@@ -4,6 +4,7 @@
 #include "bn_keypad.h"
 #include "bn_regular_bg_ptr.h"
 #include "bn_sprite_text_generator.h"
+#include "bn_sprite_builder.h"
 #include "bn_regular_bg_map_cell_info.h" //To create logical map
 
 #include "bn_log.h" //Remove on final version
@@ -18,6 +19,7 @@
 // Sprites
 #include "bn_sprite_items_dino.h"
 #include "bn_sprite_items_cat.h"
+#include "bn_sprite_items_ninja.h"
 
 // Common libraries
 #include "common_info.h"
@@ -77,6 +79,7 @@ namespace
 
         bn::sprite_ptr dino_sprite = bn::sprite_items::dino.create_sprite(20, 10);
         bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(0, 0);
+        bn::sprite_ptr ninja_sprite = bn::sprite_items::ninja.create_sprite(0, 0);
 
         bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
         bn::blending::set_transparency_alpha(0.3);
@@ -85,6 +88,24 @@ namespace
 
         while (!bn::keypad::start_pressed())
         {
+            // Handle animations
+            if(bn::keypad::left_held())
+            {
+                ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(8));
+            }
+            else if(bn::keypad::right_held())
+            {
+                ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(12));
+            }
+
+            if(bn::keypad::up_held())
+            {
+                ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(4));
+            }
+            else if(bn::keypad::down_held())
+            {
+                ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(0));
+            }
             // Handle movement
             if (bn::keypad::left_pressed())
             {
