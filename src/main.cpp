@@ -4,8 +4,11 @@
 #include "bn_keypad.h"
 #include "bn_regular_bg_ptr.h"
 #include "bn_sprite_text_generator.h"
-#include "bn_sprite_builder.h"
+#include "bn_sprite_builder.h"           //Sprites tiled
+#include "bn_sprite_animate_actions.h"   //Sprites animated
 #include "bn_regular_bg_map_cell_info.h" //To create logical map
+// #include "bn_display.h" //for windows
+#include "bn_rect_window_boundaries_hbe_ptr.h"
 
 #include "bn_log.h" //Remove on final version
 
@@ -76,6 +79,7 @@ namespace
             "",
             "START: go to next scene"};
         common::info info("Second Scene", info_text_lines, text_generator);
+        info.update();
 
         bn::sprite_ptr dino_sprite = bn::sprite_items::dino.create_sprite(20, 10);
         bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(0, 0);
@@ -86,10 +90,25 @@ namespace
         clouds_bg.set_blending_enabled(true);
         bn::regular_bg_ptr simple_bg = bn::regular_bg_items::simple_bg.create_bg(0, 0);
 
+        // Animations
+        bn::sprite_animate_action<4> action = bn::create_sprite_animate_action_forever(
+            ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
+
+        //Create outside window
+        bn::regular_bg_ptr cats_intro = bn::regular_bg_items::cats_intro.create_bg(8, 48);
+        bn::window outside_window = bn::window::outside();
+        outside_window.set_show_bg(cats_intro, false);
+
+        bn::rect_window internal_window = bn::rect_window::internal();
+        internal_window.set_boundaries(-48, -96, 48, 96);
+
+        BN_LOG("Window created");
+        internal_window.set_visible(true);
+
         while (!bn::keypad::start_pressed())
         {
             // Handle animations
-            if(bn::keypad::left_held())
+            /*if(bn::keypad::left_held())
             {
                 ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(8));
             }
@@ -105,29 +124,55 @@ namespace
             else if(bn::keypad::down_held())
             {
                 ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(0));
+            }*/
+            if (bn::keypad::left_pressed())
+            {
+                action = bn::create_sprite_animate_action_forever(
+                    ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 8, 9, 10, 11);
             }
+            else if (bn::keypad::right_pressed())
+            {
+                action = bn::create_sprite_animate_action_forever(
+                    ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 12, 13, 14, 15);
+            }
+
+            if (bn::keypad::up_pressed())
+            {
+                action = bn::create_sprite_animate_action_forever(
+                    ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 4, 5, 6, 7);
+            }
+            else if (bn::keypad::down_pressed())
+            {
+                action = bn::create_sprite_animate_action_forever(
+                    ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
+            }
+
+            action.update();
+
             // Handle movement
             if (bn::keypad::left_pressed())
             {
                 cat_map_position.set_x(cat_map_position.x() - 1);
                 cat_sprite.set_horizontal_flip(true);
+                BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
             }
             else if (bn::keypad::right_pressed())
             {
                 cat_map_position.set_x(cat_map_position.x() + 1);
                 cat_sprite.set_horizontal_flip(false);
+                BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
             }
 
             if (bn::keypad::up_pressed())
             {
                 cat_map_position.set_y(cat_map_position.y() - 1);
+                BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
             }
             else if (bn::keypad::down_pressed())
             {
                 cat_map_position.set_y(cat_map_position.y() + 1);
+                BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
             }
-
-            BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
 
             // Limits
             if (cat_map_position.x() < -12)
@@ -145,10 +190,25 @@ namespace
 
             cat_sprite.set_position(cat_sprite_x, cat_sprite_y);
 
-            BN_LOG("Map pos (Gravity): ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
-            BN_LOG("Cat pos: ", " X:", cat_sprite_x, " Y:", cat_sprite_y);
+            if (bn::keypad::b_pressed())
+            {
+                BN_LOG("Map pos (Gravity): ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
+                BN_LOG("Cat pos: ", " X:", cat_sprite_x, " Y:", cat_sprite_y);
+            }
+            // For Backgrounds
+            // cat_sprite.set_priority(1);
+            // For sprites
+            cat_sprite.set_z_order(1);
 
-            info.update();
+            if (bn::keypad::a_pressed())
+            {
+                BN_LOG("Should show window");
+                internal_window.set_visible(!internal_window.visible());
+            }
+
+            // Animate cloud
+            clouds_bg.set_position(clouds_bg.x() + 0.5, clouds_bg.y() + 0.5);
+
             bn::core::update();
         }
     }

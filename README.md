@@ -22,7 +22,8 @@
 - Add sprite (DONE) day 4
 - Read input (DONE) day 4
 - Move sprite (DONE) day 5
-- Animate sprite (WIP) day 6
-- Collission
+- Animate sprite (DONE) day 6
+- Simple animate backgrounds (DONE) day 6
+- Collisions
 - Basic game logic
 - Re-write sprites to entities
