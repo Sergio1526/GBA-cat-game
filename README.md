@@ -8,11 +8,13 @@
   - Catventure
   - Cat-advance
 ## Instructions
-  Butano setup: https://gvaliente.github.io/butano/getting_started.html
-  mGBA: https://mgba.io/
+  - Butano setup: https://gvaliente.github.io/butano/getting_started.html
+  - mGBA: https://mgba.io/
 ## Libraries
-  Butano: https://github.com/GValiente/butano
-  DevKit PRO: https://devkitpro.org/
+  - Butano: https://github.com/GValiente/butano
+  - DevKit PRO: https://devkitpro.org/
+## Graphics
+  - Usenti https://www.coranac.com/projects/usenti/
 
 ## Dev plan
 ### Milestones
@@ -24,6 +26,7 @@
 - Move sprite (DONE) day 5
 - Animate sprite (DONE) day 6
 - Simple animate backgrounds (DONE) day 6
-- Collisions
+- Re-desing some images and update placeholders (DONE) day 7
+- Collisions (WIP)
 - Basic game logic
 - Re-write sprites to entities

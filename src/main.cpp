@@ -33,41 +33,31 @@
 // Code
 namespace
 {
-    void logo_scene(bn::sprite_text_generator &text_generator)
+    bn::point cat_map_position(0, 0);
+
+    void logo_scene()
     {
         BN_LOG("Logo scene");
-        // Show text
-        constexpr bn::string_view info_text_lines[] = {
-            "START: go to next scene"};
-        common::info info("First Scene", info_text_lines, text_generator);
-
-        bn::regular_bg_ptr cats_intro = bn::regular_bg_items::cats_intro.create_bg(8, 48);
-
-        while (!bn::keypad::start_pressed())
-        {
-            info.update();
-            bn::core::update();
-        }
-    }
-
-    void first_scene(bn::sprite_text_generator &text_generator)
-    {
-        BN_LOG("First scene");
-        // Show text
-        constexpr bn::string_view info_text_lines[] = {
-            "START: go to next scene"};
-        common::info info("First Scene", info_text_lines, text_generator);
 
         bn::regular_bg_ptr jam2024_bg = bn::regular_bg_items::jam2024.create_bg(8, 48);
 
         while (!bn::keypad::start_pressed())
         {
-            info.update();
             bn::core::update();
         }
     }
 
-    bn::point cat_map_position(0, 0);
+    void first_scene()
+    {
+        BN_LOG("First scene");
+
+        bn::regular_bg_ptr cats_intro = bn::regular_bg_items::cats_intro.create_bg(0, 10);
+
+        while (!bn::keypad::start_pressed())
+        {
+            bn::core::update();
+        }
+    }
 
     void second_scene(bn::sprite_text_generator &text_generator)
     {
@@ -81,20 +71,22 @@ namespace
         common::info info("Second Scene", info_text_lines, text_generator);
         info.update();
 
+        //Sprites
         bn::sprite_ptr dino_sprite = bn::sprite_items::dino.create_sprite(20, 10);
         bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(0, 0);
         bn::sprite_ptr ninja_sprite = bn::sprite_items::ninja.create_sprite(0, 0);
 
-        bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
-        bn::blending::set_transparency_alpha(0.3);
-        clouds_bg.set_blending_enabled(true);
+        //Backgrounds
         bn::regular_bg_ptr simple_bg = bn::regular_bg_items::simple_bg.create_bg(0, 0);
+        bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
+        bn::blending::set_transparency_alpha(0.1);
+        clouds_bg.set_blending_enabled(true);
 
         // Animations
         bn::sprite_animate_action<4> action = bn::create_sprite_animate_action_forever(
             ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
 
-        //Create outside window
+        // Create outside window
         bn::regular_bg_ptr cats_intro = bn::regular_bg_items::cats_intro.create_bg(8, 48);
         bn::window outside_window = bn::window::outside();
         outside_window.set_show_bg(cats_intro, false);
@@ -150,43 +142,44 @@ namespace
             action.update();
 
             // Handle movement
-            if (bn::keypad::left_pressed())
+            // if (bn::keypad::left_pressed())
+            if (bn::keypad::left_held())
             {
                 cat_map_position.set_x(cat_map_position.x() - 1);
                 cat_sprite.set_horizontal_flip(true);
                 BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
             }
-            else if (bn::keypad::right_pressed())
+            else if (bn::keypad::right_held())
             {
                 cat_map_position.set_x(cat_map_position.x() + 1);
                 cat_sprite.set_horizontal_flip(false);
                 BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
             }
 
-            if (bn::keypad::up_pressed())
+            if (bn::keypad::up_held())
             {
                 cat_map_position.set_y(cat_map_position.y() - 1);
                 BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
             }
-            else if (bn::keypad::down_pressed())
+            else if (bn::keypad::down_held())
             {
                 cat_map_position.set_y(cat_map_position.y() + 1);
                 BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
             }
 
             // Limits
-            if (cat_map_position.x() < -12)
+            if (cat_map_position.x() < -120)
             {
-                cat_map_position.set_x(-12);
+                cat_map_position.set_x(-120);
             }
-            if (cat_map_position.x() > 12)
+            if (cat_map_position.x() > 120)
             {
-                cat_map_position.set_x(12);
+                cat_map_position.set_x(120);
             }
 
             // Update position
-            bn::fixed cat_sprite_x = (cat_map_position.x() * 8) + 4;
-            bn::fixed cat_sprite_y = (cat_map_position.y() * 8) + 4;
+            bn::fixed cat_sprite_x = cat_map_position.x();
+            bn::fixed cat_sprite_y = cat_map_position.y();
 
             cat_sprite.set_position(cat_sprite_x, cat_sprite_y);
 
@@ -227,10 +220,10 @@ int main()
     {
         BN_LOG("Main cycle");
 
-        logo_scene(text_generator);
+        logo_scene();
         bn::core::update();
 
-        first_scene(text_generator);
+        first_scene();
         bn::core::update();
 
         second_scene(text_generator);
