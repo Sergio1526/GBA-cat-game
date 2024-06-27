@@ -27,6 +27,7 @@
 - Animate sprite (DONE) day 6
 - Simple animate backgrounds (DONE) day 6
 - Re-desing some images and update placeholders (DONE) day 7
+- Added camera scroll (DONE) day 8
 - Collisions (WIP)
 - Basic game logic
-- Re-write sprites to entities
+- Re-write sprites to entities (WIP)

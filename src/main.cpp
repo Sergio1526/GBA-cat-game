@@ -4,9 +4,10 @@
 #include "bn_keypad.h"
 #include "bn_regular_bg_ptr.h"
 #include "bn_sprite_text_generator.h"
-#include "bn_sprite_builder.h"           //Sprites tiled
-#include "bn_sprite_animate_actions.h"   //Sprites animated
-#include "bn_regular_bg_map_cell_info.h" //To create logical map
+#include "bn_sprite_builder.h"              //Sprites tiled
+#include "bn_sprite_animate_actions.h"      //Sprites animated
+#include "bn_regular_bg_map_cell_info.h"    //To create logical map
+#include "bn_camera_actions.h"              //Add camera
 // #include "bn_display.h" //for windows
 #include "bn_rect_window_boundaries_hbe_ptr.h"
 
@@ -35,14 +36,21 @@ namespace
 {
     bn::point cat_map_position(0, 0);
 
-    void logo_scene()
+    void logo_scene(bn::camera_ptr& camera)
     {
         BN_LOG("Logo scene");
 
+        bn::fixed amplitude = 10;
+        camera.set_position(-amplitude, -amplitude);
+        bn::camera_move_loop_action camera_action(camera, 120, amplitude, amplitude);
+
         bn::regular_bg_ptr jam2024_bg = bn::regular_bg_items::jam2024.create_bg(8, 48);
+
+        jam2024_bg.set_camera(camera);
 
         while (!bn::keypad::start_pressed())
         {
+            camera_action.update();
             bn::core::update();
         }
     }
@@ -59,7 +67,7 @@ namespace
         }
     }
 
-    void second_scene(bn::sprite_text_generator &text_generator)
+    void second_scene(bn::camera_ptr& camera, bn::sprite_text_generator &text_generator)
     {
         BN_LOG("Second scene");
 
@@ -91,11 +99,18 @@ namespace
         bn::window outside_window = bn::window::outside();
         outside_window.set_show_bg(cats_intro, false);
 
+        //Create window
         bn::rect_window internal_window = bn::rect_window::internal();
         internal_window.set_boundaries(-48, -96, 48, 96);
-
+        internal_window.set_visible(false);
         BN_LOG("Window created");
-        internal_window.set_visible(true);
+
+        //Set camera
+        cat_sprite.set_camera(camera);
+        dino_sprite.set_camera(camera);
+        ninja_sprite.set_camera(camera);
+        simple_bg.set_camera(camera);
+        clouds_bg.set_camera(camera);
 
         while (!bn::keypad::start_pressed())
         {
@@ -103,19 +118,6 @@ namespace
             /*if(bn::keypad::left_held())
             {
                 ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(8));
-            }
-            else if(bn::keypad::right_held())
-            {
-                ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(12));
-            }
-
-            if(bn::keypad::up_held())
-            {
-                ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(4));
-            }
-            else if(bn::keypad::down_held())
-            {
-                ninja_sprite.set_tiles(bn::sprite_items::ninja.tiles_item().create_tiles(0));
             }*/
             if (bn::keypad::left_pressed())
             {
@@ -142,7 +144,6 @@ namespace
             action.update();
 
             // Handle movement
-            // if (bn::keypad::left_pressed())
             if (bn::keypad::left_held())
             {
                 cat_map_position.set_x(cat_map_position.x() - 1);
@@ -178,32 +179,36 @@ namespace
             }
 
             // Update position
-            bn::fixed cat_sprite_x = cat_map_position.x();
-            bn::fixed cat_sprite_y = cat_map_position.y();
-
-            cat_sprite.set_position(cat_sprite_x, cat_sprite_y);
+            cat_sprite.set_position(cat_map_position.x(), cat_map_position.y());
 
             if (bn::keypad::b_pressed())
             {
                 BN_LOG("Map pos (Gravity): ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
-                BN_LOG("Cat pos: ", " X:", cat_sprite_x, " Y:", cat_sprite_y);
+                BN_LOG("Cat pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
             }
             // For Backgrounds
-            // cat_sprite.set_priority(1);
+            //simple_bg.set_priority(2);
+            clouds_bg.set_priority(0);
             // For sprites
-            cat_sprite.set_z_order(1);
+            cat_sprite.set_z_order(0);
+            dino_sprite.set_z_order(1);
+            ninja_sprite.set_z_order(1);
 
             if (bn::keypad::a_pressed())
             {
-                BN_LOG("Should show window");
+                BN_LOG("Toogle window");
                 internal_window.set_visible(!internal_window.visible());
             }
 
             // Animate cloud
-            clouds_bg.set_position(clouds_bg.x() + 0.5, clouds_bg.y() + 0.5);
+            clouds_bg.set_position(clouds_bg.x() + 0.1, clouds_bg.y() + 0.1);
+
+            //Update camera pos
+            camera.set_position(cat_map_position.x(), cat_map_position.y());
 
             bn::core::update();
         }
+        camera.set_position(0, 0);
     }
 }
 
@@ -214,19 +219,21 @@ int main()
     // Initialize text generator
     bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
 
+    bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
+
     // X (Left to Right), Y (Top to Bottom) Each tile 4x4
 
     while (true)
     {
         BN_LOG("Main cycle");
 
-        logo_scene();
+        logo_scene(camera);
         bn::core::update();
 
         first_scene();
         bn::core::update();
 
-        second_scene(text_generator);
+        second_scene(camera, text_generator);
         bn::core::update();
     }
 }
