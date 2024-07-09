@@ -34,7 +34,7 @@
 // Code
 namespace
 {
-    bn::point cat_map_position(0, 0);
+    bn::point cat_map_position(16, 16);
 
     void logo_scene(bn::camera_ptr& camera)
     {
@@ -86,6 +86,9 @@ namespace
 
         //Backgrounds
         bn::regular_bg_ptr simple_bg = bn::regular_bg_items::simple_bg.create_bg(0, 0);
+        //Generate map for collisions
+        const bn::regular_bg_map_item& map_item = bn::regular_bg_items::simple_bg.map_item();
+
         bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
         bn::blending::set_transparency_alpha(0.1);
         clouds_bg.set_blending_enabled(true);
@@ -155,6 +158,10 @@ namespace
                 cat_map_position.set_x(cat_map_position.x() + 1);
                 cat_sprite.set_horizontal_flip(false);
                 BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
+                //Check collider
+                bn::regular_bg_map_cell player_map_cell = map_item.cell(cat_map_position);
+                int player_tile_index = bn::regular_bg_map_cell_info(player_map_cell).tile_index();
+                BN_LOG("Player cell: ", player_tile_index);
             }
 
             if (bn::keypad::up_held())
