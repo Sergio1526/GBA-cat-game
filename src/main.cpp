@@ -34,7 +34,7 @@
 // Code
 namespace
 {
-    bn::point cat_map_position(16, 16);
+    bn::point cat_map_position(128, 128);
 
     void logo_scene(bn::camera_ptr& camera)
     {
@@ -88,6 +88,16 @@ namespace
         bn::regular_bg_ptr simple_bg = bn::regular_bg_items::simple_bg.create_bg(0, 0);
         //Generate map for collisions
         const bn::regular_bg_map_item& map_item = bn::regular_bg_items::simple_bg.map_item();
+        bn::size s = map_item.dimensions();
+        BN_LOG("Dimension: ", s.height(), "x", s.width());
+        for(int i = 0; i < s.width(); i++){
+            for(int j = 0; j < s.height(); j++){
+                bn::point p (i, j);
+                bn::regular_bg_map_cell map_cell = map_item.cell(p);
+                int tile_index = bn::regular_bg_map_cell_info(map_cell).tile_index();
+                BN_LOG(tile_index);
+            }
+        }
 
         bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
         bn::blending::set_transparency_alpha(0.1);
@@ -157,11 +167,13 @@ namespace
             {
                 cat_map_position.set_x(cat_map_position.x() + 1);
                 cat_sprite.set_horizontal_flip(false);
-                BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
-                //Check collider
-                bn::regular_bg_map_cell player_map_cell = map_item.cell(cat_map_position);
-                int player_tile_index = bn::regular_bg_map_cell_info(player_map_cell).tile_index();
-                BN_LOG("Player cell: ", player_tile_index);
+                BN_LOG("Pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
+                //Check collider map 256x256 pixels, 32x32 tiles
+                bn::point p (cat_map_position.x()/8, cat_map_position.y()/8);
+                BN_LOG("Map pos: ", " X:", p.x(), " Y:", p.y());
+                bn::regular_bg_map_cell map_cell = map_item.cell(p);
+                int tile_index = bn::regular_bg_map_cell_info(map_cell).tile_index();
+                BN_LOG(tile_index);
             }
 
             if (bn::keypad::up_held())
@@ -176,13 +188,13 @@ namespace
             }
 
             // Limits
-            if (cat_map_position.x() < -120)
+            if (cat_map_position.x() < 0)
             {
-                cat_map_position.set_x(-120);
+                cat_map_position.set_x(0);
             }
-            if (cat_map_position.x() > 120)
+            if (cat_map_position.x() > simple_bg.dimensions().width())
             {
-                cat_map_position.set_x(120);
+                cat_map_position.set_x(simple_bg.dimensions().width());
             }
 
             // Update position

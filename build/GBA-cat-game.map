@@ -49,94 +49,94 @@ Discarded input sections
  .text          0x00000000        0x0 simple_bg_bn_gfx.o
  .data          0x00000000        0x0 simple_bg_bn_gfx.o
  .bss           0x00000000        0x0 simple_bg_bn_gfx.o
- .data          0x00000000        0x0 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .bss           0x00000000        0x0 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .data          0x00000000        0x0 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc2pdX1l.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccK7WxfL.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccIVJ0La.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cce1wZsz.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccMP8goY.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc6oScvm.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccWGWHSK.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccsgBSB8.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccS8SFBw.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc2GuCbY.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cckFzy4p.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccStbY7Q.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccgjm8Ci.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccelAF0I.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cce0JWF9.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cck2X0xz.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccAjPmuZ.debug.temp.o
- .debug_info    0x00000000      0x45f C:\Users\Sergio\AppData\Local\Temp\cc20Kjvt.debug.temp.o
- .debug_abbrev  0x00000000       0xdc C:\Users\Sergio\AppData\Local\Temp\cc20Kjvt.debug.temp.o
- .debug_line    0x00000000      0x214 C:\Users\Sergio\AppData\Local\Temp\cc20Kjvt.debug.temp.o
- .debug_str     0x00000000      0x4a9 C:\Users\Sergio\AppData\Local\Temp\cc20Kjvt.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc20Kjvt.debug.temp.o
- .debug_info    0x00000000     0x93c1 C:\Users\Sergio\AppData\Local\Temp\ccYzgHBX.debug.temp.o
- .debug_abbrev  0x00000000      0xa09 C:\Users\Sergio\AppData\Local\Temp\ccYzgHBX.debug.temp.o
- .debug_line    0x00000000      0x70b C:\Users\Sergio\AppData\Local\Temp\ccYzgHBX.debug.temp.o
- .debug_str     0x00000000     0x9050 C:\Users\Sergio\AppData\Local\Temp\ccYzgHBX.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccYzgHBX.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccYI5f3r.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccucxTBV.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccgM1otp.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cceYgedS.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccuJtvjl.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccsBG0AN.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc0tk0eg.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc4mE9CM.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccUoOrmj.debug.temp.o
- .debug_info    0x00000000      0x52b C:\Users\Sergio\AppData\Local\Temp\ccm8wxrP.debug.temp.o
- .debug_abbrev  0x00000000      0x14c C:\Users\Sergio\AppData\Local\Temp\ccm8wxrP.debug.temp.o
- .debug_line    0x00000000      0x259 C:\Users\Sergio\AppData\Local\Temp\ccm8wxrP.debug.temp.o
- .debug_str     0x00000000      0x4df C:\Users\Sergio\AppData\Local\Temp\ccm8wxrP.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccm8wxrP.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc0DDMAl.debug.temp.o
- .debug_info    0x00000000      0x4b0 C:\Users\Sergio\AppData\Local\Temp\cce0xGUQ.debug.temp.o
- .debug_abbrev  0x00000000      0x133 C:\Users\Sergio\AppData\Local\Temp\cce0xGUQ.debug.temp.o
- .debug_line    0x00000000      0x29e C:\Users\Sergio\AppData\Local\Temp\cce0xGUQ.debug.temp.o
- .debug_str     0x00000000      0x4fa C:\Users\Sergio\AppData\Local\Temp\cce0xGUQ.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cce0xGUQ.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccWHvSjm.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccqG7QUQ.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccU2zoDl.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccENueqQ.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccsYTv6o.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccsrd5QX.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccKfnoJw.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccOOElN4.debug.temp.o
- .debug_info    0x00000000      0x830 C:\Users\Sergio\AppData\Local\Temp\ccoiNJWC.debug.temp.o
- .debug_abbrev  0x00000000      0x1b1 C:\Users\Sergio\AppData\Local\Temp\ccoiNJWC.debug.temp.o
- .debug_line    0x00000000       0xf7 C:\Users\Sergio\AppData\Local\Temp\ccoiNJWC.debug.temp.o
- .debug_str     0x00000000      0x30b C:\Users\Sergio\AppData\Local\Temp\ccoiNJWC.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccoiNJWC.debug.temp.o
- .debug_info    0x00000000      0x728 C:\Users\Sergio\AppData\Local\Temp\ccsxCZeb.debug.temp.o
- .debug_abbrev  0x00000000      0x19e C:\Users\Sergio\AppData\Local\Temp\ccsxCZeb.debug.temp.o
- .debug_line    0x00000000       0xe8 C:\Users\Sergio\AppData\Local\Temp\ccsxCZeb.debug.temp.o
- .debug_str     0x00000000      0x2bc C:\Users\Sergio\AppData\Local\Temp\ccsxCZeb.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccsxCZeb.debug.temp.o
- .debug_info    0x00000000      0x278 C:\Users\Sergio\AppData\Local\Temp\cc681iMI.debug.temp.o
- .debug_abbrev  0x00000000      0x162 C:\Users\Sergio\AppData\Local\Temp\cc681iMI.debug.temp.o
- .debug_line    0x00000000      0x113 C:\Users\Sergio\AppData\Local\Temp\cc681iMI.debug.temp.o
- .debug_str     0x00000000      0x24f C:\Users\Sergio\AppData\Local\Temp\cc681iMI.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc681iMI.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccgzpusg.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc6CuZdO.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccsvxm8l.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccoeoodT.debug.temp.o
- .debug_info    0x00000000       0xf6 C:\Users\Sergio\AppData\Local\Temp\ccOIVhrq.debug.temp.o
- .debug_abbrev  0x00000000       0xc8 C:\Users\Sergio\AppData\Local\Temp\ccOIVhrq.debug.temp.o
- .debug_line    0x00000000       0xbf C:\Users\Sergio\AppData\Local\Temp\ccOIVhrq.debug.temp.o
- .debug_str     0x00000000      0x18f C:\Users\Sergio\AppData\Local\Temp\ccOIVhrq.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccOIVhrq.debug.temp.o
- .debug_info    0x00000000      0x357 C:\Users\Sergio\AppData\Local\Temp\ccGvftKX.debug.temp.o
- .debug_abbrev  0x00000000      0x131 C:\Users\Sergio\AppData\Local\Temp\ccGvftKX.debug.temp.o
- .debug_line    0x00000000       0xb9 C:\Users\Sergio\AppData\Local\Temp\ccGvftKX.debug.temp.o
- .debug_str     0x00000000      0x2a3 C:\Users\Sergio\AppData\Local\Temp\ccGvftKX.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccGvftKX.debug.temp.o
- .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccC0swIy.debug.temp.o
+ .data          0x00000000        0x0 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .bss           0x00000000        0x0 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .data          0x00000000        0x0 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccNwSMU1.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cccigybf.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccpFmZzs.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc6jOu5E.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccjtvUTR.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc4TcQS3.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccNXa45f.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccA7SI5v.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccVSBarL.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccgeZl40.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccRnAtNf.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccWY9uPu.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccF27QaJ.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc2GwwBX.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccXOvVPf.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccuUzwyy.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccvRlCkQ.debug.temp.o
+ .debug_info    0x00000000      0x45f C:\Users\Sergio\AppData\Local\Temp\cc2wshn8.debug.temp.o
+ .debug_abbrev  0x00000000       0xdc C:\Users\Sergio\AppData\Local\Temp\cc2wshn8.debug.temp.o
+ .debug_line    0x00000000      0x214 C:\Users\Sergio\AppData\Local\Temp\cc2wshn8.debug.temp.o
+ .debug_str     0x00000000      0x4a9 C:\Users\Sergio\AppData\Local\Temp\cc2wshn8.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc2wshn8.debug.temp.o
+ .debug_info    0x00000000     0x93c1 C:\Users\Sergio\AppData\Local\Temp\cctzo8np.debug.temp.o
+ .debug_abbrev  0x00000000      0xa09 C:\Users\Sergio\AppData\Local\Temp\cctzo8np.debug.temp.o
+ .debug_line    0x00000000      0x70b C:\Users\Sergio\AppData\Local\Temp\cctzo8np.debug.temp.o
+ .debug_str     0x00000000     0x9050 C:\Users\Sergio\AppData\Local\Temp\cctzo8np.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cctzo8np.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccyc3BPG.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc30u9nX.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cceBS9je.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccF7ti7y.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc8g1acU.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc5NMGke.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc8X8nOy.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccNbjBlS.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccEPBffc.debug.temp.o
+ .debug_info    0x00000000      0x52b C:\Users\Sergio\AppData\Local\Temp\ccPhLe1u.debug.temp.o
+ .debug_abbrev  0x00000000      0x14c C:\Users\Sergio\AppData\Local\Temp\ccPhLe1u.debug.temp.o
+ .debug_line    0x00000000      0x259 C:\Users\Sergio\AppData\Local\Temp\ccPhLe1u.debug.temp.o
+ .debug_str     0x00000000      0x4df C:\Users\Sergio\AppData\Local\Temp\ccPhLe1u.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccPhLe1u.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccO7xeXN.debug.temp.o
+ .debug_info    0x00000000      0x4b0 C:\Users\Sergio\AppData\Local\Temp\ccPAgYa7.debug.temp.o
+ .debug_abbrev  0x00000000      0x133 C:\Users\Sergio\AppData\Local\Temp\ccPAgYa7.debug.temp.o
+ .debug_line    0x00000000      0x29e C:\Users\Sergio\AppData\Local\Temp\ccPAgYa7.debug.temp.o
+ .debug_str     0x00000000      0x4fa C:\Users\Sergio\AppData\Local\Temp\ccPAgYa7.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccPAgYa7.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccmopSfu.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccdGy5oR.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc8hv5Kd.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccZHgMeA.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccekiN4W.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccDPx8Ti.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccgGYLNE.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccXCnN0Z.debug.temp.o
+ .debug_info    0x00000000      0x830 C:\Users\Sergio\AppData\Local\Temp\cccr1Gml.debug.temp.o
+ .debug_abbrev  0x00000000      0x1b1 C:\Users\Sergio\AppData\Local\Temp\cccr1Gml.debug.temp.o
+ .debug_line    0x00000000       0xf7 C:\Users\Sergio\AppData\Local\Temp\cccr1Gml.debug.temp.o
+ .debug_str     0x00000000      0x30b C:\Users\Sergio\AppData\Local\Temp\cccr1Gml.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cccr1Gml.debug.temp.o
+ .debug_info    0x00000000      0x728 C:\Users\Sergio\AppData\Local\Temp\cc5lC2NG.debug.temp.o
+ .debug_abbrev  0x00000000      0x19e C:\Users\Sergio\AppData\Local\Temp\cc5lC2NG.debug.temp.o
+ .debug_line    0x00000000       0xe8 C:\Users\Sergio\AppData\Local\Temp\cc5lC2NG.debug.temp.o
+ .debug_str     0x00000000      0x2bc C:\Users\Sergio\AppData\Local\Temp\cc5lC2NG.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cc5lC2NG.debug.temp.o
+ .debug_info    0x00000000      0x278 C:\Users\Sergio\AppData\Local\Temp\cckQNeo2.debug.temp.o
+ .debug_abbrev  0x00000000      0x162 C:\Users\Sergio\AppData\Local\Temp\cckQNeo2.debug.temp.o
+ .debug_line    0x00000000      0x113 C:\Users\Sergio\AppData\Local\Temp\cckQNeo2.debug.temp.o
+ .debug_str     0x00000000      0x24f C:\Users\Sergio\AppData\Local\Temp\cckQNeo2.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cckQNeo2.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccfOR0Br.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccGATEYQ.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccJyPTIg.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccs0PCmF.debug.temp.o
+ .debug_info    0x00000000       0xf6 C:\Users\Sergio\AppData\Local\Temp\ccXynXg4.debug.temp.o
+ .debug_abbrev  0x00000000       0xc8 C:\Users\Sergio\AppData\Local\Temp\ccXynXg4.debug.temp.o
+ .debug_line    0x00000000       0xbf C:\Users\Sergio\AppData\Local\Temp\ccXynXg4.debug.temp.o
+ .debug_str     0x00000000      0x18f C:\Users\Sergio\AppData\Local\Temp\ccXynXg4.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccXynXg4.debug.temp.o
+ .debug_info    0x00000000      0x357 C:\Users\Sergio\AppData\Local\Temp\cceshilt.debug.temp.o
+ .debug_abbrev  0x00000000      0x131 C:\Users\Sergio\AppData\Local\Temp\cceshilt.debug.temp.o
+ .debug_line    0x00000000       0xb9 C:\Users\Sergio\AppData\Local\Temp\cceshilt.debug.temp.o
+ .debug_str     0x00000000      0x2a3 C:\Users\Sergio\AppData\Local\Temp\cceshilt.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\cceshilt.debug.temp.o
+ .comment       0x00000000       0x24 C:\Users\Sergio\AppData\Local\Temp\ccHhYgKR.debug.temp.o
  .text          0x00000000        0x0 bn_sprites_manager.bn_iwram.o
  .data          0x00000000        0x0 bn_sprites_manager.bn_iwram.o
  .bss           0x00000000        0x0 bn_sprites_manager.bn_iwram.o
@@ -465,390 +465,380 @@ Linker script and memory map
  *(.plt)
                 0x0800021c                        . = ALIGN (0x4)
 
-.text           0x08000220    0x173e8
+.text           0x08000220    0x17628
  *(EXCLUDE_FILE(*.iwram*) .text*)
  .text.__do_global_dtors_aux
                 0x08000220       0x2c C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
  .text.frame_dummy
                 0x0800024c       0x24 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
- .text          0x08000270     0x8214 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
-                0x08000918                bn::camera_ptr::position() const
-                0x0800092c                bn::audio_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0800092c                bn::audio_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x08000930                bn::bg_blocks_manager::decrease_usages(int)
-                0x080009d8                bn::bg_blocks_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x080009d8                bn::bg_blocks_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x08000a38                bn::bgs_manager::fill_hblank_effect_regular_positions(int, bn::fixed_t<12> const*, unsigned short*)
-                0x08000a70                void _bn::assert::show_args<char [20], int>(char const*, char const*, char const*, int, char const (&) [20], int const&)
-                0x08000a70                void _bn::assert::show_args<char [16], int>(char const*, char const*, char const*, int, char const (&) [16], int const&)
-                0x08000a70                void _bn::assert::show_args<char [22], int>(char const*, char const*, char const*, int, char const (&) [22], int const&)
-                0x08000a70                void _bn::assert::show_args<char [28], int>(char const*, char const*, char const*, int, char const (&) [28], int const&)
-                0x08000a70                void _bn::assert::show_args<char [27], int>(char const*, char const*, char const*, int, char const (&) [27], int const&)
-                0x08000a70                void _bn::assert::show_args<char [25], int>(char const*, char const*, char const*, int, char const (&) [25], int const&)
-                0x08000a70                void _bn::assert::show_args<char [18], int>(char const*, char const*, char const*, int, char const (&) [18], int const&)
-                0x08000a70                void _bn::assert::show_args<char [15], int>(char const*, char const*, char const*, int, char const (&) [15], int const&)
-                0x08000a70                void _bn::assert::show_args<char [39], int>(char const*, char const*, char const*, int, char const (&) [39], int const&)
-                0x08000a70                void _bn::assert::show_args<char [26], int>(char const*, char const*, char const*, int, char const (&) [26], int const&)
-                0x08000b28                void _bn::assert::show_args<char [14]>(char const*, char const*, char const*, int, char const (&) [14])
-                0x08000b28                void _bn::assert::show_args<char [22]>(char const*, char const*, char const*, int, char const (&) [22])
-                0x08000b28                void _bn::assert::show_args<char [21]>(char const*, char const*, char const*, int, char const (&) [21])
-                0x08000b28                void _bn::assert::show_args<char [24]>(char const*, char const*, char const*, int, char const (&) [24])
-                0x08000b28                void _bn::assert::show_args<char [35]>(char const*, char const*, char const*, int, char const (&) [35])
-                0x08000b28                void _bn::assert::show_args<char [55]>(char const*, char const*, char const*, int, char const (&) [55])
-                0x08000b28                void _bn::assert::show_args<char [37]>(char const*, char const*, char const*, int, char const (&) [37])
-                0x08000b28                void _bn::assert::show_args<char [19]>(char const*, char const*, char const*, int, char const (&) [19])
-                0x08000b28                void _bn::assert::show_args<char [54]>(char const*, char const*, char const*, int, char const (&) [54])
-                0x08000b28                void _bn::assert::show_args<char [26]>(char const*, char const*, char const*, int, char const (&) [26])
-                0x08000b28                void _bn::assert::show_args<char [13]>(char const*, char const*, char const*, int, char const (&) [13])
-                0x08000b28                void _bn::assert::show_args<char [23]>(char const*, char const*, char const*, int, char const (&) [23])
-                0x08000b28                void _bn::assert::show_args<char [18]>(char const*, char const*, char const*, int, char const (&) [18])
-                0x08000b28                void _bn::assert::show_args<char [17]>(char const*, char const*, char const*, int, char const (&) [17])
-                0x08000b28                void _bn::assert::show_args<char [33]>(char const*, char const*, char const*, int, char const (&) [33])
-                0x08000b28                void _bn::assert::show_args<char [66]>(char const*, char const*, char const*, int, char const (&) [66])
-                0x08000b28                void _bn::assert::show_args<char [16]>(char const*, char const*, char const*, int, char const (&) [16])
-                0x08000b28                void _bn::assert::show_args<char [15]>(char const*, char const*, char const*, int, char const (&) [15])
-                0x08000b28                void _bn::assert::show_args<char [31]>(char const*, char const*, char const*, int, char const (&) [31])
-                0x08000b28                void _bn::assert::show_args<char [27]>(char const*, char const*, char const*, int, char const (&) [27])
-                0x08000b28                void _bn::assert::show_args<char [30]>(char const*, char const*, char const*, int, char const (&) [30])
-                0x08000b68                bn::bgs_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x08000b68                bn::bgs_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x08001554                bn::bgs_manager::fill_hblank_effect_regular_attributes(void*, bn::regular_bg_attributes const*, unsigned short*)
- .text.startup  0x08008484      0xe8c C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
-                0x08008484                main
- .text          0x08009310     0x8760 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
-                0x08009350                bn::hw::link::(anonymous namespace)::_resetStateCallback() [clone .lto_priv.0]
-                0x0800955c                bmp16_drawg_b1cts
-                0x0800961c                dummy_drawg
-                0x08009620                dummy_erase
-                0x08009d50                bmp16_erase
-                0x0800a138                bn::display_manager::(anonymous namespace)::_update_rect_windows_hw_boundaries(int) [clone .lto_priv.0]
-                0x0800a1bc                bn::display_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0800a1bc                bn::display_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0800a208                bn::keypad_manager::update()
-                0x0800a2a8                operator delete(void*)
-                0x0800a2b4                operator delete(void*, unsigned int)
-                0x0800a2c0                operator delete[](void*)
-                0x0800a2cc                operator delete[](void*, unsigned int)
-                0x0800a2d8                bn::ostringstream::ostringstream(bn::istring_base&)
-                0x0800a2d8                bn::ostringstream::ostringstream(bn::istring_base&)
-                0x0800a2e0                bn::ostringstream::append(char const*)
-                0x0800a36c                bn::palettes_bank::find_bpp_4(bn::span<bn::color const> const&, unsigned short)
-                0x0800a514                bn::palettes_bank::update()
-                0x0800a648                bn::palettes_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0800a648                bn::palettes_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0800a64c                bool bn::sprite_affine_mats_manager::(anonymous namespace)::_sprite_double_size<32, 16>(int, int, int, int, int) [clone .lto_priv.0]
-                0x0800a6d0                bool bn::sprite_affine_mats_manager::(anonymous namespace)::_sprite_double_size<16, 32>(int, int, int, int, int) [clone .lto_priv.0]
-                0x0800a754                bn::sprite_affine_mats_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0800a754                bn::sprite_affine_mats_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0800a790                bn::sprites_manager::(anonymous namespace)::_always_update_indexes_to_commit(bn::sprites_manager_item const&) [clone .lto_priv.0]
-                0x0800a7d8                bn::sprites_manager::set_horizontal_flip(void*, bool)
-                0x0800a8a0                bn::sprites_manager::update_auto_double_size(void*)
-                0x0800a9a0                VgmStop()
-                0x0800aa60                gbt_refresh_pattern_ptr.lto_priv.0
-                0x0800aae4                gbt_run_startup_commands.part.0.lto_priv.0
-                0x0800ab78                bn::hw::audio::(anonymous namespace)::_commit() [clone .lto_priv.0]
-                0x0800b2d8                bn::hw::audio::(anonymous namespace)::_vblank_handler() [clone .lto_priv.0]
-                0x0800b428                bn::sprite_tiles_manager::(anonymous namespace)::_hw_commit(bn::tile const*, bn::compression_type, int, int) [clone .lto_priv.0]
-                0x0800b50c                bn::ostringstream::append(int)
-                0x0800b698                bn::ostringstream::append(unsigned int)
-                0x0800b740                bn::ostringstream::append(void const*)
-                0x0800b9c4                malloc
-                0x0800bcb8                _bn::assert::show(char const*, char const*, char const*, int)
-                0x0800bcd0                _bn::assert::show(char const*, char const*, char const*, int, bn::istring_base const&)
-                0x0800bce8                void _bn::assert::show_args<char [52], unsigned short>(char const*, char const*, char const*, int, char const (&) [52], unsigned short const&) [clone .constprop.0]
-                0x0800bd3c                void _bn::assert::show_args<char [32], char [15], unsigned short const*, char [16], int, char [17], int, char [34], bn::string_view>(char const*, char const*, char const*, int, char const (&) [32], char const (&) [15], unsigned short const* const&, char const (&) [16], int const&, char const (&) [17], int const&, char const (&) [34], bn::string_view const&) [clone .constprop.0]
-                0x0800bdd0                void _bn::assert::show_args<char [30], char [13], unsigned short const*, char [14], int, char [15], int, char [17], int, char [34], bn::string_view>(char const*, char const*, char const*, int, char const (&) [30], char const (&) [13], unsigned short const* const&, char const (&) [14], int const&, char const (&) [15], int const&, char const (&) [17], int const&, char const (&) [34], bn::string_view const&) [clone .constprop.0]
-                0x0800be84                void _bn::assert::show_args<char [35], unsigned int>(char const*, char const*, char const*, int, char const (&) [35], unsigned int const&) [clone .constprop.0]
-                0x0800bed4                operator new(unsigned int)
-                0x0800bf04                operator new[](unsigned int)
-                0x0800bf34                bn::sprites_manager::set_tiles(void*, bn::sprite_tiles_ptr&&)
-                0x0800c188                bn::(anonymous namespace)::_graphics_index(char, bn::utf8_characters_map_ref const&, char const*, int&) [clone .part.0] [clone .lto_priv.0]
-                0x0800c32c                bn::sprite_text_generator::width(bn::string_view const&) const
-                0x0800c53c                bn::hblank_effects_manager::(anonymous namespace)::item_type::check_update() [clone .lto_priv.0]
-                0x0800e730                bn::memory_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0800e730                bn::memory_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0800e764                bn::bg_palette_ptr::create(bn::bg_palette_item const&)
-                0x0800e898                bn::sprite_palette_ptr::create(bn::sprite_palette_item const&)
-                0x0800e9c0                bn::palettes_bank::log_status() const
-                0x0800edb8                bn::sprite_tiles_manager::log_status()
-                0x0800f398                bn::ostringstream::_append_fraction(unsigned int, int)
-                0x0800f4a8                bn::hw::link::_timer_intr()
-                0x0800f59c                bn::hw::link::_serial_intr()
-                0x0800f754                bn::palettes_bank::decrease_usages(int)
-                0x0800f9e0                bn::bg_blocks_manager::(anonymous namespace)::items_list::insert_after(int, bn::bg_blocks_manager::(anonymous namespace)::item_type const&) [clone .constprop.0]
-                0x0800fe4c                bn::sprite_tiles_manager::update()
-                0x08010078                bn::sprite_tiles_manager::(anonymous namespace)::_find_impl(bn::tile const*, bn::compression_type, int) [clone .lto_priv.0]
-                0x080105c4                bn::sprite_tiles_manager::(anonymous namespace)::_create_impl(bn::tile const*, bn::compression_type, int) [clone .lto_priv.0]
-                0x08010914                bn::hw::audio::(anonymous namespace)::_add_sound_to_queue(int, unsigned short) [clone .lto_priv.0]
-                0x080109e0                bn::sprite_ptr::create(bn::fixed_t<12>, bn::fixed_t<12>, bn::sprite_item const&)
-                0x08010c20                bn::sprites_manager::create(bn::sprite_builder&&)
-                0x080112c0                bn::tile* bn::(anonymous namespace)::_build_sprite_assert<(bn::sprite_size)1>(bn::sprite_text_generator const&, bn::sprite_palette_ptr const&, bn::fixed_point_t<12> const&, bn::ivector<bn::sprite_ptr>&) [clone .lto_priv.0]
-                0x080114a4                bn::tile* bn::(anonymous namespace)::_build_sprite_assert<(bn::sprite_size)2>(bn::sprite_text_generator const&, bn::sprite_palette_ptr const&, bn::fixed_point_t<12> const&, bn::ivector<bn::sprite_ptr>&) [clone .lto_priv.0]
-                0x0801168c                bn::sprites_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x0801168c                bn::sprites_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x080116f0                bn::hw::audio::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x080116f0                bn::hw::audio::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
-                0x080116f4                bn::hw::audio::(anonymous namespace)::_erase_sound_from_queue(unsigned short) [clone .lto_priv.0]
-                0x0801178c                bn::hw::audio::(anonymous namespace)::_check_sounds_queue() [clone .part.0] [clone .lto_priv.0]
-                0x0801182c                bn::hw::link::(anonymous namespace)::_sendDataCallback() [clone .lto_priv.0]
-                0x08011910                bn::hw::link::(anonymous namespace)::_receiveResponseCallback(bn::lc::LinkResponse const&) [clone .lto_priv.0]
- .text          0x08011a70     0x37c4 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
-                0x08011be0                bn::lc::LinkConnection::stop() [clone .constprop.0]
-                0x08011c0c                bn::hw::bgs::commit_data::commit_data() [clone .constprop.0] [clone .isra.0]
-                0x08011c68                bn::bg_blocks_manager::(anonymous namespace)::items_list::items_list() [clone .constprop.0] [clone .isra.0]
-                0x08011cb4                bn::sprite_affine_mats_manager::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
-                0x08011d58                bn::sprite_tiles_manager::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
-                0x08011e84                bn::display_manager::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
-                0x08011f14                bn::hdma_manager::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
-                0x08011f48                bn::hblank_effects_manager::(anonymous namespace)::static_external_data::static_external_data() [clone .constprop.0] [clone .isra.0]
-                0x08012020                bn::string_view::string_view(char const*) [clone .isra.0]
-                0x0801203c                bn::core::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
-                0x080120a4                bn::sprite_ptr::set_camera(bn::camera_ptr const&) [clone .isra.0]
-                0x08012178                bn::sprite_affine_mats_manager::(anonymous namespace)::item_type::sprite_double_size(int, bn::sprite_shape_size const&) const [clone .isra.0]
-                0x08012324                bn::palettes_bank::palettes_bank() [clone .isra.0]
-                0x080123f8                bn::regular_bg_ptr::set_camera(bn::camera_ptr const&) [clone .isra.0]
-                0x0801259c                void _bn::assert::show_args<char [16], int, char [4], int>(char const*, char const*, char const*, int, char const (&) [16], int const&, char const (&) [4], int const&) [clone .constprop.0]
-                0x08012604                bn::istring::append(char const*) [clone .isra.0]
-                0x08012684                void _bn::assert::show_args<char [20], int, char [4], unsigned short>(char const*, char const*, char const*, int, char const (&) [20], int const&, char const (&) [4], unsigned short const&) [clone .constprop.0]
-                0x080126ec                void _bn::assert::show_args<char [44], bn::tile const*, char [4], bn::tile const*>(char const*, char const*, char const*, int, char const (&) [44], bn::tile const* const&, char const (&) [4], bn::tile const* const&) [clone .constprop.0]
-                0x08012758                void _bn::assert::show_args<char [46], int, char [4], unsigned int>(char const*, char const*, char const*, int, char const (&) [46], int const&, char const (&) [4], unsigned int const&) [clone .constprop.0]
-                0x0801282c                void _bn::assert::show_args<char [27], unsigned char>(char const*, char const*, char const*, int, char const (&) [27], unsigned char const&) [clone .constprop.0]
-                0x08012880                bn::istring::append(char const*, int) [clone .isra.0]
-                0x08012910                bn::hw::show::error(bn::system_font const&, bn::string_view const&, bn::string_view const&, bn::string_view const&, int, bn::string_view const&, bn::string_view const&) [clone .constprop.0]
-                0x08012c34                void bn::ostringstream::append_args<int, char [34], bn::string_view>(int const&, char const (&) [34], bn::string_view const&) [clone .constprop.0] [clone .isra.0]
-                0x08012c5c                void _bn::assert::show_args<char [44], int, char [34], bn::string_view>(char const*, char const*, char const*, int, char const (&) [44], int const&, char const (&) [34], bn::string_view const&) [clone .constprop.0]
-                0x08012d3c                bn::sprite_tiles_manager::create(bn::span<bn::tile const> const&, bn::compression_type) [clone .isra.0]
-                0x08012e38                bn::iunordered_map<bn::tile const*, int, bn::hash<bn::tile const*>, bn::equal_to<bn::tile const*> >::erase(bn::iunordered_map<bn::tile const*, int, bn::hash<bn::tile const*>, bn::equal_to<bn::tile const*> >::const_iterator const&) [clone .constprop.0] [clone .isra.0]
-                0x08013044                bn::palettes_bank::create_bpp_4(bn::span<bn::color const> const&, unsigned short, bool) [clone .constprop.0]
-                0x080132a0                bn::palettes_bank::create_bpp_8(bn::span<bn::color const> const&, bn::compression_type, bool) [clone .constprop.0]
-                0x080134a8                bn::palettes_bank::colors_hash(bn::span<bn::color const> const&) [clone .isra.0]
-                0x080134ec                bn::(anonymous namespace)::_create_impl(bn::sprite_palette_item const&, bool) [clone .constprop.0]
-                0x08013564                bn::sorted_sprites::sorter::insert(bn::sprites_manager_item&) [clone .constprop.0]
-                0x0801376c                void _bn::assert::show_args<char [20], char, char [9], bn::string_view, char [2]>(char const*, char const*, char const*, int, char const (&) [20], char const&, char const (&) [9], bn::string_view const&, char const (&) [2]) [clone .constprop.0]
-                0x08013810                bn::sprite_affine_mat_ptr::~sprite_affine_mat_ptr() [clone .isra.0]
-                0x08013888                bn::sprite_builder::sprite_builder(bn::sprite_shape_size const&, bn::sprite_tiles_ptr, bn::sprite_palette_ptr) [clone .isra.0]
-                0x08013aa0                bn::ivector<bn::bgs_manager::(anonymous namespace)::item_type*>::size_type bn::erase<bn::bgs_manager::(anonymous namespace)::item_type*>(bn::ivector<bn::bgs_manager::(anonymous namespace)::item_type*>&, bn::bgs_manager::(anonymous namespace)::item_type* const&) [clone .constprop.0] [clone .isra.0]
-                0x08013bd4                bn::sprite_tiles_ptr::~sprite_tiles_ptr() [clone .isra.0]
-                0x08013e14                bn::sprite_ptr::~sprite_ptr() [clone .isra.0]
-                0x08014008                bool bn::(anonymous namespace)::_generate<false>(bn::sprite_text_generator const&, bn::fixed_point_t<12> const&, bn::string_view const&, bn::utf8_characters_map_ref const&, int, int, bool, bn::ivector<bn::sprite_ptr>&) [clone .constprop.0] [clone .isra.0]
- .text.startup  0x08015234      0x318 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
+ .text          0x08000270     0xaa2c C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+                0x080009d4                bn::camera_ptr::position() const
+                0x080009e8                bn::audio_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x080009e8                bn::audio_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x080009ec                bn::bg_blocks_manager::decrease_usages(int)
+                0x08000a94                bn::bg_blocks_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x08000a94                bn::bg_blocks_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x08000af4                _bn::assert::show(char const*, char const*, char const*, int, bn::istring_base const&)
+                0x08000b0c                void _bn::assert::show_args<char [27], int>(char const*, char const*, char const*, int, char const (&) [27], int const&)
+                0x08000b0c                void _bn::assert::show_args<char [28], int>(char const*, char const*, char const*, int, char const (&) [28], int const&)
+                0x08000b0c                void _bn::assert::show_args<char [16], int>(char const*, char const*, char const*, int, char const (&) [16], int const&)
+                0x08000b0c                void _bn::assert::show_args<char [15], int>(char const*, char const*, char const*, int, char const (&) [15], int const&)
+                0x08000b0c                void _bn::assert::show_args<char [22], int>(char const*, char const*, char const*, int, char const (&) [22], int const&)
+                0x08000b0c                void _bn::assert::show_args<char [25], int>(char const*, char const*, char const*, int, char const (&) [25], int const&)
+                0x08000b0c                void _bn::assert::show_args<char [26], int>(char const*, char const*, char const*, int, char const (&) [26], int const&)
+                0x08000b0c                void _bn::assert::show_args<char [39], int>(char const*, char const*, char const*, int, char const (&) [39], int const&)
+                0x08000b0c                void _bn::assert::show_args<char [20], int>(char const*, char const*, char const*, int, char const (&) [20], int const&)
+                0x08000bc4                void _bn::assert::show_args<char [22]>(char const*, char const*, char const*, int, char const (&) [22])
+                0x08000bc4                void _bn::assert::show_args<char [37]>(char const*, char const*, char const*, int, char const (&) [37])
+                0x08000bc4                void _bn::assert::show_args<char [14]>(char const*, char const*, char const*, int, char const (&) [14])
+                0x08000bc4                void _bn::assert::show_args<char [23]>(char const*, char const*, char const*, int, char const (&) [23])
+                0x08000bc4                void _bn::assert::show_args<char [24]>(char const*, char const*, char const*, int, char const (&) [24])
+                0x08000bc4                void _bn::assert::show_args<char [35]>(char const*, char const*, char const*, int, char const (&) [35])
+                0x08000bc4                void _bn::assert::show_args<char [55]>(char const*, char const*, char const*, int, char const (&) [55])
+                0x08000bc4                void _bn::assert::show_args<char [17]>(char const*, char const*, char const*, int, char const (&) [17])
+                0x08000bc4                void _bn::assert::show_args<char [19]>(char const*, char const*, char const*, int, char const (&) [19])
+                0x08000bc4                void _bn::assert::show_args<char [31]>(char const*, char const*, char const*, int, char const (&) [31])
+                0x08000bc4                void _bn::assert::show_args<char [26]>(char const*, char const*, char const*, int, char const (&) [26])
+                0x08000bc4                void _bn::assert::show_args<char [13]>(char const*, char const*, char const*, int, char const (&) [13])
+                0x08000bc4                void _bn::assert::show_args<char [33]>(char const*, char const*, char const*, int, char const (&) [33])
+                0x08000bc4                void _bn::assert::show_args<char [18]>(char const*, char const*, char const*, int, char const (&) [18])
+                0x08000bc4                void _bn::assert::show_args<char [15]>(char const*, char const*, char const*, int, char const (&) [15])
+                0x08000bc4                void _bn::assert::show_args<char [16]>(char const*, char const*, char const*, int, char const (&) [16])
+                0x08000bc4                void _bn::assert::show_args<char [54]>(char const*, char const*, char const*, int, char const (&) [54])
+                0x08000bc4                void _bn::assert::show_args<char [27]>(char const*, char const*, char const*, int, char const (&) [27])
+                0x08000bc4                void _bn::assert::show_args<char [30]>(char const*, char const*, char const*, int, char const (&) [30])
+                0x08000c04                bn::bgs_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x08000c04                bn::bgs_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x080050d4                _bn::assert::show(char const*, char const*, char const*, int)
+                0x0800ac4c                bn::display_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x0800ac4c                bn::display_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+ .text.startup  0x0800ac9c      0xe8c C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+                0x0800ac9c                main
+ .text          0x0800bb28     0x6884 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+                0x0800bb28                bn::hw::link::(anonymous namespace)::_resetStateCallback() [clone .lto_priv.0]
+                0x0800bd34                bmp16_drawg_b1cts
+                0x0800bdf4                dummy_drawg
+                0x0800bdf8                dummy_erase
+                0x0800c644                bmp16_erase
+                0x0800c790                bn::hblank_effects_manager::(anonymous namespace)::item_type::_output_values_ptr() [clone .lto_priv.0]
+                0x0800c7d0                bn::keypad_manager::update()
+                0x0800c870                operator delete(void*)
+                0x0800c87c                operator delete(void*, unsigned int)
+                0x0800c888                operator delete[](void*)
+                0x0800c894                operator delete[](void*, unsigned int)
+                0x0800c8a0                bn::ostringstream::ostringstream(bn::istring_base&)
+                0x0800c8a0                bn::ostringstream::ostringstream(bn::istring_base&)
+                0x0800c8a8                bn::ostringstream::append(char const*)
+                0x0800c934                bn::palettes_bank::_apply_global_effects(int, bn::color*) const
+                0x0800ca80                bn::palettes_bank::palette::apply_effects(int, bn::color*) const
+                0x0800cbd0                bn::palettes_bank::update()
+                0x0800cd04                bn::palettes_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x0800cd04                bn::palettes_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x0800cd08                bool bn::sprite_affine_mats_manager::(anonymous namespace)::_sprite_double_size<32, 16>(int, int, int, int, int) [clone .lto_priv.0]
+                0x0800cd8c                bool bn::sprite_affine_mats_manager::(anonymous namespace)::_sprite_double_size<16, 32>(int, int, int, int, int) [clone .lto_priv.0]
+                0x0800ce10                bn::sprite_affine_mats_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x0800ce10                bn::sprite_affine_mats_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x0800ce4c                bn::sprites_manager::(anonymous namespace)::_always_update_indexes_to_commit(bn::sprites_manager_item const&) [clone .lto_priv.0]
+                0x0800ce94                bn::sprites_manager::set_horizontal_flip(void*, bool)
+                0x0800cf5c                bn::sprites_manager::update_auto_double_size(void*)
+                0x0800d05c                VgmStop()
+                0x0800d11c                gbt_refresh_pattern_ptr.lto_priv.0
+                0x0800d1a0                gbt_run_startup_commands.part.0.lto_priv.0
+                0x0800d234                bn::hw::audio::(anonymous namespace)::_commit() [clone .lto_priv.0]
+                0x0800d994                bn::hw::audio::(anonymous namespace)::_vblank_handler() [clone .lto_priv.0]
+                0x0800dae4                bn::sprite_tiles_manager::(anonymous namespace)::_hw_commit(bn::tile const*, bn::compression_type, int, int) [clone .lto_priv.0]
+                0x0800dbc8                bn::ostringstream::append(int)
+                0x0800dd54                bn::ostringstream::append(unsigned int)
+                0x0800ddfc                bn::ostringstream::append(void const*)
+                0x0800e080                malloc
+                0x0800e08c                void _bn::assert::show_args<char [52], unsigned short>(char const*, char const*, char const*, int, char const (&) [52], unsigned short const&) [clone .constprop.0]
+                0x0800e0e0                void _bn::assert::show_args<char [32], char [15], unsigned short const*, char [16], int, char [17], int, char [34], bn::string_view>(char const*, char const*, char const*, int, char const (&) [32], char const (&) [15], unsigned short const* const&, char const (&) [16], int const&, char const (&) [17], int const&, char const (&) [34], bn::string_view const&) [clone .constprop.0]
+                0x0800e174                void _bn::assert::show_args<char [30], char [13], unsigned short const*, char [14], int, char [15], int, char [17], int, char [34], bn::string_view>(char const*, char const*, char const*, int, char const (&) [30], char const (&) [13], unsigned short const* const&, char const (&) [14], int const&, char const (&) [15], int const&, char const (&) [17], int const&, char const (&) [34], bn::string_view const&) [clone .constprop.0]
+                0x0800e228                void _bn::assert::show_args<char [35], unsigned int>(char const*, char const*, char const*, int, char const (&) [35], unsigned int const&) [clone .constprop.0]
+                0x0800e278                operator new(unsigned int)
+                0x0800e2a8                operator new[](unsigned int)
+                0x0800e338                void _bn::assert::show_args<char [20], int, char [4], unsigned short>(char const*, char const*, char const*, int, char const (&) [20], int const&, char const (&) [4], unsigned short const&) [clone .constprop.0]
+                0x0800e478                void _bn::assert::show_args<char [28], char [15], bn::tile const*, char [16], int, char [34], bn::string_view>(char const*, char const*, char const*, int, char const (&) [28], char const (&) [15], bn::tile const* const&, char const (&) [16], int const&, char const (&) [34], bn::string_view const&) [clone .constprop.0]
+                0x0800e4f8                bn::memory_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x0800e4f8                bn::memory_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x0800eb2c                bn::sprite_tiles_manager::log_status()
+                0x0800f10c                bn::ostringstream::_append_fraction(unsigned int, int)
+                0x0800f21c                bn::hw::link::_timer_intr()
+                0x0800f310                bn::hw::link::_serial_intr()
+                0x0800f4c8                bn::palettes_bank::decrease_usages(int)
+                0x0800f754                bn::bg_blocks_manager::(anonymous namespace)::items_list::insert_after(int, bn::bg_blocks_manager::(anonymous namespace)::item_type const&) [clone .constprop.0]
+                0x0800fa10                bn::sprites_manager::set_tiles(void*, bn::sprite_tiles_ptr&&)
+                0x0800fc64                bn::(anonymous namespace)::_graphics_index(char, bn::utf8_characters_map_ref const&, char const*, int&) [clone .part.0] [clone .lto_priv.0]
+                0x0800fe08                bn::sprite_text_generator::width(bn::string_view const&) const
+                0x080103d0                bn::bg_palette_ptr::create(bn::bg_palette_item const&)
+                0x0801057c                bn::sprite_palette_ptr::create(bn::sprite_palette_item const&)
+                0x08010788                bn::sprite_tiles_manager::update()
+                0x080109b4                bn::sprite_tiles_manager::(anonymous namespace)::_find_impl(bn::tile const*, bn::compression_type, int) [clone .lto_priv.0]
+                0x08010f00                bn::sprite_tiles_manager::(anonymous namespace)::_create_impl(bn::tile const*, bn::compression_type, int) [clone .lto_priv.0]
+                0x08011250                bn::hw::audio::(anonymous namespace)::_add_sound_to_queue(int, unsigned short) [clone .lto_priv.0]
+                0x0801131c                bn::sprite_ptr::create(bn::fixed_t<12>, bn::fixed_t<12>, bn::sprite_item const&)
+                0x0801155c                bn::sprites_manager::create(bn::sprite_builder&&)
+                0x08011bfc                bn::tile* bn::(anonymous namespace)::_build_sprite_assert<(bn::sprite_size)1>(bn::sprite_text_generator const&, bn::sprite_palette_ptr const&, bn::fixed_point_t<12> const&, bn::ivector<bn::sprite_ptr>&) [clone .lto_priv.0]
+                0x08011de0                bn::tile* bn::(anonymous namespace)::_build_sprite_assert<(bn::sprite_size)2>(bn::sprite_text_generator const&, bn::sprite_palette_ptr const&, bn::fixed_point_t<12> const&, bn::ivector<bn::sprite_ptr>&) [clone .lto_priv.0]
+                0x08011fc8                bn::sprites_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x08011fc8                bn::sprites_manager::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x0801202c                bn::hw::audio::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x0801202c                bn::hw::audio::(anonymous namespace)::static_data::~static_data() [clone .lto_priv.0]
+                0x08012030                bn::hw::link::(anonymous namespace)::_sendDataCallback() [clone .lto_priv.0]
+                0x08012114                bn::hw::link::(anonymous namespace)::_receiveResponseCallback(bn::lc::LinkResponse const&) [clone .lto_priv.0]
+                0x08012270                bn::hw::audio::(anonymous namespace)::_erase_sound_from_queue(unsigned short) [clone .lto_priv.0]
+                0x08012308                bn::hw::audio::(anonymous namespace)::_check_sounds_queue() [clone .part.0] [clone .lto_priv.0]
+ .text          0x080123ac     0x30c8 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+                0x0801251c                bn::lc::LinkConnection::stop() [clone .constprop.0]
+                0x08012548                bn::hw::bgs::commit_data::commit_data() [clone .constprop.0] [clone .isra.0]
+                0x080125a4                bn::bg_blocks_manager::(anonymous namespace)::items_list::items_list() [clone .constprop.0] [clone .isra.0]
+                0x080125f0                bn::sprite_affine_mats_manager::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
+                0x08012694                bn::sprite_tiles_manager::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
+                0x080127c0                bn::display_manager::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
+                0x08012850                bn::hdma_manager::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
+                0x08012884                bn::hblank_effects_manager::(anonymous namespace)::static_external_data::static_external_data() [clone .constprop.0] [clone .isra.0]
+                0x0801295c                bn::string_view::string_view(char const*) [clone .isra.0]
+                0x08012978                bn::core::(anonymous namespace)::static_data::static_data() [clone .constprop.0] [clone .isra.0]
+                0x080129e0                bn::sprite_ptr::set_camera(bn::camera_ptr const&) [clone .isra.0]
+                0x08012ab4                bn::sprite_affine_mats_manager::(anonymous namespace)::item_type::sprite_double_size(int, bn::sprite_shape_size const&) const [clone .isra.0]
+                0x08012c60                bn::palettes_bank::palettes_bank() [clone .isra.0]
+                0x08012d34                bn::regular_bg_ptr::set_camera(bn::camera_ptr const&) [clone .isra.0]
+                0x08012ed8                void _bn::assert::show_args<char [16], int, char [4], int>(char const*, char const*, char const*, int, char const (&) [16], int const&, char const (&) [4], int const&) [clone .constprop.0]
+                0x08012f40                bn::istring::append(char const*) [clone .isra.0]
+                0x08012fc0                void _bn::assert::show_args<char [43], int, char [36], char [42]>(char const*, char const*, char const*, int, char const (&) [43], int const&, char const (&) [36], char const (&) [42]) [clone .constprop.0]
+                0x08013028                void _bn::assert::show_args<char [27], unsigned char>(char const*, char const*, char const*, int, char const (&) [27], unsigned char const&) [clone .constprop.0]
+                0x0801307c                bn::istring::append(char const*, int) [clone .isra.0]
+                0x0801310c                bn::hw::show::error(bn::system_font const&, bn::string_view const&, bn::string_view const&, bn::string_view const&, int, bn::string_view const&, bn::string_view const&) [clone .constprop.0]
+                0x08013430                void bn::ostringstream::append_args<int, char [34], bn::string_view>(int const&, char const (&) [34], bn::string_view const&) [clone .constprop.0] [clone .isra.0]
+                0x08013458                bn::sorted_sprites::sorter::insert(bn::sprites_manager_item&) [clone .constprop.0]
+                0x08013660                void _bn::assert::show_args<char [20], char, char [9], bn::string_view, char [2]>(char const*, char const*, char const*, int, char const (&) [20], char const&, char const (&) [9], bn::string_view const&, char const (&) [2]) [clone .constprop.0]
+                0x08013704                bn::sprite_affine_mat_ptr::~sprite_affine_mat_ptr() [clone .isra.0]
+                0x0801377c                bn::sprite_tiles_manager::create(bn::span<bn::tile const> const&, bn::compression_type) [clone .isra.0]
+                0x08013878                bn::iunordered_map<bn::tile const*, int, bn::hash<bn::tile const*>, bn::equal_to<bn::tile const*> >::erase(bn::iunordered_map<bn::tile const*, int, bn::hash<bn::tile const*>, bn::equal_to<bn::tile const*> >::const_iterator const&) [clone .constprop.0] [clone .isra.0]
+                0x08013a84                bn::sprite_builder::sprite_builder(bn::sprite_shape_size const&, bn::sprite_tiles_ptr, bn::sprite_palette_ptr) [clone .isra.0]
+                0x08013c9c                bn::ivector<bn::bgs_manager::(anonymous namespace)::item_type*>::size_type bn::erase<bn::bgs_manager::(anonymous namespace)::item_type*>(bn::ivector<bn::bgs_manager::(anonymous namespace)::item_type*>&, bn::bgs_manager::(anonymous namespace)::item_type* const&) [clone .constprop.0] [clone .isra.0]
+                0x08013dd0                bn::sprite_tiles_ptr::~sprite_tiles_ptr() [clone .isra.0]
+                0x08014010                bn::sprite_ptr::~sprite_ptr() [clone .isra.0]
+                0x08014204                bool bn::(anonymous namespace)::_generate<false>(bn::sprite_text_generator const&, bn::fixed_point_t<12> const&, bn::string_view const&, bn::utf8_characters_map_ref const&, int, int, bool, bn::ivector<bn::sprite_ptr>&) [clone .constprop.0] [clone .isra.0]
+                0x0801542c                bn::palettes_bank::colors_hash(bn::span<bn::color const> const&) [clone .isra.0]
+ .text.startup  0x08015474      0x318 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
  .text.__libc_init_array
-                0x0801554c       0x50 bn_hw_common.bn_noflto.o
-                0x0801554c                __libc_init_array
+                0x0801578c       0x50 bn_hw_common.bn_noflto.o
+                0x0801578c                __libc_init_array
  .text.__aeabi_atexit
-                0x0801559c        0x4 bn_hw_common.bn_noflto.o
-                0x0801559c                __aeabi_atexit
+                0x080157dc        0x4 bn_hw_common.bn_noflto.o
+                0x080157dc                __aeabi_atexit
  .text._ZN3_bn6assert9show_argsIA40_cEEvPKcS4_S4_iRKT_
-                0x080155a0       0x48 bn_hw_common.bn_noflto.o
-                0x080155a0                void _bn::assert::show_args<char [40]>(char const*, char const*, char const*, int, char const (&) [40])
+                0x080157e0       0x48 bn_hw_common.bn_noflto.o
+                0x080157e0                void _bn::assert::show_args<char [40]>(char const*, char const*, char const*, int, char const (&) [40])
  .text.__aeabi_idiv0
-                0x080155e8       0x24 bn_hw_common.bn_noflto.o
-                0x080155e8                __aeabi_idiv0
+                0x08015828       0x24 bn_hw_common.bn_noflto.o
+                0x08015828                __aeabi_idiv0
  .text.VBlankIntrWait
-                0x0801560c        0x4 tonc_bios.o
-                0x0801560c                VBlankIntrWait
+                0x0801584c        0x4 tonc_bios.o
+                0x0801584c                VBlankIntrWait
  .text.memset16
-                0x08015610       0x3c tonc_memset.o
-                0x08015610                memset16
- .text          0x0801564c      0x26c posprintf.o
-                0x08015650                posprintf
- .text          0x080158b8      0x314 mm_effect.o
-                0x080158b8                mmResetEffects
-                0x080158e4                mmEffect
-                0x080158fa                mmEffectEx
-                0x080159fa                mmEffectActive
-                0x08015a2e                mmEffectVolume
-                0x08015a4a                mmEffectPanning
-                0x08015a5e                mmEffectRate
-                0x08015a72                mmEffectCancel
-                0x08015aac                mmEffectRelease
-                0x08015ad2                mmEffectScaleRate
-                0x08015ae6                mmSetEffectsVolume
-                0x08015af4                mmEffectCancelAll
-                0x08015b34                mmUpdateEffects
- .text          0x08015bcc       0x14 mm_main.o
-                0x08015bcc                mpp_call_r7
-                0x08015bce                mpp_call_r1
-                0x08015bd0                mpp_call_r2
-                0x08015bd2                mpp_call_r3
-                0x08015bd4                mmSetEventHandler
- .text          0x08015be0     0x1570 mm_mas.o
-                0x08015c54                mmStart
-                0x08015c74                mmJingle
-                0x08015c7a                mmPlayModule
-                0x08015d44                mmPause
-                0x08015d60                mmResume
-                0x08015d70                mmActive
-                0x08015d76                mmActiveSub
-                0x08015d7c                mmSetModuleVolume
-                0x08015d8c                mmSetJingleVolume
-                0x08015dc8                mmGetPositionTick
-                0x08015dce                mmGetPositionRow
-                0x08015dd4                mmGetPosition
-                0x08015dda                mmPosition
-                0x08015df4                mmSetModuleTempo
-                0x08015e26                mmSetModulePitch
-                0x08015e68                mmStop
-                0x08015f2e                mppUpdateSub
-                0x0801608a                mpp_Process_VolumeCommand
-                0x080162c2                mpp_Process_Effect
-                0x08016a10                ST3_FREQTABLE
-                0x08016e30                IT_PitchTable
- .text          0x08017150      0x12c mm_main_gba.o
-                0x08017150                mmInit
-                0x080171a4                mmSetVBlankHandler
-                0x080171aa                mmFrame
- .text          0x0801727c      0x1e0 mm_mixer_gba.o
-                0x0801727c                mmMixerSetSource
-                0x08017290                mmMixerSetRead
-                0x0801729e                mmMixerSetFreq
-                0x080172ae                mmMixerMulFreq
-                0x080172c2                mmMixerStopChannel
-                0x080172d4                mmMixerChannelActive
-                0x080172e6                mmMixerSetVolume
-                0x080172f4                mmMixerSetPan
-                0x08017302                mmMixerInit
- .text          0x0801745c       0x3c C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb\libgcc.a(_call_via_rX.o)
-                0x0801745c                _call_via_r0
-                0x08017460                _call_via_r1
-                0x08017464                _call_via_r2
-                0x08017468                _call_via_r3
-                0x0801746c                _call_via_r4
-                0x08017470                _call_via_r5
-                0x08017474                _call_via_r6
-                0x08017478                _call_via_r7
-                0x0801747c                _call_via_r8
-                0x08017480                _call_via_r9
-                0x08017484                _call_via_sl
-                0x08017488                _call_via_fp
-                0x0801748c                _call_via_ip
-                0x08017490                _call_via_sp
-                0x08017494                _call_via_lr
- .text.__stub   0x08017498      0x118 linker stubs
+                0x08015850       0x3c tonc_memset.o
+                0x08015850                memset16
+ .text          0x0801588c      0x26c posprintf.o
+                0x08015890                posprintf
+ .text          0x08015af8      0x314 mm_effect.o
+                0x08015af8                mmResetEffects
+                0x08015b24                mmEffect
+                0x08015b3a                mmEffectEx
+                0x08015c3a                mmEffectActive
+                0x08015c6e                mmEffectVolume
+                0x08015c8a                mmEffectPanning
+                0x08015c9e                mmEffectRate
+                0x08015cb2                mmEffectCancel
+                0x08015cec                mmEffectRelease
+                0x08015d12                mmEffectScaleRate
+                0x08015d26                mmSetEffectsVolume
+                0x08015d34                mmEffectCancelAll
+                0x08015d74                mmUpdateEffects
+ .text          0x08015e0c       0x14 mm_main.o
+                0x08015e0c                mpp_call_r7
+                0x08015e0e                mpp_call_r1
+                0x08015e10                mpp_call_r2
+                0x08015e12                mpp_call_r3
+                0x08015e14                mmSetEventHandler
+ .text          0x08015e20     0x1570 mm_mas.o
+                0x08015e94                mmStart
+                0x08015eb4                mmJingle
+                0x08015eba                mmPlayModule
+                0x08015f84                mmPause
+                0x08015fa0                mmResume
+                0x08015fb0                mmActive
+                0x08015fb6                mmActiveSub
+                0x08015fbc                mmSetModuleVolume
+                0x08015fcc                mmSetJingleVolume
+                0x08016008                mmGetPositionTick
+                0x0801600e                mmGetPositionRow
+                0x08016014                mmGetPosition
+                0x0801601a                mmPosition
+                0x08016034                mmSetModuleTempo
+                0x08016066                mmSetModulePitch
+                0x080160a8                mmStop
+                0x0801616e                mppUpdateSub
+                0x080162ca                mpp_Process_VolumeCommand
+                0x08016502                mpp_Process_Effect
+                0x08016c50                ST3_FREQTABLE
+                0x08017070                IT_PitchTable
+ .text          0x08017390      0x12c mm_main_gba.o
+                0x08017390                mmInit
+                0x080173e4                mmSetVBlankHandler
+                0x080173ea                mmFrame
+ .text          0x080174bc      0x1e0 mm_mixer_gba.o
+                0x080174bc                mmMixerSetSource
+                0x080174d0                mmMixerSetRead
+                0x080174de                mmMixerSetFreq
+                0x080174ee                mmMixerMulFreq
+                0x08017502                mmMixerStopChannel
+                0x08017514                mmMixerChannelActive
+                0x08017526                mmMixerSetVolume
+                0x08017534                mmMixerSetPan
+                0x08017542                mmMixerInit
+ .text          0x0801769c       0x3c C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb\libgcc.a(_call_via_rX.o)
+                0x0801769c                _call_via_r0
+                0x080176a0                _call_via_r1
+                0x080176a4                _call_via_r2
+                0x080176a8                _call_via_r3
+                0x080176ac                _call_via_r4
+                0x080176b0                _call_via_r5
+                0x080176b4                _call_via_r6
+                0x080176b8                _call_via_r7
+                0x080176bc                _call_via_r8
+                0x080176c0                _call_via_r9
+                0x080176c4                _call_via_sl
+                0x080176c8                _call_via_fp
+                0x080176cc                _call_via_ip
+                0x080176d0                _call_via_sp
+                0x080176d4                _call_via_lr
+ .text.__stub   0x080176d8      0x118 linker stubs
  *(.gnu.linkonce.t.*)
  *(.text.*personality*)
  *(.gnu.warning)
  *(.glue_7t)
- .glue_7t       0x08017608        0x0 linker stubs
+ .glue_7t       0x08017848        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x08017608        0x0 linker stubs
+ .glue_7        0x08017848        0x0 linker stubs
  *(.vfp11_veneer)
- .vfp11_veneer  0x08017608        0x0 linker stubs
-                0x08017608                        . = ALIGN (0x4)
-                0x08017608                        __text_end = .
+ .vfp11_veneer  0x08017848        0x0 linker stubs
+                0x08017848                        . = ALIGN (0x4)
+                0x08017848                        __text_end = .
 
-.v4_bx          0x08017608        0x0
- .v4_bx         0x08017608        0x0 linker stubs
+.v4_bx          0x08017848        0x0
+ .v4_bx         0x08017848        0x0 linker stubs
 
-.iplt           0x08017608        0x0
- .iplt          0x08017608        0x0 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/../../../../arm-none-eabi/lib/thumb/gba_crt0.o
+.iplt           0x08017848        0x0
+ .iplt          0x08017848        0x0 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/../../../../arm-none-eabi/lib/thumb/gba_crt0.o
 
-.fini           0x08017608        0xc
+.fini           0x08017848        0xc
  *(.fini)
- .fini          0x08017608        0x4 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crti.o
-                0x08017608                _fini
- .fini          0x0801760c        0x8 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtn.o
-                0x08017614                        . = ALIGN (0x4)
+ .fini          0x08017848        0x4 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crti.o
+                0x08017848                _fini
+ .fini          0x0801784c        0x8 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtn.o
+                0x08017854                        . = ALIGN (0x4)
 
-.rodata         0x08017614     0xd514
+.rodata         0x08017854     0xd048
  *(.rodata)
- .rodata        0x08017614      0x220 cat_bn_gfx.o
-                0x08017614                cat_bn_gfxTiles
-                0x08017814                cat_bn_gfxPal
- .rodata        0x08017834     0x16e8 cats_intro_bn_gfx.o
-                0x08017834                cats_intro_bn_gfxTiles
-                0x080186fc                cats_intro_bn_gfxMap
-                0x08018efc                cats_intro_bn_gfxPal
- .rodata        0x08018f1c     0x1600 clouds_bn_gfx.o
-                0x08018f1c                clouds_bn_gfxTiles
-                0x08019cfc                clouds_bn_gfxMap
-                0x0801a4fc                clouds_bn_gfxPal
- .rodata        0x0801a51c     0x1ba0 common_variable_8x16_font_bn_gfx.o
-                0x0801a51c                common_variable_8x16_font_bn_gfxTiles
-                0x0801c09c                common_variable_8x16_font_bn_gfxPal
- .rodata        0x0801c0bc      0x820 dino_bn_gfx.o
-                0x0801c0bc                dino_bn_gfxTiles
-                0x0801c8bc                dino_bn_gfxPal
- .rodata        0x0801c8dc     0x271c jam2024_bn_gfx.o
-                0x0801c8dc                jam2024_bn_gfxTiles
-                0x0801e618                jam2024_bn_gfxMap
-                0x0801ee18                jam2024_bn_gfxPal
- .rodata        0x0801eff8      0x820 ninja_bn_gfx.o
-                0x0801eff8                ninja_bn_gfxTiles
-                0x0801f7f8                ninja_bn_gfxPal
- .rodata        0x0801f818     0x1480 simple_bg_bn_gfx.o
-                0x0801f818                simple_bg_bn_gfxTiles
-                0x08020478                simple_bg_bn_gfxMap
-                0x08020c78                simple_bg_bn_gfxPal
- .rodata        0x08020c98      0x3ce C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
-                0x08020d7c                _ZN2bn2hw7sprites12_GLOBAL__N_1L10_obj_sizesE.lto_priv.0
-                0x08021054                _ZN2bn17bg_blocks_manager12_GLOBAL__N_1L19_status_log_messageE.lto_priv.0
- *fill*         0x08021066        0x2 ff
- .rodata        0x08021068      0xfc0 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
-                0x080212bc                _ZN2bn20sprite_tiles_manager12_GLOBAL__N_1L19_status_log_messageE.lto_priv.0
- .rodata        0x08022028       0x14 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
- .rodata        0x0802203c      0xef8 verdana9.o
-                0x0802203c                verdana9Font
-                0x08022054                verdana9Glyphs
-                0x08022e54                verdana9Widths
+ .rodata        0x08017854      0x220 cat_bn_gfx.o
+                0x08017854                cat_bn_gfxTiles
+                0x08017a54                cat_bn_gfxPal
+ .rodata        0x08017a74     0x16e8 cats_intro_bn_gfx.o
+                0x08017a74                cats_intro_bn_gfxTiles
+                0x0801893c                cats_intro_bn_gfxMap
+                0x0801913c                cats_intro_bn_gfxPal
+ .rodata        0x0801915c     0x1600 clouds_bn_gfx.o
+                0x0801915c                clouds_bn_gfxTiles
+                0x08019f3c                clouds_bn_gfxMap
+                0x0801a73c                clouds_bn_gfxPal
+ .rodata        0x0801a75c     0x1ba0 common_variable_8x16_font_bn_gfx.o
+                0x0801a75c                common_variable_8x16_font_bn_gfxTiles
+                0x0801c2dc                common_variable_8x16_font_bn_gfxPal
+ .rodata        0x0801c2fc      0x820 dino_bn_gfx.o
+                0x0801c2fc                dino_bn_gfxTiles
+                0x0801cafc                dino_bn_gfxPal
+ .rodata        0x0801cb1c     0x271c jam2024_bn_gfx.o
+                0x0801cb1c                jam2024_bn_gfxTiles
+                0x0801e858                jam2024_bn_gfxMap
+                0x0801f058                jam2024_bn_gfxPal
+ .rodata        0x0801f238      0x820 ninja_bn_gfx.o
+                0x0801f238                ninja_bn_gfxTiles
+                0x0801fa38                ninja_bn_gfxPal
+ .rodata        0x0801fa58      0xf60 simple_bg_bn_gfx.o
+                0x0801fa58                simple_bg_bn_gfxTiles
+                0x08020198                simple_bg_bn_gfxMap
+                0x08020998                simple_bg_bn_gfxPal
+ .rodata        0x080209b8      0x472 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+                0x08020b40                _ZN2bn2hw7sprites12_GLOBAL__N_1L10_obj_sizesE.lto_priv.0
+                0x08020e18                _ZN2bn17bg_blocks_manager12_GLOBAL__N_1L19_status_log_messageE.lto_priv.0
+ *fill*         0x08020e2a        0x2 ff
+ .rodata        0x08020e2c      0xf1c C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+                0x08020fcc                _ZN2bn20sprite_tiles_manager12_GLOBAL__N_1L19_status_log_messageE.lto_priv.0
+ .rodata        0x08021d48       0x14 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+ .rodata        0x08021d5c      0xef8 verdana9.o
+                0x08021d5c                verdana9Font
+                0x08021d74                verdana9Glyphs
+                0x08022b74                verdana9Widths
  *all.rodata*(*)
  *(.roda)
  *(.rodata.*)
  .rodata._bn_audio_soundbank_bin
-                0x08022f34        0xc _bn_audio_soundbank.bin.o
-                0x08022f34                _bn_audio_soundbank_bin
-                0x08022f40                _bn_audio_soundbank_bin_end
+                0x08022c54        0xc _bn_audio_soundbank.bin.o
+                0x08022c54                _bn_audio_soundbank_bin
+                0x08022c60                _bn_audio_soundbank_bin_end
  .rodata.str1.4
-                0x08022f40      0xe68 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
+                0x08022c60     0x1090 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
  .rodata.str1.4
-                0x08022f40      0xe11 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
+                0x08022c60      0xd35 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
  .rodata.str1.4
-                0x08022f40      0x8e2 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
+                0x08022c60      0x6fb C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
  .rodata.__cxa_pure_virtual.str1.4
-                0x08022f40     0x1bdc bn_hw_common.bn_noflto.o
+                0x08022c60     0x1c30 bn_hw_common.bn_noflto.o
                                  0x4f (size before relaxing)
  .rodata.__aeabi_idiv0.str1.4
-                0x08024b1c       0x38 bn_hw_common.bn_noflto.o
+                0x08024890       0x38 bn_hw_common.bn_noflto.o
  .rodata._ZN2bn2hw8game_pak12_GLOBAL__N_1L8rom_dataE
-                0x08024b1c        0xc bn_hw_game_pak.bn_ewram.o
+                0x08024890        0xc bn_hw_game_pak.bn_ewram.o
  *(.gnu.linkonce.r*)
-                0x08024b54                        . = ALIGN (0x4)
+                0x080248c8                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08024b28                        __exidx_start = .
+                0x0802489c                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08024b28                        __exidx_end = .
+                0x0802489c                        __exidx_end = .
 
-.ctors          0x08024b28        0x0
+.ctors          0x0802489c        0x0
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
-                0x08024b28                        . = ALIGN (0x4)
+                0x0802489c                        . = ALIGN (0x4)
 
-.dtors          0x08024b28        0x0
+.dtors          0x0802489c        0x0
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x08024b28                        . = ALIGN (0x4)
+                0x0802489c                        . = ALIGN (0x4)
 
-.eh_frame       0x08024b28        0x4
+.eh_frame       0x0802489c        0x4
  *(.eh_frame)
- .eh_frame      0x08024b28        0x0 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
- .eh_frame      0x08024b28        0x4 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtend.o
-                0x08024b2c                        . = ALIGN (0x4)
+ .eh_frame      0x0802489c        0x0 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
+ .eh_frame      0x0802489c        0x4 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtend.o
+                0x080248a0                        . = ALIGN (0x4)
 
 .gcc_except_table
-                0x08024b2c        0x0
+                0x080248a0        0x0
  *(.gcc_except_table)
-                0x08024b2c                        . = ALIGN (0x4)
-                0x08024b2c                        __iwram_lma = .
+                0x080248a0                        . = ALIGN (0x4)
+                0x080248a0                        __iwram_lma = .
 
-.iwram          0x03000000     0x23c8 load address 0x08024b2c
+.iwram          0x03000000     0x23c8 load address 0x080248a0
                 0x03000000                        __iwram_start__ = ABSOLUTE (.)
  *(.iwram .iwram*)
  .iwram         0x03000000      0x290 bn_sprites_manager.bn_iwram.o
@@ -957,7 +947,7 @@ Linker script and memory map
  *iwram.*(.text* .data*)
                 0x030023c4                        . = ALIGN (0x4)
                 0x030023c8                        __iwram_end__ = ABSOLUTE (.)
-                0x08026ef4                        __data_lma = (__iwram_lma + SIZEOF (.iwram))
+                0x08026c68                        __data_lma = (__iwram_lma + SIZEOF (.iwram))
 
 .bss            0x030023c8      0x86c
                 0x030023c8                        __bss_start = ABSOLUTE (.)
@@ -969,10 +959,10 @@ Linker script and memory map
                 0x030023c8        0x1 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
  *fill*         0x030023c9        0x3 
  .bss.object.0  0x030023cc       0x18 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
- .bss           0x030023e4      0x508 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
+ .bss           0x030023e4      0x508 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
                 0x030023e4                IRQ_VectorTable
                 0x0300283c                _ZN2bn22hblank_effects_manager12_GLOBAL__N_113internal_dataE.lto_priv.0
- .bss           0x030028ec        0x4 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
+ .bss           0x030028ec        0x4 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
                 0x030028ec                fake_heap_end
  .bss           0x030028f0       0x2d mm_effect.o
                 0x03002914                mm_sfx_bitmask
@@ -1007,54 +997,54 @@ Linker script and memory map
                 0x03002c34                        . = ALIGN (0x4)
                 0x03002c34                        __bss_end__ = ABSOLUTE (.)
 
-.data           0x03002c34        0xc load address 0x08026ef4
+.data           0x03002c34        0xc load address 0x08026c68
                 0x03002c34                        __data_start__ = ABSOLUTE (.)
  *(.data*)
  .data.__dso_handle
                 0x03002c34        0x4 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
                 0x03002c34                __dso_handle
- .data          0x03002c38        0x8 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
+ .data          0x03002c38        0x8 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
  *(.gnu.linkonce.d*)
                 0x03002c40                        . = ALIGN (0x4)
-                0x08026f00                        __preinit_lma = (__data_lma + SIZEOF (.data))
+                0x08026c74                        __preinit_lma = (__data_lma + SIZEOF (.data))
 
-.igot.plt       0x03002c40        0x0 load address 0x08026f00
+.igot.plt       0x03002c40        0x0 load address 0x08026c74
  .igot.plt      0x03002c40        0x0 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/../../../../arm-none-eabi/lib/thumb/gba_crt0.o
 
-.preinit_array  0x03002c40        0x0 load address 0x08026f00
+.preinit_array  0x03002c40        0x0 load address 0x08026c74
                 0x03002c40                        __preinit_array_start = ABSOLUTE (.)
  *(.preinit_array)
                 0x03002c40                        __preinit_array_end = ABSOLUTE (.)
-                0x08026f00                        __init_lma = (__preinit_lma + SIZEOF (.preinit_array))
+                0x08026c74                        __init_lma = (__preinit_lma + SIZEOF (.preinit_array))
 
-.init_array     0x03002c40        0x8 load address 0x08026f00
+.init_array     0x03002c40        0x8 load address 0x08026c74
                 0x03002c40                        __init_array_start = ABSOLUTE (.)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
  .init_array    0x03002c40        0x4 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
- .init_array    0x03002c44        0x4 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
+ .init_array    0x03002c44        0x4 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
                 0x03002c48                        __init_array_end = ABSOLUTE (.)
-                0x08026f08                        __fini_lma = (__init_lma + SIZEOF (.init_array))
+                0x08026c7c                        __fini_lma = (__init_lma + SIZEOF (.init_array))
 
-.fini_array     0x03002c48        0x4 load address 0x08026f08
+.fini_array     0x03002c48        0x4 load address 0x08026c7c
                 0x03002c48                        __fini_array_start = ABSOLUTE (.)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
  .fini_array    0x03002c48        0x4 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
                 0x03002c4c                        __fini_array_end = ABSOLUTE (.)
-                0x08026f0c                        __jcr_lma = (__fini_lma + SIZEOF (.fini_array))
+                0x08026c80                        __jcr_lma = (__fini_lma + SIZEOF (.fini_array))
 
 .jcr
  *(.jcr)
                 0x03002c4c                        __data_end__ = ABSOLUTE (.)
-                0x08026f0c                        __iwram_overlay_lma = (__jcr_lma + SIZEOF (.jcr))
+                0x08026c80                        __iwram_overlay_lma = (__jcr_lma + SIZEOF (.jcr))
                 0x03002c4c                        __iwram_overlay_start = .
 
-.iwram0         0x03002c4c        0x0 load address 0x08026f0c
+.iwram0         0x03002c4c        0x0 load address 0x08026c80
  *(.iwram0)
                 0x03002c4c                        . = ALIGN (0x4)
-                0x08026f0c                        PROVIDE (__load_start_iwram0 = LOADADDR (.iwram0))
-                0x08026f0c                        PROVIDE (__load_stop_iwram0 = (LOADADDR (.iwram0) + SIZEOF (.iwram0)))
+                0x08026c80                        PROVIDE (__load_start_iwram0 = LOADADDR (.iwram0))
+                0x08026c80                        PROVIDE (__load_stop_iwram0 = (LOADADDR (.iwram0) + SIZEOF (.iwram0)))
 
 .iwram1         0x03002c4c        0x0
  *(.iwram1)
@@ -1110,27 +1100,27 @@ Linker script and memory map
                 [!provide]                        PROVIDE (__load_start_iwram9 = LOADADDR (.iwram9))
                 [!provide]                        PROVIDE (__load_stop_iwram9 = (LOADADDR (.iwram9) + SIZEOF (.iwram9)))
                 0x03002c4c                        __iwram_overlay_end = .
-                0x08026f0c                        __ewram_lma = (__iwram_overlay_lma + (__iwram_overlay_end - __iwram_overlay_start))
+                0x08026c80                        __ewram_lma = (__iwram_overlay_lma + (__iwram_overlay_end - __iwram_overlay_start))
                 0x03002c4c                        __iheap_start = .
                 0x02000000                        __ewram_start = ORIGIN (ewram)
 
-.ewram          0x02000000       0xf4 load address 0x08026f0c
+.ewram          0x02000000       0xf4 load address 0x08026c80
  *(.ewram*)
- .ewram         0x02000000        0xc C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
+ .ewram         0x02000000        0xe C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
                 0x02000000                Vgm
- .ewram         0x0200000c       0x4a C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
-                0x0200000c                __tte_main_context
- *fill*         0x02000056        0x2 ff
+ *fill*         0x0200000e        0x2 ff
+ .ewram         0x02000010       0x48 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+                0x02000010                __tte_main_context
  .ewram         0x02000058       0x9c bn_hw_game_pak.bn_ewram.o
                 0x02000058                bn::hw::game_pak::_slow_game_pak()
                 0x020000f4                        . = ALIGN (0x4)
                 0x020000f4                        __ewram_end = ABSOLUTE (.)
-                0x08027000                        __pad_lma = (__ewram_lma + SIZEOF (.ewram))
+                0x08026d74                        __pad_lma = (__ewram_lma + SIZEOF (.ewram))
 
 .sbss           0x020000f4     0x8204
                 0x020000f4                        __sbss_start__ = ABSOLUTE (.)
  *(.sbss*)
- .sbss          0x020000f4     0x8204 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
+ .sbss          0x020000f4     0x8204 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
                 0x020000f4                _ZN2bn15cameras_manager12_GLOBAL__N_14dataE.lto_priv.0
                 0x0200012c                _ZN2bn2hw5audio12_GLOBAL__N_14dataE.lto_priv.0
                 0x02000178                _ZN2bn4core12_GLOBAL__N_14dataE.lto_priv.0
@@ -1153,13 +1143,13 @@ Linker script and memory map
                 0x020082f8                        __end__ = ABSOLUTE (.)
                 0x020082f8                        __eheap_start = ABSOLUTE (.)
 
-.pad            0x020082f8        0x8 load address 0x08027000
+.pad            0x020082f8        0x8 load address 0x08026d74
                 0x020082f8        0x4 LONG 0x52416b64
                 0x020082fc        0x4 LONG 0x4d
                 0x02008300                        . = ALIGN (0x4)
-                0x08027008                        __rom_end__ = (__pad_lma + SIZEOF (.pad))
+                0x08026d7c                        __rom_end__ = (__pad_lma + SIZEOF (.pad))
 
-.rel.dyn        0x02008300        0x0 load address 0x08027008
+.rel.dyn        0x02008300        0x0 load address 0x08026d7c
  .rel.iplt      0x02008300        0x0 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/../../../../arm-none-eabi/lib/thumb/gba_crt0.o
 
 .stab
@@ -1184,9 +1174,9 @@ Linker script and memory map
  *(.comment)
  .comment       0x00000000       0x23 C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtbegin.o
                                  0x24 (size before relaxing)
- .comment       0x00000023       0x24 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
- .comment       0x00000023       0x24 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .comment       0x00000023       0x24 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
+ .comment       0x00000023       0x24 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+ .comment       0x00000023       0x24 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .comment       0x00000023       0x24 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
  .comment       0x00000023       0x24 bn_sprites_manager.bn_iwram.o
  .comment       0x00000023       0x24 bn_hw_common.bn_noflto.o
  .comment       0x00000023       0x24 bn_hw_game_pak.bn_ewram.o
@@ -1209,11 +1199,11 @@ Linker script and memory map
 .debug_aranges  0x00000000      0x608
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x28 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
+                0x00000000       0x28 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
  .debug_aranges
-                0x00000028       0x20 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
+                0x00000028       0x20 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
  .debug_aranges
-                0x00000048       0x20 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
+                0x00000048       0x20 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
  .debug_aranges
                 0x00000068       0x30 bn_sprites_manager.bn_iwram.o
  .debug_aranges
@@ -1278,372 +1268,372 @@ Linker script and memory map
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000   0x1dc253
+.debug_info     0x00000000   0x1dd586
  *(.debug_info)
- .debug_info    0x00000000    0x267f0 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
- .debug_info    0x000267f0    0x21468 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .debug_info    0x00047c58     0xceef C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
- .debug_info    0x00054b47     0x8d2b C:\Users\Sergio\AppData\Local\Temp\cc2pdX1l.debug.temp.o
-                0x00054b47                common_info.cpp.a0c3e114
- .debug_info    0x0005d872    0x1288f C:\Users\Sergio\AppData\Local\Temp\ccK7WxfL.debug.temp.o
-                0x0005d872                main.cpp.c0569254
- .debug_info    0x00070101     0x96a3 C:\Users\Sergio\AppData\Local\Temp\ccIVJ0La.debug.temp.o
-                0x00070101                bn_affine_bg_animate_actions.cpp.e74739b4
- .debug_info    0x000797a4     0xdb21 C:\Users\Sergio\AppData\Local\Temp\cce1wZsz.debug.temp.o
-                0x000797a4                bn_audio_manager.cpp.c7a52476
- .debug_info    0x000872c5     0x45a8 C:\Users\Sergio\AppData\Local\Temp\ccMP8goY.debug.temp.o
-                0x000872c5                bn_best_fit_allocator.cpp.54a39eb5
- .debug_info    0x0008b86d    0x1c99a C:\Users\Sergio\AppData\Local\Temp\cc6oScvm.debug.temp.o
-                0x0008b86d                bn_bg_blocks_manager.cpp.8bbb75f2
- .debug_info    0x000a8207    0x1e88a C:\Users\Sergio\AppData\Local\Temp\ccWGWHSK.debug.temp.o
-                0x000a8207                bn_bgs_manager.cpp.b2a48d40
- .debug_info    0x000c6a91     0x4d11 C:\Users\Sergio\AppData\Local\Temp\ccsgBSB8.debug.temp.o
-                0x000c6a91                bn_cameras_manager.cpp.f0cc3966
- .debug_info    0x000cb7a2     0x64a7 C:\Users\Sergio\AppData\Local\Temp\ccS8SFBw.debug.temp.o
-                0x000cb7a2                bn_core.cpp.12fe1f41
- .debug_info    0x000d1c49    0x13e13 C:\Users\Sergio\AppData\Local\Temp\cc2GuCbY.debug.temp.o
-                0x000d1c49                bn_display_manager.cpp.8f39e9b5
- .debug_info    0x000e5a5c     0x4c6f C:\Users\Sergio\AppData\Local\Temp\cckFzy4p.debug.temp.o
-                0x000e5a5c                bn_gpio_manager.cpp.9108806b
- .debug_info    0x000ea6cb    0x39136 C:\Users\Sergio\AppData\Local\Temp\ccStbY7Q.debug.temp.o
-                0x000ea6cb                bn_hblank_effects_manager.cpp.c1342847
- .debug_info    0x00123801     0x1d27 C:\Users\Sergio\AppData\Local\Temp\ccgjm8Ci.debug.temp.o
-                0x00123801                bn_hdma_manager.cpp.967aafa5
- .debug_info    0x00125528     0x4a03 C:\Users\Sergio\AppData\Local\Temp\ccelAF0I.debug.temp.o
-                0x00125528                bn_keypad_manager.cpp.b3f703fa
- .debug_info    0x00129f2b     0x4dbc C:\Users\Sergio\AppData\Local\Temp\cce0JWF9.debug.temp.o
-                0x00129f2b                bn_link_manager.cpp.9128f562
- .debug_info    0x0012ece7     0x4cb7 C:\Users\Sergio\AppData\Local\Temp\cck2X0xz.debug.temp.o
-                0x0012ece7                bn_memory_manager.cpp.4c15fab7
- .debug_info    0x0013399e     0xf0a6 C:\Users\Sergio\AppData\Local\Temp\ccAjPmuZ.debug.temp.o
-                0x0013399e                bn_palettes_manager.cpp.3b5670f4
- .debug_info    0x00142a44     0xf973 C:\Users\Sergio\AppData\Local\Temp\ccYI5f3r.debug.temp.o
-                0x00142a44                bn_sprite_affine_mats_manager.cpp.ff108f1c
- .debug_info    0x001523b7     0x8e56 C:\Users\Sergio\AppData\Local\Temp\ccucxTBV.debug.temp.o
-                0x001523b7                bn_sprite_animate_actions.cpp.033832e0
- .debug_info    0x0015b20d    0x145e9 C:\Users\Sergio\AppData\Local\Temp\ccgM1otp.debug.temp.o
-                0x0015b20d                bn_sprite_text_generator.cpp.3bce1910
- .debug_info    0x0016f7f6     0xde85 C:\Users\Sergio\AppData\Local\Temp\cceYgedS.debug.temp.o
-                0x0016f7f6                bn_sprite_tiles_manager.cpp.eed3e239
- .debug_info    0x0017d67b    0x1a647 C:\Users\Sergio\AppData\Local\Temp\ccuJtvjl.debug.temp.o
-                0x0017d67b                bn_sprites_manager.cpp.153ebd4b
- .debug_info    0x00197cc2     0x5df9 C:\Users\Sergio\AppData\Local\Temp\ccsBG0AN.debug.temp.o
-                0x00197cc2                bn_sstream.cpp.ac2deeae
- .debug_info    0x0019dabb    0x10961 C:\Users\Sergio\AppData\Local\Temp\cc0tk0eg.debug.temp.o
-                0x0019dabb                bn_translation_unit.cpp.56a57108
- .debug_info    0x001ae41c     0x59a1 C:\Users\Sergio\AppData\Local\Temp\cc4mE9CM.debug.temp.o
-                0x001ae41c                bn_hw_audio.cpp.fc2e12ad
- .debug_info    0x001b3dbd     0x155e C:\Users\Sergio\AppData\Local\Temp\ccUoOrmj.debug.temp.o
-                0x001b3dbd                bn_hw_cstdlib.cpp.a93f252e
- .debug_info    0x001b531b     0x5b63 C:\Users\Sergio\AppData\Local\Temp\cc0DDMAl.debug.temp.o
-                0x001b531b                bn_hw_link.cpp.001f7bf3
- .debug_info    0x001bae7e     0x49b3 C:\Users\Sergio\AppData\Local\Temp\ccWHvSjm.debug.temp.o
-                0x001bae7e                bn_hw_palettes.cpp.60216126
- .debug_info    0x001bf831     0x5f99 C:\Users\Sergio\AppData\Local\Temp\ccqG7QUQ.debug.temp.o
-                0x001bf831                bn_hw_show.cpp.75ca1e2d
- .debug_info    0x001c57ca      0x549 C:\Users\Sergio\AppData\Local\Temp\ccU2zoDl.debug.temp.o
-                0x001c57ca                bn_hw_sram.cpp.85cb9265
- .debug_info    0x001c5d13      0x6c7 C:\Users\Sergio\AppData\Local\Temp\ccENueqQ.debug.temp.o
-                0x001c5d13                bn_hw_system_font.cpp.91e85e7c
- .debug_info    0x001c63da     0x41c0 C:\Users\Sergio\AppData\Local\Temp\ccsYTv6o.debug.temp.o
-                0x001c63da                bn_hw_text.cpp.50d88a6f
- .debug_info    0x001ca59a      0x64e C:\Users\Sergio\AppData\Local\Temp\ccsrd5QX.debug.temp.o
-                0x001ca59a                vgm.cpp.6a9eb84b
- .debug_info    0x001cabe8      0x594 C:\Users\Sergio\AppData\Local\Temp\ccKfnoJw.debug.temp.o
-                0x001cabe8                tonc_color.c.cad8444b
- .debug_info    0x001cb17c      0x5e1 C:\Users\Sergio\AppData\Local\Temp\ccOOElN4.debug.temp.o
-                0x001cb17c                tonc_sbmp16.c.a3e3e1c0
- .debug_info    0x001cb75d      0x596 C:\Users\Sergio\AppData\Local\Temp\ccgzpusg.debug.temp.o
-                0x001cb75d                bmp16_drawg_b1cs.c.d3c62f5b
- .debug_info    0x001cbcf3      0x4cf C:\Users\Sergio\AppData\Local\Temp\cc6CuZdO.debug.temp.o
-                0x001cbcf3                tte_init_bmp.c.f471ffd0
- .debug_info    0x001cc1c2      0x9be C:\Users\Sergio\AppData\Local\Temp\ccsvxm8l.debug.temp.o
-                0x001cc1c2                tte_main.c.cc86772d
- .debug_info    0x001ccb80      0x1b3 C:\Users\Sergio\AppData\Local\Temp\ccoeoodT.debug.temp.o
-                0x001ccb80                interrupts_gba.c.4abbfea2
- .debug_info    0x001ccd33     0x119b C:\Users\Sergio\AppData\Local\Temp\ccC0swIy.debug.temp.o
-                0x001ccd33                gbt_player.c.e1b0f848
- .debug_info    0x001cdece     0xa5b1 bn_sprites_manager.bn_iwram.o
- .debug_info    0x001d847f     0x19e4 bn_hw_common.bn_noflto.o
- .debug_info    0x001d9e63      0x614 bn_hw_game_pak.bn_ewram.o
- .debug_info    0x001da477     0x1104 bn_hw_palettes.bn_iwram.o
- .debug_info    0x001db57b      0x7a3 bn_hw_sprite_tiles.bn_iwram.o
- .debug_info    0x001dbd1e       0x23 bn_hw_bg_blocks.o
- .debug_info    0x001dbd41       0x24 bn_hw_hblank_effects.o
- .debug_info    0x001dbd65       0x23 bn_hw_palettes_asm.o
- .debug_info    0x001dbd88       0x30 clr_blend_fast.o
- .debug_info    0x001dbdb8       0x23 clr_fade_fast.o
- .debug_info    0x001dbddb      0x1c8 tonc_bios.o
- .debug_info    0x001dbfa3       0x3a tonc_memset.o
- .debug_info    0x001dbfdd       0x24 irq_handler.o
- .debug_info    0x001dc001       0x24 posprintf.o
- .debug_info    0x001dc025       0x22 lmul.o
- .debug_info    0x001dc047       0x22 memcpy.o
- .debug_info    0x001dc069       0x22 memmove.o
- .debug_info    0x001dc08b       0x22 memset.o
- .debug_info    0x001dc0ad       0x22 rmemcpy.o
- .debug_info    0x001dc0cf       0x23 sdiv32.o
- .debug_info    0x001dc0f2       0x24 udiv32.o
- .debug_info    0x001dc116       0x24 huffman.o
- .debug_info    0x001dc13a       0x24 lz77.o
- .debug_info    0x001dc15e       0x24 running_length.o
- .debug_info    0x001dc182       0x24 mm_effect.o
- .debug_info    0x001dc1a6       0x23 mm_main.o
- .debug_info    0x001dc1c9       0x22 mm_mas.o
- .debug_info    0x001dc1eb       0x24 mm_mas_arm.o
- .debug_info    0x001dc20f       0x22 mm_main_gba.o
- .debug_info    0x001dc231       0x22 mm_mixer_gba.o
+ .debug_info    0x00000000    0x316ef C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+ .debug_info    0x000316ef    0x192f0 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .debug_info    0x0004a9df     0xb12c C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+ .debug_info    0x00055b0b     0x8d2b C:\Users\Sergio\AppData\Local\Temp\ccNwSMU1.debug.temp.o
+                0x00055b0b                common_info.cpp.a0c3e114
+ .debug_info    0x0005e836    0x12bfe C:\Users\Sergio\AppData\Local\Temp\cccigybf.debug.temp.o
+                0x0005e836                main.cpp.3b004eac
+ .debug_info    0x00071434     0x96a3 C:\Users\Sergio\AppData\Local\Temp\ccpFmZzs.debug.temp.o
+                0x00071434                bn_affine_bg_animate_actions.cpp.e74739b4
+ .debug_info    0x0007aad7     0xdb21 C:\Users\Sergio\AppData\Local\Temp\cc6jOu5E.debug.temp.o
+                0x0007aad7                bn_audio_manager.cpp.c7a52476
+ .debug_info    0x000885f8     0x45a8 C:\Users\Sergio\AppData\Local\Temp\ccjtvUTR.debug.temp.o
+                0x000885f8                bn_best_fit_allocator.cpp.54a39eb5
+ .debug_info    0x0008cba0    0x1c99a C:\Users\Sergio\AppData\Local\Temp\cc4TcQS3.debug.temp.o
+                0x0008cba0                bn_bg_blocks_manager.cpp.8bbb75f2
+ .debug_info    0x000a953a    0x1e88a C:\Users\Sergio\AppData\Local\Temp\ccNXa45f.debug.temp.o
+                0x000a953a                bn_bgs_manager.cpp.b2a48d40
+ .debug_info    0x000c7dc4     0x4d11 C:\Users\Sergio\AppData\Local\Temp\ccA7SI5v.debug.temp.o
+                0x000c7dc4                bn_cameras_manager.cpp.f0cc3966
+ .debug_info    0x000ccad5     0x64a7 C:\Users\Sergio\AppData\Local\Temp\ccVSBarL.debug.temp.o
+                0x000ccad5                bn_core.cpp.12fe1f41
+ .debug_info    0x000d2f7c    0x13e13 C:\Users\Sergio\AppData\Local\Temp\ccgeZl40.debug.temp.o
+                0x000d2f7c                bn_display_manager.cpp.8f39e9b5
+ .debug_info    0x000e6d8f     0x4c6f C:\Users\Sergio\AppData\Local\Temp\ccRnAtNf.debug.temp.o
+                0x000e6d8f                bn_gpio_manager.cpp.9108806b
+ .debug_info    0x000eb9fe    0x39136 C:\Users\Sergio\AppData\Local\Temp\ccWY9uPu.debug.temp.o
+                0x000eb9fe                bn_hblank_effects_manager.cpp.c1342847
+ .debug_info    0x00124b34     0x1d27 C:\Users\Sergio\AppData\Local\Temp\ccF27QaJ.debug.temp.o
+                0x00124b34                bn_hdma_manager.cpp.967aafa5
+ .debug_info    0x0012685b     0x4a03 C:\Users\Sergio\AppData\Local\Temp\cc2GwwBX.debug.temp.o
+                0x0012685b                bn_keypad_manager.cpp.b3f703fa
+ .debug_info    0x0012b25e     0x4dbc C:\Users\Sergio\AppData\Local\Temp\ccXOvVPf.debug.temp.o
+                0x0012b25e                bn_link_manager.cpp.9128f562
+ .debug_info    0x0013001a     0x4cb7 C:\Users\Sergio\AppData\Local\Temp\ccuUzwyy.debug.temp.o
+                0x0013001a                bn_memory_manager.cpp.4c15fab7
+ .debug_info    0x00134cd1     0xf0a6 C:\Users\Sergio\AppData\Local\Temp\ccvRlCkQ.debug.temp.o
+                0x00134cd1                bn_palettes_manager.cpp.3b5670f4
+ .debug_info    0x00143d77     0xf973 C:\Users\Sergio\AppData\Local\Temp\ccyc3BPG.debug.temp.o
+                0x00143d77                bn_sprite_affine_mats_manager.cpp.ff108f1c
+ .debug_info    0x001536ea     0x8e56 C:\Users\Sergio\AppData\Local\Temp\cc30u9nX.debug.temp.o
+                0x001536ea                bn_sprite_animate_actions.cpp.033832e0
+ .debug_info    0x0015c540    0x145e9 C:\Users\Sergio\AppData\Local\Temp\cceBS9je.debug.temp.o
+                0x0015c540                bn_sprite_text_generator.cpp.3bce1910
+ .debug_info    0x00170b29     0xde85 C:\Users\Sergio\AppData\Local\Temp\ccF7ti7y.debug.temp.o
+                0x00170b29                bn_sprite_tiles_manager.cpp.eed3e239
+ .debug_info    0x0017e9ae    0x1a647 C:\Users\Sergio\AppData\Local\Temp\cc8g1acU.debug.temp.o
+                0x0017e9ae                bn_sprites_manager.cpp.153ebd4b
+ .debug_info    0x00198ff5     0x5df9 C:\Users\Sergio\AppData\Local\Temp\cc5NMGke.debug.temp.o
+                0x00198ff5                bn_sstream.cpp.ac2deeae
+ .debug_info    0x0019edee    0x10961 C:\Users\Sergio\AppData\Local\Temp\cc8X8nOy.debug.temp.o
+                0x0019edee                bn_translation_unit.cpp.56a57108
+ .debug_info    0x001af74f     0x59a1 C:\Users\Sergio\AppData\Local\Temp\ccNbjBlS.debug.temp.o
+                0x001af74f                bn_hw_audio.cpp.fc2e12ad
+ .debug_info    0x001b50f0     0x155e C:\Users\Sergio\AppData\Local\Temp\ccEPBffc.debug.temp.o
+                0x001b50f0                bn_hw_cstdlib.cpp.a93f252e
+ .debug_info    0x001b664e     0x5b63 C:\Users\Sergio\AppData\Local\Temp\ccO7xeXN.debug.temp.o
+                0x001b664e                bn_hw_link.cpp.001f7bf3
+ .debug_info    0x001bc1b1     0x49b3 C:\Users\Sergio\AppData\Local\Temp\ccmopSfu.debug.temp.o
+                0x001bc1b1                bn_hw_palettes.cpp.60216126
+ .debug_info    0x001c0b64     0x5f99 C:\Users\Sergio\AppData\Local\Temp\ccdGy5oR.debug.temp.o
+                0x001c0b64                bn_hw_show.cpp.75ca1e2d
+ .debug_info    0x001c6afd      0x549 C:\Users\Sergio\AppData\Local\Temp\cc8hv5Kd.debug.temp.o
+                0x001c6afd                bn_hw_sram.cpp.85cb9265
+ .debug_info    0x001c7046      0x6c7 C:\Users\Sergio\AppData\Local\Temp\ccZHgMeA.debug.temp.o
+                0x001c7046                bn_hw_system_font.cpp.91e85e7c
+ .debug_info    0x001c770d     0x41c0 C:\Users\Sergio\AppData\Local\Temp\ccekiN4W.debug.temp.o
+                0x001c770d                bn_hw_text.cpp.50d88a6f
+ .debug_info    0x001cb8cd      0x64e C:\Users\Sergio\AppData\Local\Temp\ccDPx8Ti.debug.temp.o
+                0x001cb8cd                vgm.cpp.6a9eb84b
+ .debug_info    0x001cbf1b      0x594 C:\Users\Sergio\AppData\Local\Temp\ccgGYLNE.debug.temp.o
+                0x001cbf1b                tonc_color.c.cad8444b
+ .debug_info    0x001cc4af      0x5e1 C:\Users\Sergio\AppData\Local\Temp\ccXCnN0Z.debug.temp.o
+                0x001cc4af                tonc_sbmp16.c.a3e3e1c0
+ .debug_info    0x001cca90      0x596 C:\Users\Sergio\AppData\Local\Temp\ccfOR0Br.debug.temp.o
+                0x001cca90                bmp16_drawg_b1cs.c.d3c62f5b
+ .debug_info    0x001cd026      0x4cf C:\Users\Sergio\AppData\Local\Temp\ccGATEYQ.debug.temp.o
+                0x001cd026                tte_init_bmp.c.f471ffd0
+ .debug_info    0x001cd4f5      0x9be C:\Users\Sergio\AppData\Local\Temp\ccJyPTIg.debug.temp.o
+                0x001cd4f5                tte_main.c.cc86772d
+ .debug_info    0x001cdeb3      0x1b3 C:\Users\Sergio\AppData\Local\Temp\ccs0PCmF.debug.temp.o
+                0x001cdeb3                interrupts_gba.c.4abbfea2
+ .debug_info    0x001ce066     0x119b C:\Users\Sergio\AppData\Local\Temp\ccHhYgKR.debug.temp.o
+                0x001ce066                gbt_player.c.e1b0f848
+ .debug_info    0x001cf201     0xa5b1 bn_sprites_manager.bn_iwram.o
+ .debug_info    0x001d97b2     0x19e4 bn_hw_common.bn_noflto.o
+ .debug_info    0x001db196      0x614 bn_hw_game_pak.bn_ewram.o
+ .debug_info    0x001db7aa     0x1104 bn_hw_palettes.bn_iwram.o
+ .debug_info    0x001dc8ae      0x7a3 bn_hw_sprite_tiles.bn_iwram.o
+ .debug_info    0x001dd051       0x23 bn_hw_bg_blocks.o
+ .debug_info    0x001dd074       0x24 bn_hw_hblank_effects.o
+ .debug_info    0x001dd098       0x23 bn_hw_palettes_asm.o
+ .debug_info    0x001dd0bb       0x30 clr_blend_fast.o
+ .debug_info    0x001dd0eb       0x23 clr_fade_fast.o
+ .debug_info    0x001dd10e      0x1c8 tonc_bios.o
+ .debug_info    0x001dd2d6       0x3a tonc_memset.o
+ .debug_info    0x001dd310       0x24 irq_handler.o
+ .debug_info    0x001dd334       0x24 posprintf.o
+ .debug_info    0x001dd358       0x22 lmul.o
+ .debug_info    0x001dd37a       0x22 memcpy.o
+ .debug_info    0x001dd39c       0x22 memmove.o
+ .debug_info    0x001dd3be       0x22 memset.o
+ .debug_info    0x001dd3e0       0x22 rmemcpy.o
+ .debug_info    0x001dd402       0x23 sdiv32.o
+ .debug_info    0x001dd425       0x24 udiv32.o
+ .debug_info    0x001dd449       0x24 huffman.o
+ .debug_info    0x001dd46d       0x24 lz77.o
+ .debug_info    0x001dd491       0x24 running_length.o
+ .debug_info    0x001dd4b5       0x24 mm_effect.o
+ .debug_info    0x001dd4d9       0x23 mm_main.o
+ .debug_info    0x001dd4fc       0x22 mm_mas.o
+ .debug_info    0x001dd51e       0x24 mm_mas_arm.o
+ .debug_info    0x001dd542       0x22 mm_main_gba.o
+ .debug_info    0x001dd564       0x22 mm_mixer_gba.o
 
-.debug_abbrev   0x00000000    0x17f87
+.debug_abbrev   0x00000000    0x17fa6
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x335 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
- .debug_abbrev  0x00000335      0x393 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .debug_abbrev  0x000006c8      0x1ff C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
- .debug_abbrev  0x000008c7      0xa1e C:\Users\Sergio\AppData\Local\Temp\cc2pdX1l.debug.temp.o
- .debug_abbrev  0x000012e5      0xd37 C:\Users\Sergio\AppData\Local\Temp\ccK7WxfL.debug.temp.o
- .debug_abbrev  0x0000201c      0xa09 C:\Users\Sergio\AppData\Local\Temp\ccIVJ0La.debug.temp.o
- .debug_abbrev  0x00002a25      0xde4 C:\Users\Sergio\AppData\Local\Temp\cce1wZsz.debug.temp.o
- .debug_abbrev  0x00003809      0x882 C:\Users\Sergio\AppData\Local\Temp\ccMP8goY.debug.temp.o
- .debug_abbrev  0x0000408b      0xdd0 C:\Users\Sergio\AppData\Local\Temp\cc6oScvm.debug.temp.o
- .debug_abbrev  0x00004e5b     0x10f6 C:\Users\Sergio\AppData\Local\Temp\ccWGWHSK.debug.temp.o
- .debug_abbrev  0x00005f51      0x9f8 C:\Users\Sergio\AppData\Local\Temp\ccsgBSB8.debug.temp.o
- .debug_abbrev  0x00006949      0xb46 C:\Users\Sergio\AppData\Local\Temp\ccS8SFBw.debug.temp.o
- .debug_abbrev  0x0000748f      0xcb1 C:\Users\Sergio\AppData\Local\Temp\cc2GuCbY.debug.temp.o
- .debug_abbrev  0x00008140      0x921 C:\Users\Sergio\AppData\Local\Temp\cckFzy4p.debug.temp.o
- .debug_abbrev  0x00008a61     0x1054 C:\Users\Sergio\AppData\Local\Temp\ccStbY7Q.debug.temp.o
- .debug_abbrev  0x00009ab5      0x606 C:\Users\Sergio\AppData\Local\Temp\ccgjm8Ci.debug.temp.o
- .debug_abbrev  0x0000a0bb      0x8b3 C:\Users\Sergio\AppData\Local\Temp\ccelAF0I.debug.temp.o
- .debug_abbrev  0x0000a96e      0x991 C:\Users\Sergio\AppData\Local\Temp\cce0JWF9.debug.temp.o
- .debug_abbrev  0x0000b2ff      0x910 C:\Users\Sergio\AppData\Local\Temp\cck2X0xz.debug.temp.o
- .debug_abbrev  0x0000bc0f      0xdc2 C:\Users\Sergio\AppData\Local\Temp\ccAjPmuZ.debug.temp.o
- .debug_abbrev  0x0000c9d1      0xead C:\Users\Sergio\AppData\Local\Temp\ccYI5f3r.debug.temp.o
- .debug_abbrev  0x0000d87e      0x9c1 C:\Users\Sergio\AppData\Local\Temp\ccucxTBV.debug.temp.o
- .debug_abbrev  0x0000e23f      0xcab C:\Users\Sergio\AppData\Local\Temp\ccgM1otp.debug.temp.o
- .debug_abbrev  0x0000eeea      0xdee C:\Users\Sergio\AppData\Local\Temp\cceYgedS.debug.temp.o
- .debug_abbrev  0x0000fcd8      0xeea C:\Users\Sergio\AppData\Local\Temp\ccuJtvjl.debug.temp.o
- .debug_abbrev  0x00010bc2      0x79e C:\Users\Sergio\AppData\Local\Temp\ccsBG0AN.debug.temp.o
- .debug_abbrev  0x00011360      0xcbf C:\Users\Sergio\AppData\Local\Temp\cc0tk0eg.debug.temp.o
- .debug_abbrev  0x0001201f      0xb98 C:\Users\Sergio\AppData\Local\Temp\cc4mE9CM.debug.temp.o
- .debug_abbrev  0x00012bb7      0x519 C:\Users\Sergio\AppData\Local\Temp\ccUoOrmj.debug.temp.o
- .debug_abbrev  0x000130d0      0x9dc C:\Users\Sergio\AppData\Local\Temp\cc0DDMAl.debug.temp.o
- .debug_abbrev  0x00013aac      0x7d4 C:\Users\Sergio\AppData\Local\Temp\ccWHvSjm.debug.temp.o
- .debug_abbrev  0x00014280      0x9c8 C:\Users\Sergio\AppData\Local\Temp\ccqG7QUQ.debug.temp.o
- .debug_abbrev  0x00014c48      0x192 C:\Users\Sergio\AppData\Local\Temp\ccU2zoDl.debug.temp.o
- .debug_abbrev  0x00014dda      0x228 C:\Users\Sergio\AppData\Local\Temp\ccENueqQ.debug.temp.o
- .debug_abbrev  0x00015002      0x70d C:\Users\Sergio\AppData\Local\Temp\ccsYTv6o.debug.temp.o
- .debug_abbrev  0x0001570f      0x1a4 C:\Users\Sergio\AppData\Local\Temp\ccsrd5QX.debug.temp.o
- .debug_abbrev  0x000158b3       0xf4 C:\Users\Sergio\AppData\Local\Temp\ccKfnoJw.debug.temp.o
- .debug_abbrev  0x000159a7      0x1c6 C:\Users\Sergio\AppData\Local\Temp\ccOOElN4.debug.temp.o
- .debug_abbrev  0x00015b6d      0x174 C:\Users\Sergio\AppData\Local\Temp\ccgzpusg.debug.temp.o
- .debug_abbrev  0x00015ce1      0x1b1 C:\Users\Sergio\AppData\Local\Temp\cc6CuZdO.debug.temp.o
- .debug_abbrev  0x00015e92      0x266 C:\Users\Sergio\AppData\Local\Temp\ccsvxm8l.debug.temp.o
- .debug_abbrev  0x000160f8       0xed C:\Users\Sergio\AppData\Local\Temp\ccoeoodT.debug.temp.o
- .debug_abbrev  0x000161e5      0x187 C:\Users\Sergio\AppData\Local\Temp\ccC0swIy.debug.temp.o
- .debug_abbrev  0x0001636c      0xabc bn_sprites_manager.bn_iwram.o
- .debug_abbrev  0x00016e28      0x606 bn_hw_common.bn_noflto.o
- .debug_abbrev  0x0001742e      0x1e0 bn_hw_game_pak.bn_ewram.o
- .debug_abbrev  0x0001760e      0x4db bn_hw_palettes.bn_iwram.o
- .debug_abbrev  0x00017ae9      0x282 bn_hw_sprite_tiles.bn_iwram.o
- .debug_abbrev  0x00017d6b       0x14 bn_hw_bg_blocks.o
- .debug_abbrev  0x00017d7f       0x14 bn_hw_hblank_effects.o
- .debug_abbrev  0x00017d93       0x14 bn_hw_palettes_asm.o
- .debug_abbrev  0x00017da7       0x28 clr_blend_fast.o
- .debug_abbrev  0x00017dcf       0x14 clr_fade_fast.o
- .debug_abbrev  0x00017de3       0x26 tonc_bios.o
- .debug_abbrev  0x00017e09       0x26 tonc_memset.o
- .debug_abbrev  0x00017e2f       0x14 irq_handler.o
- .debug_abbrev  0x00017e43       0x14 posprintf.o
- .debug_abbrev  0x00017e57       0x12 lmul.o
- .debug_abbrev  0x00017e69       0x12 memcpy.o
- .debug_abbrev  0x00017e7b       0x12 memmove.o
- .debug_abbrev  0x00017e8d       0x12 memset.o
- .debug_abbrev  0x00017e9f       0x12 rmemcpy.o
- .debug_abbrev  0x00017eb1       0x14 sdiv32.o
- .debug_abbrev  0x00017ec5       0x14 udiv32.o
- .debug_abbrev  0x00017ed9       0x14 huffman.o
- .debug_abbrev  0x00017eed       0x14 lz77.o
- .debug_abbrev  0x00017f01       0x14 running_length.o
- .debug_abbrev  0x00017f15       0x14 mm_effect.o
- .debug_abbrev  0x00017f29       0x14 mm_main.o
- .debug_abbrev  0x00017f3d       0x12 mm_mas.o
- .debug_abbrev  0x00017f4f       0x14 mm_mas_arm.o
- .debug_abbrev  0x00017f63       0x12 mm_main_gba.o
- .debug_abbrev  0x00017f75       0x12 mm_mixer_gba.o
+ .debug_abbrev  0x00000000      0x345 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+ .debug_abbrev  0x00000345      0x393 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .debug_abbrev  0x000006d8      0x1fe C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+ .debug_abbrev  0x000008d6      0xa1e C:\Users\Sergio\AppData\Local\Temp\ccNwSMU1.debug.temp.o
+ .debug_abbrev  0x000012f4      0xd47 C:\Users\Sergio\AppData\Local\Temp\cccigybf.debug.temp.o
+ .debug_abbrev  0x0000203b      0xa09 C:\Users\Sergio\AppData\Local\Temp\ccpFmZzs.debug.temp.o
+ .debug_abbrev  0x00002a44      0xde4 C:\Users\Sergio\AppData\Local\Temp\cc6jOu5E.debug.temp.o
+ .debug_abbrev  0x00003828      0x882 C:\Users\Sergio\AppData\Local\Temp\ccjtvUTR.debug.temp.o
+ .debug_abbrev  0x000040aa      0xdd0 C:\Users\Sergio\AppData\Local\Temp\cc4TcQS3.debug.temp.o
+ .debug_abbrev  0x00004e7a     0x10f6 C:\Users\Sergio\AppData\Local\Temp\ccNXa45f.debug.temp.o
+ .debug_abbrev  0x00005f70      0x9f8 C:\Users\Sergio\AppData\Local\Temp\ccA7SI5v.debug.temp.o
+ .debug_abbrev  0x00006968      0xb46 C:\Users\Sergio\AppData\Local\Temp\ccVSBarL.debug.temp.o
+ .debug_abbrev  0x000074ae      0xcb1 C:\Users\Sergio\AppData\Local\Temp\ccgeZl40.debug.temp.o
+ .debug_abbrev  0x0000815f      0x921 C:\Users\Sergio\AppData\Local\Temp\ccRnAtNf.debug.temp.o
+ .debug_abbrev  0x00008a80     0x1054 C:\Users\Sergio\AppData\Local\Temp\ccWY9uPu.debug.temp.o
+ .debug_abbrev  0x00009ad4      0x606 C:\Users\Sergio\AppData\Local\Temp\ccF27QaJ.debug.temp.o
+ .debug_abbrev  0x0000a0da      0x8b3 C:\Users\Sergio\AppData\Local\Temp\cc2GwwBX.debug.temp.o
+ .debug_abbrev  0x0000a98d      0x991 C:\Users\Sergio\AppData\Local\Temp\ccXOvVPf.debug.temp.o
+ .debug_abbrev  0x0000b31e      0x910 C:\Users\Sergio\AppData\Local\Temp\ccuUzwyy.debug.temp.o
+ .debug_abbrev  0x0000bc2e      0xdc2 C:\Users\Sergio\AppData\Local\Temp\ccvRlCkQ.debug.temp.o
+ .debug_abbrev  0x0000c9f0      0xead C:\Users\Sergio\AppData\Local\Temp\ccyc3BPG.debug.temp.o
+ .debug_abbrev  0x0000d89d      0x9c1 C:\Users\Sergio\AppData\Local\Temp\cc30u9nX.debug.temp.o
+ .debug_abbrev  0x0000e25e      0xcab C:\Users\Sergio\AppData\Local\Temp\cceBS9je.debug.temp.o
+ .debug_abbrev  0x0000ef09      0xdee C:\Users\Sergio\AppData\Local\Temp\ccF7ti7y.debug.temp.o
+ .debug_abbrev  0x0000fcf7      0xeea C:\Users\Sergio\AppData\Local\Temp\cc8g1acU.debug.temp.o
+ .debug_abbrev  0x00010be1      0x79e C:\Users\Sergio\AppData\Local\Temp\cc5NMGke.debug.temp.o
+ .debug_abbrev  0x0001137f      0xcbf C:\Users\Sergio\AppData\Local\Temp\cc8X8nOy.debug.temp.o
+ .debug_abbrev  0x0001203e      0xb98 C:\Users\Sergio\AppData\Local\Temp\ccNbjBlS.debug.temp.o
+ .debug_abbrev  0x00012bd6      0x519 C:\Users\Sergio\AppData\Local\Temp\ccEPBffc.debug.temp.o
+ .debug_abbrev  0x000130ef      0x9dc C:\Users\Sergio\AppData\Local\Temp\ccO7xeXN.debug.temp.o
+ .debug_abbrev  0x00013acb      0x7d4 C:\Users\Sergio\AppData\Local\Temp\ccmopSfu.debug.temp.o
+ .debug_abbrev  0x0001429f      0x9c8 C:\Users\Sergio\AppData\Local\Temp\ccdGy5oR.debug.temp.o
+ .debug_abbrev  0x00014c67      0x192 C:\Users\Sergio\AppData\Local\Temp\cc8hv5Kd.debug.temp.o
+ .debug_abbrev  0x00014df9      0x228 C:\Users\Sergio\AppData\Local\Temp\ccZHgMeA.debug.temp.o
+ .debug_abbrev  0x00015021      0x70d C:\Users\Sergio\AppData\Local\Temp\ccekiN4W.debug.temp.o
+ .debug_abbrev  0x0001572e      0x1a4 C:\Users\Sergio\AppData\Local\Temp\ccDPx8Ti.debug.temp.o
+ .debug_abbrev  0x000158d2       0xf4 C:\Users\Sergio\AppData\Local\Temp\ccgGYLNE.debug.temp.o
+ .debug_abbrev  0x000159c6      0x1c6 C:\Users\Sergio\AppData\Local\Temp\ccXCnN0Z.debug.temp.o
+ .debug_abbrev  0x00015b8c      0x174 C:\Users\Sergio\AppData\Local\Temp\ccfOR0Br.debug.temp.o
+ .debug_abbrev  0x00015d00      0x1b1 C:\Users\Sergio\AppData\Local\Temp\ccGATEYQ.debug.temp.o
+ .debug_abbrev  0x00015eb1      0x266 C:\Users\Sergio\AppData\Local\Temp\ccJyPTIg.debug.temp.o
+ .debug_abbrev  0x00016117       0xed C:\Users\Sergio\AppData\Local\Temp\ccs0PCmF.debug.temp.o
+ .debug_abbrev  0x00016204      0x187 C:\Users\Sergio\AppData\Local\Temp\ccHhYgKR.debug.temp.o
+ .debug_abbrev  0x0001638b      0xabc bn_sprites_manager.bn_iwram.o
+ .debug_abbrev  0x00016e47      0x606 bn_hw_common.bn_noflto.o
+ .debug_abbrev  0x0001744d      0x1e0 bn_hw_game_pak.bn_ewram.o
+ .debug_abbrev  0x0001762d      0x4db bn_hw_palettes.bn_iwram.o
+ .debug_abbrev  0x00017b08      0x282 bn_hw_sprite_tiles.bn_iwram.o
+ .debug_abbrev  0x00017d8a       0x14 bn_hw_bg_blocks.o
+ .debug_abbrev  0x00017d9e       0x14 bn_hw_hblank_effects.o
+ .debug_abbrev  0x00017db2       0x14 bn_hw_palettes_asm.o
+ .debug_abbrev  0x00017dc6       0x28 clr_blend_fast.o
+ .debug_abbrev  0x00017dee       0x14 clr_fade_fast.o
+ .debug_abbrev  0x00017e02       0x26 tonc_bios.o
+ .debug_abbrev  0x00017e28       0x26 tonc_memset.o
+ .debug_abbrev  0x00017e4e       0x14 irq_handler.o
+ .debug_abbrev  0x00017e62       0x14 posprintf.o
+ .debug_abbrev  0x00017e76       0x12 lmul.o
+ .debug_abbrev  0x00017e88       0x12 memcpy.o
+ .debug_abbrev  0x00017e9a       0x12 memmove.o
+ .debug_abbrev  0x00017eac       0x12 memset.o
+ .debug_abbrev  0x00017ebe       0x12 rmemcpy.o
+ .debug_abbrev  0x00017ed0       0x14 sdiv32.o
+ .debug_abbrev  0x00017ee4       0x14 udiv32.o
+ .debug_abbrev  0x00017ef8       0x14 huffman.o
+ .debug_abbrev  0x00017f0c       0x14 lz77.o
+ .debug_abbrev  0x00017f20       0x14 running_length.o
+ .debug_abbrev  0x00017f34       0x14 mm_effect.o
+ .debug_abbrev  0x00017f48       0x14 mm_main.o
+ .debug_abbrev  0x00017f5c       0x12 mm_mas.o
+ .debug_abbrev  0x00017f6e       0x14 mm_mas_arm.o
+ .debug_abbrev  0x00017f82       0x12 mm_main_gba.o
+ .debug_abbrev  0x00017f94       0x12 mm_mixer_gba.o
 
-.debug_line     0x00000000    0x423ae
+.debug_line     0x00000000    0x42815
  *(.debug_line)
- .debug_line    0x00000000    0x1458a C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
- .debug_line    0x0001458a    0x1228d C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .debug_line    0x00026817     0x56a8 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
- .debug_line    0x0002bebf      0x799 C:\Users\Sergio\AppData\Local\Temp\cc2pdX1l.debug.temp.o
- .debug_line    0x0002c658      0xb7d C:\Users\Sergio\AppData\Local\Temp\ccK7WxfL.debug.temp.o
- .debug_line    0x0002d1d5      0x704 C:\Users\Sergio\AppData\Local\Temp\ccIVJ0La.debug.temp.o
- .debug_line    0x0002d8d9      0x926 C:\Users\Sergio\AppData\Local\Temp\cce1wZsz.debug.temp.o
- .debug_line    0x0002e1ff      0x5db C:\Users\Sergio\AppData\Local\Temp\ccMP8goY.debug.temp.o
- .debug_line    0x0002e7da      0xaf8 C:\Users\Sergio\AppData\Local\Temp\cc6oScvm.debug.temp.o
- .debug_line    0x0002f2d2      0xcc6 C:\Users\Sergio\AppData\Local\Temp\ccWGWHSK.debug.temp.o
- .debug_line    0x0002ff98      0x6c7 C:\Users\Sergio\AppData\Local\Temp\ccsgBSB8.debug.temp.o
- .debug_line    0x0003065f      0x9d0 C:\Users\Sergio\AppData\Local\Temp\ccS8SFBw.debug.temp.o
- .debug_line    0x0003102f      0xc22 C:\Users\Sergio\AppData\Local\Temp\cc2GuCbY.debug.temp.o
- .debug_line    0x00031c51      0x6ae C:\Users\Sergio\AppData\Local\Temp\cckFzy4p.debug.temp.o
- .debug_line    0x000322ff     0x1e86 C:\Users\Sergio\AppData\Local\Temp\ccStbY7Q.debug.temp.o
- .debug_line    0x00034185      0x516 C:\Users\Sergio\AppData\Local\Temp\ccgjm8Ci.debug.temp.o
- .debug_line    0x0003469b      0x64f C:\Users\Sergio\AppData\Local\Temp\ccelAF0I.debug.temp.o
- .debug_line    0x00034cea      0x73d C:\Users\Sergio\AppData\Local\Temp\cce0JWF9.debug.temp.o
- .debug_line    0x00035427      0x7ad C:\Users\Sergio\AppData\Local\Temp\cck2X0xz.debug.temp.o
- .debug_line    0x00035bd4      0xa1d C:\Users\Sergio\AppData\Local\Temp\ccAjPmuZ.debug.temp.o
- .debug_line    0x000365f1      0xa1c C:\Users\Sergio\AppData\Local\Temp\ccYI5f3r.debug.temp.o
- .debug_line    0x0003700d      0x69d C:\Users\Sergio\AppData\Local\Temp\ccucxTBV.debug.temp.o
- .debug_line    0x000376aa      0x91e C:\Users\Sergio\AppData\Local\Temp\ccgM1otp.debug.temp.o
- .debug_line    0x00037fc8      0x8a6 C:\Users\Sergio\AppData\Local\Temp\cceYgedS.debug.temp.o
- .debug_line    0x0003886e      0xbad C:\Users\Sergio\AppData\Local\Temp\ccuJtvjl.debug.temp.o
- .debug_line    0x0003941b      0x5e3 C:\Users\Sergio\AppData\Local\Temp\ccsBG0AN.debug.temp.o
- .debug_line    0x000399fe      0xa2b C:\Users\Sergio\AppData\Local\Temp\cc0tk0eg.debug.temp.o
- .debug_line    0x0003a429      0x809 C:\Users\Sergio\AppData\Local\Temp\cc4mE9CM.debug.temp.o
- .debug_line    0x0003ac32      0x42a C:\Users\Sergio\AppData\Local\Temp\ccUoOrmj.debug.temp.o
- .debug_line    0x0003b05c      0x6ad C:\Users\Sergio\AppData\Local\Temp\cc0DDMAl.debug.temp.o
- .debug_line    0x0003b709      0x660 C:\Users\Sergio\AppData\Local\Temp\ccWHvSjm.debug.temp.o
- .debug_line    0x0003bd69      0x7a6 C:\Users\Sergio\AppData\Local\Temp\ccqG7QUQ.debug.temp.o
- .debug_line    0x0003c50f      0x2fe C:\Users\Sergio\AppData\Local\Temp\ccU2zoDl.debug.temp.o
- .debug_line    0x0003c80d      0x2d5 C:\Users\Sergio\AppData\Local\Temp\ccENueqQ.debug.temp.o
- .debug_line    0x0003cae2      0x622 C:\Users\Sergio\AppData\Local\Temp\ccsYTv6o.debug.temp.o
- .debug_line    0x0003d104      0x230 C:\Users\Sergio\AppData\Local\Temp\ccsrd5QX.debug.temp.o
- .debug_line    0x0003d334       0xe5 C:\Users\Sergio\AppData\Local\Temp\ccKfnoJw.debug.temp.o
- .debug_line    0x0003d419       0xe8 C:\Users\Sergio\AppData\Local\Temp\ccOOElN4.debug.temp.o
- .debug_line    0x0003d501       0xf0 C:\Users\Sergio\AppData\Local\Temp\ccgzpusg.debug.temp.o
- .debug_line    0x0003d5f1       0xec C:\Users\Sergio\AppData\Local\Temp\cc6CuZdO.debug.temp.o
- .debug_line    0x0003d6dd      0x12f C:\Users\Sergio\AppData\Local\Temp\ccsvxm8l.debug.temp.o
- .debug_line    0x0003d80c      0x156 C:\Users\Sergio\AppData\Local\Temp\ccoeoodT.debug.temp.o
- .debug_line    0x0003d962      0x153 C:\Users\Sergio\AppData\Local\Temp\ccC0swIy.debug.temp.o
- .debug_line    0x0003dab5      0xf47 bn_sprites_manager.bn_iwram.o
- .debug_line    0x0003e9fc      0x651 bn_hw_common.bn_noflto.o
- .debug_line    0x0003f04d      0x4a8 bn_hw_game_pak.bn_ewram.o
- .debug_line    0x0003f4f5      0x6e3 bn_hw_palettes.bn_iwram.o
- .debug_line    0x0003fbd8      0x3d5 bn_hw_sprite_tiles.bn_iwram.o
- .debug_line    0x0003ffad       0x90 bn_hw_bg_blocks.o
- .debug_line    0x0004003d       0xa9 bn_hw_hblank_effects.o
- .debug_line    0x000400e6       0x80 bn_hw_palettes_asm.o
- .debug_line    0x00040166       0xa0 clr_blend_fast.o
- .debug_line    0x00040206       0x9f clr_fade_fast.o
- .debug_line    0x000402a5      0x2bb tonc_bios.o
- .debug_line    0x00040560       0xbe tonc_memset.o
- .debug_line    0x0004061e       0xdb irq_handler.o
- .debug_line    0x000406f9      0x1b5 posprintf.o
- .debug_line    0x000408ae       0xbb lmul.o
- .debug_line    0x00040969       0xd1 memcpy.o
- .debug_line    0x00040a3a       0xb1 memmove.o
- .debug_line    0x00040aeb       0xdb memset.o
- .debug_line    0x00040bc6       0xbe rmemcpy.o
- .debug_line    0x00040c84       0x8c sdiv32.o
- .debug_line    0x00040d10       0xf5 udiv32.o
- .debug_line    0x00040e05       0xa8 huffman.o
- .debug_line    0x00040ead       0xee lz77.o
- .debug_line    0x00040f9b       0xc6 running_length.o
- .debug_line    0x00041061      0x217 mm_effect.o
- .debug_line    0x00041278       0x88 mm_main.o
- .debug_line    0x00041300      0xa77 mm_mas.o
- .debug_line    0x00041d77      0x1fd mm_mas_arm.o
- .debug_line    0x00041f74      0x11b mm_main_gba.o
- .debug_line    0x0004208f      0x31f mm_mixer_gba.o
+ .debug_line    0x00000000    0x1a6b9 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+ .debug_line    0x0001a6b9     0xcf24 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .debug_line    0x000275dd     0x4d49 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+ .debug_line    0x0002c326      0x799 C:\Users\Sergio\AppData\Local\Temp\ccNwSMU1.debug.temp.o
+ .debug_line    0x0002cabf      0xb7d C:\Users\Sergio\AppData\Local\Temp\cccigybf.debug.temp.o
+ .debug_line    0x0002d63c      0x704 C:\Users\Sergio\AppData\Local\Temp\ccpFmZzs.debug.temp.o
+ .debug_line    0x0002dd40      0x926 C:\Users\Sergio\AppData\Local\Temp\cc6jOu5E.debug.temp.o
+ .debug_line    0x0002e666      0x5db C:\Users\Sergio\AppData\Local\Temp\ccjtvUTR.debug.temp.o
+ .debug_line    0x0002ec41      0xaf8 C:\Users\Sergio\AppData\Local\Temp\cc4TcQS3.debug.temp.o
+ .debug_line    0x0002f739      0xcc6 C:\Users\Sergio\AppData\Local\Temp\ccNXa45f.debug.temp.o
+ .debug_line    0x000303ff      0x6c7 C:\Users\Sergio\AppData\Local\Temp\ccA7SI5v.debug.temp.o
+ .debug_line    0x00030ac6      0x9d0 C:\Users\Sergio\AppData\Local\Temp\ccVSBarL.debug.temp.o
+ .debug_line    0x00031496      0xc22 C:\Users\Sergio\AppData\Local\Temp\ccgeZl40.debug.temp.o
+ .debug_line    0x000320b8      0x6ae C:\Users\Sergio\AppData\Local\Temp\ccRnAtNf.debug.temp.o
+ .debug_line    0x00032766     0x1e86 C:\Users\Sergio\AppData\Local\Temp\ccWY9uPu.debug.temp.o
+ .debug_line    0x000345ec      0x516 C:\Users\Sergio\AppData\Local\Temp\ccF27QaJ.debug.temp.o
+ .debug_line    0x00034b02      0x64f C:\Users\Sergio\AppData\Local\Temp\cc2GwwBX.debug.temp.o
+ .debug_line    0x00035151      0x73d C:\Users\Sergio\AppData\Local\Temp\ccXOvVPf.debug.temp.o
+ .debug_line    0x0003588e      0x7ad C:\Users\Sergio\AppData\Local\Temp\ccuUzwyy.debug.temp.o
+ .debug_line    0x0003603b      0xa1d C:\Users\Sergio\AppData\Local\Temp\ccvRlCkQ.debug.temp.o
+ .debug_line    0x00036a58      0xa1c C:\Users\Sergio\AppData\Local\Temp\ccyc3BPG.debug.temp.o
+ .debug_line    0x00037474      0x69d C:\Users\Sergio\AppData\Local\Temp\cc30u9nX.debug.temp.o
+ .debug_line    0x00037b11      0x91e C:\Users\Sergio\AppData\Local\Temp\cceBS9je.debug.temp.o
+ .debug_line    0x0003842f      0x8a6 C:\Users\Sergio\AppData\Local\Temp\ccF7ti7y.debug.temp.o
+ .debug_line    0x00038cd5      0xbad C:\Users\Sergio\AppData\Local\Temp\cc8g1acU.debug.temp.o
+ .debug_line    0x00039882      0x5e3 C:\Users\Sergio\AppData\Local\Temp\cc5NMGke.debug.temp.o
+ .debug_line    0x00039e65      0xa2b C:\Users\Sergio\AppData\Local\Temp\cc8X8nOy.debug.temp.o
+ .debug_line    0x0003a890      0x809 C:\Users\Sergio\AppData\Local\Temp\ccNbjBlS.debug.temp.o
+ .debug_line    0x0003b099      0x42a C:\Users\Sergio\AppData\Local\Temp\ccEPBffc.debug.temp.o
+ .debug_line    0x0003b4c3      0x6ad C:\Users\Sergio\AppData\Local\Temp\ccO7xeXN.debug.temp.o
+ .debug_line    0x0003bb70      0x660 C:\Users\Sergio\AppData\Local\Temp\ccmopSfu.debug.temp.o
+ .debug_line    0x0003c1d0      0x7a6 C:\Users\Sergio\AppData\Local\Temp\ccdGy5oR.debug.temp.o
+ .debug_line    0x0003c976      0x2fe C:\Users\Sergio\AppData\Local\Temp\cc8hv5Kd.debug.temp.o
+ .debug_line    0x0003cc74      0x2d5 C:\Users\Sergio\AppData\Local\Temp\ccZHgMeA.debug.temp.o
+ .debug_line    0x0003cf49      0x622 C:\Users\Sergio\AppData\Local\Temp\ccekiN4W.debug.temp.o
+ .debug_line    0x0003d56b      0x230 C:\Users\Sergio\AppData\Local\Temp\ccDPx8Ti.debug.temp.o
+ .debug_line    0x0003d79b       0xe5 C:\Users\Sergio\AppData\Local\Temp\ccgGYLNE.debug.temp.o
+ .debug_line    0x0003d880       0xe8 C:\Users\Sergio\AppData\Local\Temp\ccXCnN0Z.debug.temp.o
+ .debug_line    0x0003d968       0xf0 C:\Users\Sergio\AppData\Local\Temp\ccfOR0Br.debug.temp.o
+ .debug_line    0x0003da58       0xec C:\Users\Sergio\AppData\Local\Temp\ccGATEYQ.debug.temp.o
+ .debug_line    0x0003db44      0x12f C:\Users\Sergio\AppData\Local\Temp\ccJyPTIg.debug.temp.o
+ .debug_line    0x0003dc73      0x156 C:\Users\Sergio\AppData\Local\Temp\ccs0PCmF.debug.temp.o
+ .debug_line    0x0003ddc9      0x153 C:\Users\Sergio\AppData\Local\Temp\ccHhYgKR.debug.temp.o
+ .debug_line    0x0003df1c      0xf47 bn_sprites_manager.bn_iwram.o
+ .debug_line    0x0003ee63      0x651 bn_hw_common.bn_noflto.o
+ .debug_line    0x0003f4b4      0x4a8 bn_hw_game_pak.bn_ewram.o
+ .debug_line    0x0003f95c      0x6e3 bn_hw_palettes.bn_iwram.o
+ .debug_line    0x0004003f      0x3d5 bn_hw_sprite_tiles.bn_iwram.o
+ .debug_line    0x00040414       0x90 bn_hw_bg_blocks.o
+ .debug_line    0x000404a4       0xa9 bn_hw_hblank_effects.o
+ .debug_line    0x0004054d       0x80 bn_hw_palettes_asm.o
+ .debug_line    0x000405cd       0xa0 clr_blend_fast.o
+ .debug_line    0x0004066d       0x9f clr_fade_fast.o
+ .debug_line    0x0004070c      0x2bb tonc_bios.o
+ .debug_line    0x000409c7       0xbe tonc_memset.o
+ .debug_line    0x00040a85       0xdb irq_handler.o
+ .debug_line    0x00040b60      0x1b5 posprintf.o
+ .debug_line    0x00040d15       0xbb lmul.o
+ .debug_line    0x00040dd0       0xd1 memcpy.o
+ .debug_line    0x00040ea1       0xb1 memmove.o
+ .debug_line    0x00040f52       0xdb memset.o
+ .debug_line    0x0004102d       0xbe rmemcpy.o
+ .debug_line    0x000410eb       0x8c sdiv32.o
+ .debug_line    0x00041177       0xf5 udiv32.o
+ .debug_line    0x0004126c       0xa8 huffman.o
+ .debug_line    0x00041314       0xee lz77.o
+ .debug_line    0x00041402       0xc6 running_length.o
+ .debug_line    0x000414c8      0x217 mm_effect.o
+ .debug_line    0x000416df       0x88 mm_main.o
+ .debug_line    0x00041767      0xa77 mm_mas.o
+ .debug_line    0x000421de      0x1fd mm_mas_arm.o
+ .debug_line    0x000423db      0x11b mm_main_gba.o
+ .debug_line    0x000424f6      0x31f mm_mixer_gba.o
 
 .debug_frame    0x00000000     0x1a70
  *(.debug_frame)
- .debug_frame   0x00000000      0x500 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
- .debug_frame   0x00000500      0xdb4 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .debug_frame   0x000012b4      0x57c C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
+ .debug_frame   0x00000000      0x5cc C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+ .debug_frame   0x000005cc      0xe04 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .debug_frame   0x000013d0      0x460 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
  .debug_frame   0x00001830       0x94 bn_sprites_manager.bn_iwram.o
  .debug_frame   0x000018c4       0xec bn_hw_common.bn_noflto.o
  .debug_frame   0x000019b0       0x34 bn_hw_game_pak.bn_ewram.o
  .debug_frame   0x000019e4       0x48 bn_hw_palettes.bn_iwram.o
  .debug_frame   0x00001a2c       0x44 bn_hw_sprite_tiles.bn_iwram.o
 
-.debug_str      0x00000000    0x940fe
+.debug_str      0x00000000    0x9409f
  *(.debug_str)
- .debug_str     0x00000000      0x6fe C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
- .debug_str     0x00000000      0x9ef C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .debug_str     0x00000000      0xc7e C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
- .debug_str     0x00000000     0x8f05 C:\Users\Sergio\AppData\Local\Temp\cc2pdX1l.debug.temp.o
- .debug_str     0x00000000    0x14db9 C:\Users\Sergio\AppData\Local\Temp\ccK7WxfL.debug.temp.o
- .debug_str     0x00000000     0x93fa C:\Users\Sergio\AppData\Local\Temp\ccIVJ0La.debug.temp.o
- .debug_str     0x00000000     0xbc93 C:\Users\Sergio\AppData\Local\Temp\cce1wZsz.debug.temp.o
- .debug_str     0x00000000     0x29ff C:\Users\Sergio\AppData\Local\Temp\ccMP8goY.debug.temp.o
- .debug_str     0x00000000    0x163e3 C:\Users\Sergio\AppData\Local\Temp\cc6oScvm.debug.temp.o
- .debug_str     0x00000000    0x1b54d C:\Users\Sergio\AppData\Local\Temp\ccWGWHSK.debug.temp.o
- .debug_str     0x00000000     0x3cea C:\Users\Sergio\AppData\Local\Temp\ccsgBSB8.debug.temp.o
- .debug_str     0x00000000     0x54c1 C:\Users\Sergio\AppData\Local\Temp\ccS8SFBw.debug.temp.o
- .debug_str     0x00000000    0x16ba1 C:\Users\Sergio\AppData\Local\Temp\cc2GuCbY.debug.temp.o
- .debug_str     0x00000000     0x3266 C:\Users\Sergio\AppData\Local\Temp\cckFzy4p.debug.temp.o
- .debug_str     0x00000000    0x4a094 C:\Users\Sergio\AppData\Local\Temp\ccStbY7Q.debug.temp.o
- .debug_str     0x00000000     0x1616 C:\Users\Sergio\AppData\Local\Temp\ccgjm8Ci.debug.temp.o
- .debug_str     0x00000000     0x37c5 C:\Users\Sergio\AppData\Local\Temp\ccelAF0I.debug.temp.o
- .debug_str     0x00000000     0x3aea C:\Users\Sergio\AppData\Local\Temp\cce0JWF9.debug.temp.o
- .debug_str     0x00000000     0x31be C:\Users\Sergio\AppData\Local\Temp\cck2X0xz.debug.temp.o
- .debug_str     0x00000000     0xc432 C:\Users\Sergio\AppData\Local\Temp\ccAjPmuZ.debug.temp.o
- .debug_str     0x00000000     0xf4d7 C:\Users\Sergio\AppData\Local\Temp\ccYI5f3r.debug.temp.o
- .debug_str     0x00000000     0x8286 C:\Users\Sergio\AppData\Local\Temp\ccucxTBV.debug.temp.o
- .debug_str     0x00000000    0x10267 C:\Users\Sergio\AppData\Local\Temp\ccgM1otp.debug.temp.o
- .debug_str     0x00000000     0xb4db C:\Users\Sergio\AppData\Local\Temp\cceYgedS.debug.temp.o
- .debug_str     0x00000000    0x184ca C:\Users\Sergio\AppData\Local\Temp\ccuJtvjl.debug.temp.o
- .debug_str     0x00000000     0x3d93 C:\Users\Sergio\AppData\Local\Temp\ccsBG0AN.debug.temp.o
- .debug_str     0x00000000     0xbfd0 C:\Users\Sergio\AppData\Local\Temp\cc0tk0eg.debug.temp.o
- .debug_str     0x00000000     0x33f2 C:\Users\Sergio\AppData\Local\Temp\cc4mE9CM.debug.temp.o
- .debug_str     0x00000000     0x10bb C:\Users\Sergio\AppData\Local\Temp\ccUoOrmj.debug.temp.o
- .debug_str     0x00000000     0x45a6 C:\Users\Sergio\AppData\Local\Temp\cc0DDMAl.debug.temp.o
- .debug_str     0x00000000     0x2bc6 C:\Users\Sergio\AppData\Local\Temp\ccWHvSjm.debug.temp.o
- .debug_str     0x00000000     0x3ffe C:\Users\Sergio\AppData\Local\Temp\ccqG7QUQ.debug.temp.o
- .debug_str     0x00000000      0x56b C:\Users\Sergio\AppData\Local\Temp\ccU2zoDl.debug.temp.o
- .debug_str     0x00000000      0x5d1 C:\Users\Sergio\AppData\Local\Temp\ccENueqQ.debug.temp.o
- .debug_str     0x00000000     0x29c1 C:\Users\Sergio\AppData\Local\Temp\ccsYTv6o.debug.temp.o
- .debug_str     0x00000000      0x5bf C:\Users\Sergio\AppData\Local\Temp\ccsrd5QX.debug.temp.o
- .debug_str     0x00000000      0x2af C:\Users\Sergio\AppData\Local\Temp\ccKfnoJw.debug.temp.o
- .debug_str     0x00000000      0x2f5 C:\Users\Sergio\AppData\Local\Temp\ccOOElN4.debug.temp.o
- .debug_str     0x00000000      0x33e C:\Users\Sergio\AppData\Local\Temp\ccgzpusg.debug.temp.o
- .debug_str     0x00000000      0x36c C:\Users\Sergio\AppData\Local\Temp\cc6CuZdO.debug.temp.o
- .debug_str     0x00000000      0x56f C:\Users\Sergio\AppData\Local\Temp\ccsvxm8l.debug.temp.o
- .debug_str     0x00000000      0x31a C:\Users\Sergio\AppData\Local\Temp\ccoeoodT.debug.temp.o
- .debug_str     0x00000000      0xaaa C:\Users\Sergio\AppData\Local\Temp\ccC0swIy.debug.temp.o
- .debug_str     0x00000000    0x940fe bn_sprites_manager.bn_iwram.o
+ .debug_str     0x00000000      0x763 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+ .debug_str     0x00000000      0x816 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .debug_str     0x00000000      0xb50 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+ .debug_str     0x00000000     0x8f05 C:\Users\Sergio\AppData\Local\Temp\ccNwSMU1.debug.temp.o
+ .debug_str     0x00000000    0x14ee9 C:\Users\Sergio\AppData\Local\Temp\cccigybf.debug.temp.o
+ .debug_str     0x00000000     0x93fa C:\Users\Sergio\AppData\Local\Temp\ccpFmZzs.debug.temp.o
+ .debug_str     0x00000000     0xbc93 C:\Users\Sergio\AppData\Local\Temp\cc6jOu5E.debug.temp.o
+ .debug_str     0x00000000     0x29ff C:\Users\Sergio\AppData\Local\Temp\ccjtvUTR.debug.temp.o
+ .debug_str     0x00000000    0x163e3 C:\Users\Sergio\AppData\Local\Temp\cc4TcQS3.debug.temp.o
+ .debug_str     0x00000000    0x1b54d C:\Users\Sergio\AppData\Local\Temp\ccNXa45f.debug.temp.o
+ .debug_str     0x00000000     0x3cea C:\Users\Sergio\AppData\Local\Temp\ccA7SI5v.debug.temp.o
+ .debug_str     0x00000000     0x54c1 C:\Users\Sergio\AppData\Local\Temp\ccVSBarL.debug.temp.o
+ .debug_str     0x00000000    0x16ba1 C:\Users\Sergio\AppData\Local\Temp\ccgeZl40.debug.temp.o
+ .debug_str     0x00000000     0x3266 C:\Users\Sergio\AppData\Local\Temp\ccRnAtNf.debug.temp.o
+ .debug_str     0x00000000    0x4a094 C:\Users\Sergio\AppData\Local\Temp\ccWY9uPu.debug.temp.o
+ .debug_str     0x00000000     0x1616 C:\Users\Sergio\AppData\Local\Temp\ccF27QaJ.debug.temp.o
+ .debug_str     0x00000000     0x37c5 C:\Users\Sergio\AppData\Local\Temp\cc2GwwBX.debug.temp.o
+ .debug_str     0x00000000     0x3aea C:\Users\Sergio\AppData\Local\Temp\ccXOvVPf.debug.temp.o
+ .debug_str     0x00000000     0x31be C:\Users\Sergio\AppData\Local\Temp\ccuUzwyy.debug.temp.o
+ .debug_str     0x00000000     0xc432 C:\Users\Sergio\AppData\Local\Temp\ccvRlCkQ.debug.temp.o
+ .debug_str     0x00000000     0xf4d7 C:\Users\Sergio\AppData\Local\Temp\ccyc3BPG.debug.temp.o
+ .debug_str     0x00000000     0x8286 C:\Users\Sergio\AppData\Local\Temp\cc30u9nX.debug.temp.o
+ .debug_str     0x00000000    0x10267 C:\Users\Sergio\AppData\Local\Temp\cceBS9je.debug.temp.o
+ .debug_str     0x00000000     0xb4db C:\Users\Sergio\AppData\Local\Temp\ccF7ti7y.debug.temp.o
+ .debug_str     0x00000000    0x184ca C:\Users\Sergio\AppData\Local\Temp\cc8g1acU.debug.temp.o
+ .debug_str     0x00000000     0x3d93 C:\Users\Sergio\AppData\Local\Temp\cc5NMGke.debug.temp.o
+ .debug_str     0x00000000     0xbfd0 C:\Users\Sergio\AppData\Local\Temp\cc8X8nOy.debug.temp.o
+ .debug_str     0x00000000     0x33f2 C:\Users\Sergio\AppData\Local\Temp\ccNbjBlS.debug.temp.o
+ .debug_str     0x00000000     0x10bb C:\Users\Sergio\AppData\Local\Temp\ccEPBffc.debug.temp.o
+ .debug_str     0x00000000     0x45a6 C:\Users\Sergio\AppData\Local\Temp\ccO7xeXN.debug.temp.o
+ .debug_str     0x00000000     0x2bc6 C:\Users\Sergio\AppData\Local\Temp\ccmopSfu.debug.temp.o
+ .debug_str     0x00000000     0x3ffe C:\Users\Sergio\AppData\Local\Temp\ccdGy5oR.debug.temp.o
+ .debug_str     0x00000000      0x56b C:\Users\Sergio\AppData\Local\Temp\cc8hv5Kd.debug.temp.o
+ .debug_str     0x00000000      0x5d1 C:\Users\Sergio\AppData\Local\Temp\ccZHgMeA.debug.temp.o
+ .debug_str     0x00000000     0x29c1 C:\Users\Sergio\AppData\Local\Temp\ccekiN4W.debug.temp.o
+ .debug_str     0x00000000      0x5bf C:\Users\Sergio\AppData\Local\Temp\ccDPx8Ti.debug.temp.o
+ .debug_str     0x00000000      0x2af C:\Users\Sergio\AppData\Local\Temp\ccgGYLNE.debug.temp.o
+ .debug_str     0x00000000      0x2f5 C:\Users\Sergio\AppData\Local\Temp\ccXCnN0Z.debug.temp.o
+ .debug_str     0x00000000      0x33e C:\Users\Sergio\AppData\Local\Temp\ccfOR0Br.debug.temp.o
+ .debug_str     0x00000000      0x36c C:\Users\Sergio\AppData\Local\Temp\ccGATEYQ.debug.temp.o
+ .debug_str     0x00000000      0x56f C:\Users\Sergio\AppData\Local\Temp\ccJyPTIg.debug.temp.o
+ .debug_str     0x00000000      0x31a C:\Users\Sergio\AppData\Local\Temp\ccs0PCmF.debug.temp.o
+ .debug_str     0x00000000      0xaaa C:\Users\Sergio\AppData\Local\Temp\ccHhYgKR.debug.temp.o
+ .debug_str     0x00000000    0x9409f bn_sprites_manager.bn_iwram.o
                                0xb57f (size before relaxing)
- .debug_str     0x000940fe     0x117e bn_hw_common.bn_noflto.o
- .debug_str     0x000940fe      0x5b3 bn_hw_game_pak.bn_ewram.o
- .debug_str     0x000940fe      0x93d bn_hw_palettes.bn_iwram.o
- .debug_str     0x000940fe      0x5a5 bn_hw_sprite_tiles.bn_iwram.o
- .debug_str     0x000940fe       0x68 bn_hw_bg_blocks.o
- .debug_str     0x000940fe       0x6d bn_hw_hblank_effects.o
- .debug_str     0x000940fe       0x6b bn_hw_palettes_asm.o
- .debug_str     0x000940fe       0x88 clr_blend_fast.o
- .debug_str     0x000940fe       0x78 clr_fade_fast.o
- .debug_str     0x000940fe      0x22c tonc_bios.o
- .debug_str     0x000940fe       0x88 tonc_memset.o
- .debug_str     0x000940fe       0x76 irq_handler.o
- .debug_str     0x000940fe       0x76 posprintf.o
- .debug_str     0x000940fe       0x6e lmul.o
- .debug_str     0x000940fe       0x70 memcpy.o
- .debug_str     0x000940fe       0x71 memmove.o
- .debug_str     0x000940fe       0x70 memset.o
- .debug_str     0x000940fe       0x71 rmemcpy.o
- .debug_str     0x000940fe       0x74 sdiv32.o
- .debug_str     0x000940fe       0x74 udiv32.o
- .debug_str     0x000940fe       0x7b huffman.o
- .debug_str     0x000940fe       0x78 lz77.o
- .debug_str     0x000940fe       0x82 running_length.o
- .debug_str     0x000940fe       0x76 mm_effect.o
- .debug_str     0x000940fe       0x74 mm_main.o
- .debug_str     0x000940fe       0x73 mm_mas.o
- .debug_str     0x000940fe       0x77 mm_mas_arm.o
- .debug_str     0x000940fe       0x7c mm_main_gba.o
- .debug_str     0x000940fe       0x7d mm_mixer_gba.o
+ .debug_str     0x0009409f     0x117e bn_hw_common.bn_noflto.o
+ .debug_str     0x0009409f      0x5b3 bn_hw_game_pak.bn_ewram.o
+ .debug_str     0x0009409f      0x93d bn_hw_palettes.bn_iwram.o
+ .debug_str     0x0009409f      0x5a5 bn_hw_sprite_tiles.bn_iwram.o
+ .debug_str     0x0009409f       0x68 bn_hw_bg_blocks.o
+ .debug_str     0x0009409f       0x6d bn_hw_hblank_effects.o
+ .debug_str     0x0009409f       0x6b bn_hw_palettes_asm.o
+ .debug_str     0x0009409f       0x88 clr_blend_fast.o
+ .debug_str     0x0009409f       0x78 clr_fade_fast.o
+ .debug_str     0x0009409f      0x22c tonc_bios.o
+ .debug_str     0x0009409f       0x88 tonc_memset.o
+ .debug_str     0x0009409f       0x76 irq_handler.o
+ .debug_str     0x0009409f       0x76 posprintf.o
+ .debug_str     0x0009409f       0x6e lmul.o
+ .debug_str     0x0009409f       0x70 memcpy.o
+ .debug_str     0x0009409f       0x71 memmove.o
+ .debug_str     0x0009409f       0x70 memset.o
+ .debug_str     0x0009409f       0x71 rmemcpy.o
+ .debug_str     0x0009409f       0x74 sdiv32.o
+ .debug_str     0x0009409f       0x74 udiv32.o
+ .debug_str     0x0009409f       0x7b huffman.o
+ .debug_str     0x0009409f       0x78 lz77.o
+ .debug_str     0x0009409f       0x82 running_length.o
+ .debug_str     0x0009409f       0x76 mm_effect.o
+ .debug_str     0x0009409f       0x74 mm_main.o
+ .debug_str     0x0009409f       0x73 mm_mas.o
+ .debug_str     0x0009409f       0x77 mm_mas_arm.o
+ .debug_str     0x0009409f       0x7c mm_main_gba.o
+ .debug_str     0x0009409f       0x7d mm_mixer_gba.o
 
-.debug_loc      0x00000000    0x75f08
+.debug_loc      0x00000000    0x7781c
  *(.debug_loc)
- .debug_loc     0x00000000    0x3b4d4 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
- .debug_loc     0x0003b4d4    0x294df C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .debug_loc     0x000649b3     0xffdf C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
- .debug_loc     0x00074992      0xbc1 bn_sprites_manager.bn_iwram.o
- .debug_loc     0x00075553      0x309 bn_hw_common.bn_noflto.o
- .debug_loc     0x0007585c      0x102 bn_hw_game_pak.bn_ewram.o
- .debug_loc     0x0007595e      0x371 bn_hw_palettes.bn_iwram.o
- .debug_loc     0x00075ccf      0x239 bn_hw_sprite_tiles.bn_iwram.o
+ .debug_loc     0x00000000    0x490eb C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+ .debug_loc     0x000490eb    0x1ff6d C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .debug_loc     0x00069058     0xd24e C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+ .debug_loc     0x000762a6      0xbc1 bn_sprites_manager.bn_iwram.o
+ .debug_loc     0x00076e67      0x309 bn_hw_common.bn_noflto.o
+ .debug_loc     0x00077170      0x102 bn_hw_game_pak.bn_ewram.o
+ .debug_loc     0x00077272      0x371 bn_hw_palettes.bn_iwram.o
+ .debug_loc     0x000775e3      0x239 bn_hw_sprite_tiles.bn_iwram.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1697,11 +1687,11 @@ Linker script and memory map
  .ARM.attributes
                 0x00000150       0x1a simple_bg_bn_gfx.o
  .ARM.attributes
-                0x0000016a       0x28 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
+                0x0000016a       0x28 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
  .ARM.attributes
-                0x00000192       0x28 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
+                0x00000192       0x28 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
  .ARM.attributes
-                0x000001ba       0x28 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
+                0x000001ba       0x28 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
  .ARM.attributes
                 0x000001e2       0x26 bn_sprites_manager.bn_iwram.o
  .ARM.attributes
@@ -1807,58 +1797,58 @@ LOAD jam2024_bn_gfx.o
 LOAD ninja_bn_gfx.o
 LOAD simple_bg_bn_gfx.o
 LOAD common_info.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cc2pdX1l.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccK7WxfL.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccIVJ0La.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cce1wZsz.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccMP8goY.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cc6oScvm.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccWGWHSK.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccsgBSB8.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccS8SFBw.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cc2GuCbY.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cckFzy4p.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccStbY7Q.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccgjm8Ci.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccelAF0I.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cce0JWF9.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cck2X0xz.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccAjPmuZ.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cc20Kjvt.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccYzgHBX.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccYI5f3r.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccucxTBV.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccgM1otp.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cceYgedS.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccuJtvjl.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccsBG0AN.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cc0tk0eg.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cc4mE9CM.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccUoOrmj.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccm8wxrP.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cc0DDMAl.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cce0xGUQ.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccWHvSjm.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccqG7QUQ.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccU2zoDl.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccENueqQ.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccsYTv6o.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccsrd5QX.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccKfnoJw.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccOOElN4.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccoiNJWC.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccsxCZeb.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cc681iMI.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccgzpusg.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\cc6CuZdO.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccsvxm8l.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccoeoodT.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccOIVhrq.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccGvftKX.debug.temp.o
-LOAD C:\Users\Sergio\AppData\Local\Temp\ccC0swIy.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccNwSMU1.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cccigybf.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccpFmZzs.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc6jOu5E.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccjtvUTR.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc4TcQS3.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccNXa45f.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccA7SI5v.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccVSBarL.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccgeZl40.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccRnAtNf.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccWY9uPu.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccF27QaJ.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc2GwwBX.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccXOvVPf.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccuUzwyy.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccvRlCkQ.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc2wshn8.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cctzo8np.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccyc3BPG.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc30u9nX.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cceBS9je.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccF7ti7y.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc8g1acU.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc5NMGke.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc8X8nOy.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccNbjBlS.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccEPBffc.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccPhLe1u.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccO7xeXN.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccPAgYa7.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccmopSfu.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccdGy5oR.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc8hv5Kd.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccZHgMeA.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccekiN4W.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccDPx8Ti.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccgGYLNE.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccXCnN0Z.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cccr1Gml.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cc5lC2NG.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cckQNeo2.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccfOR0Br.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccGATEYQ.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccJyPTIg.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccs0PCmF.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccXynXg4.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\cceshilt.debug.temp.o
+LOAD C:\Users\Sergio\AppData\Local\Temp\ccHhYgKR.debug.temp.o
 LOAD main.o
 LOAD bn_affine_bg_animate_actions.o
 LOAD bn_audio_manager.o
@@ -1953,22 +1943,22 @@ LOAD C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/14.1.0/thumb/crtn.o
 OUTPUT(C:/GBA/GBA-cat-game/GBA-cat-game.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_ranges   0x00000000    0x1afd0
- .debug_ranges  0x00000000     0xbbb0 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans0.ltrans.o
- .debug_ranges  0x0000bbb0     0xacb8 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans1.ltrans.o
- .debug_ranges  0x00016868     0x3d90 C:\Users\Sergio\AppData\Local\Temp\ccfMMHfA.ltrans2.ltrans.o
- .debug_ranges  0x0001a5f8      0x490 bn_sprites_manager.bn_iwram.o
- .debug_ranges  0x0001aa88       0x98 bn_hw_common.bn_noflto.o
- .debug_ranges  0x0001ab20       0x48 bn_hw_game_pak.bn_ewram.o
- .debug_ranges  0x0001ab68      0x148 bn_hw_palettes.bn_iwram.o
- .debug_ranges  0x0001acb0       0xa0 bn_hw_sprite_tiles.bn_iwram.o
- .debug_ranges  0x0001ad50      0x128 tonc_bios.o
- .debug_ranges  0x0001ae78       0x20 tonc_memset.o
- .debug_ranges  0x0001ae98       0x30 lmul.o
- .debug_ranges  0x0001aec8       0x28 memcpy.o
- .debug_ranges  0x0001aef0       0x30 memmove.o
- .debug_ranges  0x0001af20       0x30 memset.o
- .debug_ranges  0x0001af50       0x20 rmemcpy.o
- .debug_ranges  0x0001af70       0x20 mm_mas.o
- .debug_ranges  0x0001af90       0x20 mm_main_gba.o
- .debug_ranges  0x0001afb0       0x20 mm_mixer_gba.o
+.debug_ranges   0x00000000    0x1b4b8
+ .debug_ranges  0x00000000    0x10340 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans0.ltrans.o
+ .debug_ranges  0x00010340     0x6f98 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans1.ltrans.o
+ .debug_ranges  0x000172d8     0x3808 C:\Users\Sergio\AppData\Local\Temp\cc0BIJru.ltrans2.ltrans.o
+ .debug_ranges  0x0001aae0      0x490 bn_sprites_manager.bn_iwram.o
+ .debug_ranges  0x0001af70       0x98 bn_hw_common.bn_noflto.o
+ .debug_ranges  0x0001b008       0x48 bn_hw_game_pak.bn_ewram.o
+ .debug_ranges  0x0001b050      0x148 bn_hw_palettes.bn_iwram.o
+ .debug_ranges  0x0001b198       0xa0 bn_hw_sprite_tiles.bn_iwram.o
+ .debug_ranges  0x0001b238      0x128 tonc_bios.o
+ .debug_ranges  0x0001b360       0x20 tonc_memset.o
+ .debug_ranges  0x0001b380       0x30 lmul.o
+ .debug_ranges  0x0001b3b0       0x28 memcpy.o
+ .debug_ranges  0x0001b3d8       0x30 memmove.o
+ .debug_ranges  0x0001b408       0x30 memset.o
+ .debug_ranges  0x0001b438       0x20 rmemcpy.o
+ .debug_ranges  0x0001b458       0x20 mm_mas.o
+ .debug_ranges  0x0001b478       0x20 mm_main_gba.o
+ .debug_ranges  0x0001b498       0x20 mm_mixer_gba.o
