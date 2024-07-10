@@ -28,6 +28,7 @@
 - Simple animate backgrounds (DONE) day 6
 - Re-desing some images and update placeholders (DONE) day 7
 - Added camera scroll (DONE) day 8
-- Collisions (WIP)
+- Collisions (WIP) day 9, 10, 11
+- Refator code day 12
 - Basic game logic
 - Re-write sprites to entities (WIP)
