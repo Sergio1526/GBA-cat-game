@@ -27,5 +27,7 @@ namespace catgame
             camera_action.update();
             bn::core::update();
         }
+        
+        camera.set_position(0, 0);
     }
 }
