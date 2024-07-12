@@ -16,7 +16,6 @@
 // Backgrounds
 #include "bn_regular_bg_items_simple_bg.h"
 #include "bn_regular_bg_items_clouds.h"
-#include "bn_regular_bg_items_cats_intro.h"
 
 // Sprites
 #include "bn_sprite_items_dino.h"
@@ -44,9 +43,9 @@ namespace catgame
         bn::vector<bn::sprite_ptr, 32> text_sprites;
 
         // Sprites
-        bn::sprite_ptr dino_sprite = bn::sprite_items::dino.create_sprite(20, 10);
+        bn::sprite_ptr dino_sprite = bn::sprite_items::dino.create_sprite(50, 50);
         bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(0, 0);
-        bn::sprite_ptr ninja_sprite = bn::sprite_items::ninja.create_sprite(0, 0);
+        bn::sprite_ptr ninja_sprite = bn::sprite_items::ninja.create_sprite(20, 20);
 
         bn::sprite_ptr limit_TL = bn::sprite_items::limit.create_sprite(0, 0);
         bn::sprite_ptr limit_TR = bn::sprite_items::limit.create_sprite(0, 255);
@@ -74,16 +73,8 @@ namespace catgame
         bn::sprite_animate_action<4> action = bn::create_sprite_animate_action_forever(
             ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
 
-        // Create outside window
-        bn::regular_bg_ptr cats_intro = bn::regular_bg_items::cats_intro.create_bg(8, 48);
-        bn::window outside_window = bn::window::outside();
-        outside_window.set_show_bg(cats_intro, false);
-
-        // Create window
-        bn::rect_window internal_window = bn::rect_window::internal();
-        internal_window.set_boundaries(-48, -96, 48, 96);
-        internal_window.set_visible(false);
-        BN_LOG("Window created");
+        bn::sprite_animate_action<2> cat_anim = bn::create_sprite_animate_action_forever(
+            cat_sprite, 16, bn::sprite_items::cat.tiles_item(), 0, 1);
 
         // Set camera
         cat_sprite.set_camera(camera);
@@ -96,6 +87,14 @@ namespace catgame
         limit_BL.set_camera(camera);
         limit_BR.set_camera(camera);
         limit_center.set_camera(camera);
+
+        // For Backgrounds
+        // ground.set_priority(2);
+        clouds_bg.set_priority(0);
+        // For sprites
+        cat_sprite.set_z_order(0);
+        dino_sprite.set_z_order(1);
+        ninja_sprite.set_z_order(1);
 
         while (!bn::keypad::start_pressed())
         {
@@ -129,25 +128,32 @@ namespace catgame
             action.update();
 
             // Handle movement
+            bool idle = true;
             if (bn::keypad::left_held())
             {
                 cat_new_position.set_x(cat_new_position.x() - 1);
                 cat_sprite.set_horizontal_flip(true);
+                idle = false;
             }
             else if (bn::keypad::right_held())
             {
                 cat_new_position.set_x(cat_new_position.x() + 1);
                 cat_sprite.set_horizontal_flip(false);
+                idle = false;
             }
 
             if (bn::keypad::up_held())
             {
                 cat_new_position.set_y(cat_new_position.y() - 1);
+                idle = false;
             }
             else if (bn::keypad::down_held())
             {
                 cat_new_position.set_y(cat_new_position.y() + 1);
+                idle = false;
             }
+
+            cat_anim.update();
 
             // Limits
             if (cat_new_position.x() < 0)
@@ -176,7 +182,7 @@ namespace catgame
             int tile_index = bn::regular_bg_map_cell_info(map_cell).tile_index();
             bn::string val = bn::to_string<32>(tile_index);
             text_generator.generate(0, -60, val, text_sprites);
-            if (tile_index == 1 || tile_index == 32 || tile_index == 33)
+            if (tile_index < 5)
             {
                 cat_position = cat_new_position;
             }
@@ -187,23 +193,14 @@ namespace catgame
                 BN_LOG("Cat pos: ", " X:", cat_position.x(), " Y:", cat_position.y());
                 BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
 
-                bn::regular_bg_map_cell map_cell = map_item.cell(cat_map_position);
-                int tile_index = bn::regular_bg_map_cell_info(map_cell).tile_index();
+                map_cell = map_item.cell(cat_map_position);
+                tile_index = bn::regular_bg_map_cell_info(map_cell).tile_index();
                 BN_LOG(tile_index);
             }
 
-            // For Backgrounds
-            // ground.set_priority(2);
-            clouds_bg.set_priority(0);
-            // For sprites
-            cat_sprite.set_z_order(0);
-            dino_sprite.set_z_order(1);
-            ninja_sprite.set_z_order(1);
-
             if (bn::keypad::a_pressed())
             {
-                BN_LOG("Toogle window");
-                internal_window.set_visible(!internal_window.visible());
+                //
             }
 
             // Animate cloud

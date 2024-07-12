@@ -33,7 +33,7 @@ int main()
             bn::core::update();
             break;
         case (catgame::game_phases::INTRO):
-            new catgame::intro();
+            new catgame::intro(text_generator);
             next_game_phase = catgame::game_phases::LVL1;
             bn::core::update();
             break;
