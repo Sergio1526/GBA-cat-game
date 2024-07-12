@@ -8,22 +8,22 @@ I decided to make a game about a random Cat that decides to go to the Gym
   For example use `make -j6` for six cores
 
 ## Posible Names:
-  - Cat-pocalypse
+  - CatPocalypse
   - Cat-quest
   - Gym-cat
   - Catventure
   - Cat-advance
 
 ## Instructions
-  - Butano setup: https://gvaliente.github.io/butano/getting_started.html
-  - mGBA: https://mgba.io/
+  - [Butano setup](https://gvaliente.github.io/butano/getting_started.html)
+  - [mGBA](https://mgba.io/)
 
 ## Libraries
-  - Butano: https://github.com/GValiente/butano
-  - DevKit PRO: https://devkitpro.org/
-  
+  - [Butano](https://github.com/GValiente/butano)
+  - [DevKit PRO](https://devkitpro.org/)
+
 ## Graphics
-  - Usenti https://www.coranac.com/projects/usenti/
+  - [Usenti](https://www.coranac.com/projects/usenti/)
 
 ## Dev plan
 ### Milestones
@@ -37,16 +37,16 @@ I decided to make a game about a random Cat that decides to go to the Gym
 - [x] Simple animate backgrounds day 6
 - [x] Re-desing some images and update placeholders day 7
 - [x] Added camera scroll day 8
-- [x] Collisions day 9, 10, 11 [Jono Shields post] https://jonoshields.com/post/day-13
-- [] Refator code day 12
-- [] Basic game logic
-- [] Re-write sprites to entities
-- [] Write story
-- [] Draw some new sprites
-- [] Add more details to world
-- [] Add gameplay
-- [] Add music
-- [] Add new GUI
+- [x] Collisions day 9, 10, 11 [Jono Shields post](https://jonoshields.com/post/day-13)
+- [ ] Refator code day 12
+- [ ] Basic game logic
+- [ ] Re-write sprites to entities
+- [ ] Write story
+- [ ] Draw some new sprites
+- [ ] Add more details to world
+- [ ] Add gameplay
+- [ ] Add music
+- [ ] Add new GUI
 
 ## Some initial dev screenshoots
 ### First week
