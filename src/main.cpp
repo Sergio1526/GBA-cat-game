@@ -12,39 +12,41 @@
 #include "catgame_scene.h"
 #include "catgame_lvl1.h"
 
-// Code
-bn::optional<catgame::game_phases> current_game_phase = catgame::game_phases::LOGO;
-catgame::game_phases next_game_phase;
-
 int main()
 {
     bn::core::init();
 
+    catgame::game_phases next_game_phase = catgame::game_phases::LOGO;
+
     bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
-    bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
 
     while (true)
     {
         switch (next_game_phase)
         {
         case (catgame::game_phases::LOGO):
-            new catgame::logo(camera);
-            next_game_phase = catgame::game_phases::INTRO;
-            bn::core::update();
-            break;
+        {
+            catgame::logo logo = catgame::logo();
+            bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
+            next_game_phase = logo.execute(camera);
+        }
+        break;
         case (catgame::game_phases::INTRO):
-            new catgame::intro(text_generator);
-            next_game_phase = catgame::game_phases::LVL1;
-            bn::core::update();
-            break;
+        {
+            catgame::intro intro = catgame::intro();
+            next_game_phase = intro.execute(text_generator);
+        }
+        break;
         case (catgame::game_phases::LVL1):
-            new catgame::lvl1(camera, text_generator);
-            next_game_phase = catgame::game_phases::INTRO;
-            bn::core::update();
-            break;
+        {
+            catgame::lvl1 lvl1 = catgame::lvl1();
+            next_game_phase = lvl1.execute(text_generator);
+        }
+        break;
         default:
             BN_ERROR("Invalid next scene: ");
             break;
         }
+        bn::core::update();
     }
 }

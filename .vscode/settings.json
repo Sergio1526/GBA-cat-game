@@ -5,6 +5,7 @@
         "type_traits": "cpp",
         "xstring": "cpp",
         "xutility": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "system_error": "cpp"
     }
 }

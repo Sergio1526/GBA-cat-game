@@ -3,10 +3,12 @@
 
 namespace catgame
 {
-    class logo : public scene{
-        public:
-            logo(bn::camera_ptr &camera);
-        private:
+    class logo : public scene
+    {
+    private:
 
+    public:
+        logo();
+        catgame::game_phases execute(bn::camera_ptr &camera);
     };
 }

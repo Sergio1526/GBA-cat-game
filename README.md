@@ -38,10 +38,10 @@ I decided to make a game about a random Cat that decides to go to the Gym
 - [x] Re-desing some images and update placeholders day 7
 - [x] Added camera scroll day 8
 - [x] Collisions day 9, 10, 11 [Jono Shields post](https://jonoshields.com/post/day-13)
-- [ ] Refator code day 12
-- [ ] Basic game logic
-- [ ] Re-write sprites to entities
-- [ ] Write story
+- [x] Refcator code day 12
+- [ ] Basic game logic day 13
+- [x] Re-write sprites to entities day 12
+- [x] Write story day 13
 - [ ] Draw some new sprites
 - [ ] Add more details to world
 - [ ] Add gameplay

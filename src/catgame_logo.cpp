@@ -8,10 +8,11 @@
 
 namespace catgame
 {
-    logo::logo(bn::camera_ptr &camera)
+    logo::logo(){}
+
+    catgame::game_phases logo::execute(bn::camera_ptr &camera)
     {
         BN_LOG("Logo scene");
-        current_game_phase = catgame::game_phases::LOGO;
         next_game_phase = catgame::game_phases::INTRO;
 
         bn::fixed amplitude = 10;
@@ -27,7 +28,7 @@ namespace catgame
             camera_action.update();
             bn::core::update();
         }
-        
         camera.set_position(0, 0);
+        return next_game_phase;
     }
 }

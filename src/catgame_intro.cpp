@@ -11,7 +11,9 @@
 
 namespace catgame
 {
-    intro::intro(bn::sprite_text_generator &text_generator){
+    intro::intro() {}
+    catgame::game_phases intro::execute(bn::sprite_text_generator &text_generator)
+    {
         BN_LOG("INTRO");
         current_game_phase = catgame::game_phases::INTRO;
         next_game_phase = catgame::game_phases::LVL1;
@@ -28,5 +30,6 @@ namespace catgame
         {
             bn::core::update();
         }
+        return next_game_phase;
     }
 }

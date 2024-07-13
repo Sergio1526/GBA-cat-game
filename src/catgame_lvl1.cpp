@@ -12,26 +12,29 @@
 #include "bn_rect_window_boundaries_hbe_ptr.h"
 #include "bn_log.h" //Remove on final version
 #include "bn_string.h"
+#include "bn_vector.h"
 
 // Backgrounds
 #include "bn_regular_bg_items_simple_bg.h"
 #include "bn_regular_bg_items_clouds.h"
 
 // Sprites
-#include "bn_sprite_items_dino.h"
 #include "bn_sprite_items_cat.h"
-#include "bn_sprite_items_ninja.h"
 #include "bn_sprite_items_limit.h"
-#include "bn_sprite_items_collider.h"
 
 // Common libraries
 #include "common_info.h"
 #include "common_variable_8x16_sprite_font.h"
 
+#include "catgame_enemy.h"
+#include "bn_sprite_items_collider.h"
+
 namespace catgame
 {
-    lvl1::lvl1(bn::camera_ptr &camera, bn::sprite_text_generator &text_generator)
+    lvl1::lvl1() {}
+    catgame::game_phases lvl1::execute(bn::sprite_text_generator &text_generator)
     {
+        bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
         // Set current scene
         current_game_phase = catgame::game_phases::LVL1;
         next_game_phase = catgame::game_phases::INTRO;
@@ -43,15 +46,18 @@ namespace catgame
         bn::vector<bn::sprite_ptr, 32> text_sprites;
 
         // Sprites
-        bn::sprite_ptr dino_sprite = bn::sprite_items::dino.create_sprite(50, 50);
         bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(0, 0);
-        bn::sprite_ptr ninja_sprite = bn::sprite_items::ninja.create_sprite(20, 20);
+
+        // Create enemies
+        bn::vector<enemy, 16> enemies = {};
+        enemies.push_back(enemy(camera, bn::point(10, 10)));
+        enemies.push_back(enemy(camera, bn::point(20, 20)));
+        enemies.push_back(enemy(camera, bn::point(30, 30)));
 
         bn::sprite_ptr limit_TL = bn::sprite_items::limit.create_sprite(0, 0);
         bn::sprite_ptr limit_TR = bn::sprite_items::limit.create_sprite(0, 255);
         bn::sprite_ptr limit_BL = bn::sprite_items::limit.create_sprite(255, 0);
         bn::sprite_ptr limit_BR = bn::sprite_items::limit.create_sprite(255, 255);
-        bn::sprite_ptr limit_center = bn::sprite_items::limit.create_sprite(128, 128);
 
         // Backgrounds
         bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(128, 128);
@@ -70,31 +76,22 @@ namespace catgame
         clouds_bg.set_blending_enabled(true);
 
         // Animations
-        bn::sprite_animate_action<4> action = bn::create_sprite_animate_action_forever(
-            ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
-
         bn::sprite_animate_action<2> cat_anim = bn::create_sprite_animate_action_forever(
             cat_sprite, 16, bn::sprite_items::cat.tiles_item(), 0, 1);
 
         // Set camera
         cat_sprite.set_camera(camera);
-        dino_sprite.set_camera(camera);
-        ninja_sprite.set_camera(camera);
         ground.set_camera(camera);
         clouds_bg.set_camera(camera);
         limit_TL.set_camera(camera);
         limit_TR.set_camera(camera);
         limit_BL.set_camera(camera);
         limit_BR.set_camera(camera);
-        limit_center.set_camera(camera);
 
         // For Backgrounds
-        // ground.set_priority(2);
         clouds_bg.set_priority(0);
         // For sprites
         cat_sprite.set_z_order(0);
-        dino_sprite.set_z_order(1);
-        ninja_sprite.set_z_order(1);
 
         while (!bn::keypad::start_pressed())
         {
@@ -102,30 +99,6 @@ namespace catgame
             text_generator.generate(0, -40, "GUI", text_sprites);
 
             bn::point cat_new_position = cat_position;
-
-            if (bn::keypad::left_pressed())
-            {
-                action = bn::create_sprite_animate_action_forever(
-                    ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 8, 9, 10, 11);
-            }
-            else if (bn::keypad::right_pressed())
-            {
-                action = bn::create_sprite_animate_action_forever(
-                    ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 12, 13, 14, 15);
-            }
-
-            if (bn::keypad::up_pressed())
-            {
-                action = bn::create_sprite_animate_action_forever(
-                    ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 4, 5, 6, 7);
-            }
-            else if (bn::keypad::down_pressed())
-            {
-                action = bn::create_sprite_animate_action_forever(
-                    ninja_sprite, 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
-            }
-
-            action.update();
 
             // Handle movement
             bool idle = true;
@@ -200,7 +173,15 @@ namespace catgame
 
             if (bn::keypad::a_pressed())
             {
-                //
+                for (enemy &enemy : enemies)
+                {
+                    enemy.spawn();
+                }
+            }
+
+            for (enemy &enemy : enemies)
+            {
+                enemy.update();
             }
 
             // Animate cloud
@@ -211,6 +192,6 @@ namespace catgame
 
             bn::core::update();
         }
-        camera.set_position(0, 0);
+        return next_game_phase;
     }
 }
