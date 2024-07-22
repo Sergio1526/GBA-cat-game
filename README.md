@@ -24,6 +24,7 @@ I decided to make a game about a random Cat that decides to go to the Gym
 
 ## Graphics
   - [Usenti](https://www.coranac.com/projects/usenti/)
+  - [Jam 24 Assets](https://github.com/gbadev-org/gbajam24-assets)
 
 ## Dev plan
 ### Milestones
@@ -55,3 +56,7 @@ I decided to make a game about a random Cat that decides to go to the Gym
 ### Second week
 ![Collisions works](/images/GBA-cat-game-3.png)
 ![Collisions works](/images/GBA-cat-game-4.png)
+
+## Licenses
+Logos and banners made by GBA Jam 2024 Organizers, licensed under [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/).
+"JAM 2024" logo text font — Over Drive by [Graphic Arts Unit](https://www.graphicartsunit.com/gaupra/index.html).
