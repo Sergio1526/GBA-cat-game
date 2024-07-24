@@ -8,12 +8,12 @@ namespace catgame
 {
     class hitbox
     {
-    private:
-        bn::fixed_point _pos;
-        bn::fixed width, height;
-    public:
-        hitbox(bn::fixed x, bn::fixed y, bn::fixed width, bn::fixed height);
-        bn::fixed_point pos();
+        private:
+            bn::fixed_point _pos;
+            bn::fixed width, height;
+        public:
+            hitbox(bn::fixed x, bn::fixed y, bn::fixed width, bn::fixed height);
+            bn::fixed_point pos();
     };
 }
 #endif

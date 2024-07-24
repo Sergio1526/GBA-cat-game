@@ -24,7 +24,7 @@ namespace catgame
 
         text_generator.generate(0, 60, "PRESS START", text_sprites);
 
-        bn::regular_bg_ptr cats_intro = bn::regular_bg_items::cats_intro.create_bg(0, 10);
+        bn::regular_bg_ptr cats_intro = bn::regular_bg_items::cats_intro.create_bg(0, 18);
 
         while (!bn::keypad::start_pressed())
         {

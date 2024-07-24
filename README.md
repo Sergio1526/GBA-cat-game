@@ -56,6 +56,10 @@ I decided to make a game about a random Cat that decides to go to the Gym
 ### Second week
 ![Collisions works](/images/GBA-cat-game-3.png)
 ![Collisions works](/images/GBA-cat-game-4.png)
+### Third week
+![Rework sprite works](/images/GBA-cat-game-5.png)
+![Rework logos works](/images/GBA-cat-game-6.png)
+![Rework intro works](/images/GBA-cat-game-7.png)
 
 ## Licenses
 Logos and banners made by GBA Jam 2024 Organizers, licensed under [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/).

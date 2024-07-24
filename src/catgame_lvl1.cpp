@@ -39,8 +39,6 @@ namespace catgame
         current_game_phase = catgame::game_phases::LVL1;
         next_game_phase = catgame::game_phases::INTRO;
 
-        BN_LOG("Second scene");
-
         // Show text
         text_generator.set_center_alignment();
         bn::vector<bn::sprite_ptr, 32> text_sprites;
