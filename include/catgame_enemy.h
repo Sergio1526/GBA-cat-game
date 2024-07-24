@@ -13,14 +13,17 @@ namespace catgame
     private:
         bn::optional<bn::sprite_ptr> _sprite;
         bn::optional<bn::sprite_animate_action<4>> _action;
-        int _hp;
-        int _velocity;
+        int _hp = 100;
+        bn::fixed _velocity = 0.5;
+        int _view_distance = 10;
         bool _dead = false;
+        bool _is_near_player = false;
 
     public:
-        int _mov_count = 0;
-        enemy(bn::camera_ptr camera, bn::point pos);
+        enemy(bn::camera_ptr camera, bn::point pos, bn::sprite_ptr player_sprite);
         void spawn();
+        void set_view_distance(bn::sprite_ptr player_pos);
+        bool near_player(bn::fixed_point player_pos);
         void update();
     };
 }

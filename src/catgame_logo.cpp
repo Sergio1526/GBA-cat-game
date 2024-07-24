@@ -1,5 +1,4 @@
 #include "catgame_logo.h"
-#include "bn_log.h"
 #include "bn_core.h"
 #include "bn_keypad.h"
 #include "bn_camera_actions.h"
@@ -13,7 +12,6 @@ namespace catgame
 
     catgame::game_phases logo::execute(bn::camera_ptr &camera)
     {
-        BN_LOG("Logo scene");
         next_game_phase = catgame::game_phases::INTRO;
 
         bn::fixed amplitude = 60;

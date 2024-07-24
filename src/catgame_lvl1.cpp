@@ -13,6 +13,7 @@
 #include "bn_log.h" //Remove on final version
 #include "bn_string.h"
 #include "bn_vector.h"
+#include "bn_backdrop.h"
 
 // Backgrounds
 #include "bn_regular_bg_items_simple_bg.h"
@@ -34,6 +35,7 @@ namespace catgame
     lvl1::lvl1() {}
     catgame::game_phases lvl1::execute(bn::sprite_text_generator &text_generator)
     {
+        bn::backdrop::set_color(bn::color(0, 0, 0));
         bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
         // Set current scene
         current_game_phase = catgame::game_phases::LVL1;
@@ -48,26 +50,24 @@ namespace catgame
 
         // Create enemies
         bn::vector<enemy, 16> enemies = {};
-        enemies.push_back(enemy(camera, bn::point(10, 10)));
-        enemies.push_back(enemy(camera, bn::point(20, 20)));
-        enemies.push_back(enemy(camera, bn::point(30, 30)));
+        enemies.push_back(enemy(camera, bn::point(100, 100), cat_sprite));
+        enemies.push_back(enemy(camera, bn::point(200, 50), cat_sprite));
+        enemies.push_back(enemy(camera, bn::point(160, 140), cat_sprite));
 
+        // Create limits
         bn::sprite_ptr limit_TL = bn::sprite_items::limit.create_sprite(0, 0);
         bn::sprite_ptr limit_TR = bn::sprite_items::limit.create_sprite(0, 255);
         bn::sprite_ptr limit_BL = bn::sprite_items::limit.create_sprite(255, 0);
         bn::sprite_ptr limit_BR = bn::sprite_items::limit.create_sprite(255, 255);
 
         // Backgrounds
-        bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(128, 128);
+        bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256);    //Center
         // Generate map for collisions
         const bn::regular_bg_map_item &map_item = bn::regular_bg_items::simple_bg.map_item();
-        bn::regular_bg_map_cell valid_map_cell = map_item.cell(0, 0); // Set valid cell
-        int valid_tile_index = bn::regular_bg_map_cell_info(valid_map_cell).tile_index();
-        BN_LOG("Valid: ", valid_tile_index);
 
         // Set player at middle of the map
         bn::point cat_position(128, 128);
-        bn::point cat_map_position(16, 16);
+        bn::point cat_map_position(16, 16); //Pos divide by 8 (tiles size)
 
         bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
         bn::blending::set_transparency_alpha(0.1);
@@ -173,12 +173,13 @@ namespace catgame
             {
                 for (enemy &enemy : enemies)
                 {
-                    enemy.spawn();
+                    //enemy.near_player(cat_position);
                 }
             }
 
             for (enemy &enemy : enemies)
             {
+                enemy.near_player(cat_position);
                 enemy.update();
             }
 
