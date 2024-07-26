@@ -28,6 +28,7 @@
 #include "common_variable_8x16_sprite_font.h"
 
 #include "catgame_enemy.h"
+#include "catgame_player.h"
 #include "bn_sprite_items_collider.h"
 
 namespace catgame
@@ -48,17 +49,14 @@ namespace catgame
         // Sprites
         bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(0, 0);
 
+        // Create player
+        catgame::player _player = player(camera, bn::point(128, 128));
+
         // Create enemies
         bn::vector<enemy, 16> enemies = {};
         enemies.push_back(enemy(camera, bn::point(100, 100), cat_sprite));
         enemies.push_back(enemy(camera, bn::point(200, 50), cat_sprite));
         enemies.push_back(enemy(camera, bn::point(160, 140), cat_sprite));
-
-        // Create limits
-        bn::sprite_ptr limit_TL = bn::sprite_items::limit.create_sprite(0, 0);
-        bn::sprite_ptr limit_TR = bn::sprite_items::limit.create_sprite(0, 255);
-        bn::sprite_ptr limit_BL = bn::sprite_items::limit.create_sprite(255, 0);
-        bn::sprite_ptr limit_BR = bn::sprite_items::limit.create_sprite(255, 255);
 
         // Backgrounds
         bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256);    //Center
@@ -81,10 +79,6 @@ namespace catgame
         cat_sprite.set_camera(camera);
         ground.set_camera(camera);
         clouds_bg.set_camera(camera);
-        limit_TL.set_camera(camera);
-        limit_TR.set_camera(camera);
-        limit_BL.set_camera(camera);
-        limit_BR.set_camera(camera);
 
         // For Backgrounds
         clouds_bg.set_priority(0);

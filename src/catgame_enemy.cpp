@@ -3,7 +3,6 @@
 #include "bn_point.h"
 #include "bn_keypad.h"
 #include "bn_sprite_animate_actions.h"
-#include "bn_sprite_items_dino.h"
 #include "bn_sprite_items_ninja.h"
 
 // Common libraries
