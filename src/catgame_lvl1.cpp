@@ -18,6 +18,7 @@
 // Backgrounds
 #include "bn_regular_bg_items_simple_bg.h"
 #include "bn_regular_bg_items_clouds.h"
+#include "bn_regular_bg_map_ptr.h"
 
 // Sprites
 #include "bn_sprite_items_cat.h"
@@ -49,27 +50,27 @@ namespace catgame
         // Sprites
         bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(0, 0);
 
+        // Backgrounds
+        bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256);    //Center
+        // Generate map for collisions
+        const bn::regular_bg_map_item &map_item = bn::regular_bg_items::simple_bg.map_item();
+
+        bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
+        bn::blending::set_transparency_alpha(0.1);
+        clouds_bg.set_blending_enabled(true);
+
+        // Set player at middle of the map
+        bn::point cat_position(128, 128);
+        bn::point cat_map_position(16, 16); //Pos divide by 8 (tiles size)
+
         // Create player
-        catgame::player _player = player(camera, bn::point(128, 128));
+        catgame::player _player = player(camera, cat_position, cat_map_position);
 
         // Create enemies
         bn::vector<enemy, 16> enemies = {};
         enemies.push_back(enemy(camera, bn::point(100, 100), cat_sprite));
         enemies.push_back(enemy(camera, bn::point(200, 50), cat_sprite));
         enemies.push_back(enemy(camera, bn::point(160, 140), cat_sprite));
-
-        // Backgrounds
-        bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256);    //Center
-        // Generate map for collisions
-        const bn::regular_bg_map_item &map_item = bn::regular_bg_items::simple_bg.map_item();
-
-        // Set player at middle of the map
-        bn::point cat_position(128, 128);
-        bn::point cat_map_position(16, 16); //Pos divide by 8 (tiles size)
-
-        bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
-        bn::blending::set_transparency_alpha(0.1);
-        clouds_bg.set_blending_enabled(true);
 
         // Animations
         bn::sprite_animate_action<2> cat_anim = bn::create_sprite_animate_action_forever(
@@ -163,19 +164,13 @@ namespace catgame
                 BN_LOG(tile_index);
             }
 
-            if (bn::keypad::a_pressed())
-            {
-                for (enemy &enemy : enemies)
-                {
-                    //enemy.near_player(cat_position);
-                }
-            }
-
             for (enemy &enemy : enemies)
             {
                 enemy.near_player(cat_position);
                 enemy.update();
             }
+
+            _player.update();
 
             // Animate cloud
             clouds_bg.set_position(clouds_bg.x() + 0.1, clouds_bg.y() + 0.1);

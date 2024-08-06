@@ -43,6 +43,7 @@ I decided to make a game about a random Cat that decides to go to the Gym
 - [ ] Basic game logic day 13
 - [x] Re-write sprites to entities day 12
 - [x] Write story day 13
+- [x] Re-write player entity day 14
 - [ ] Draw some new sprites
 - [ ] Add more details to world
 - [ ] Add gameplay

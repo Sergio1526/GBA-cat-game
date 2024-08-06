@@ -5,6 +5,8 @@
 #include "bn_sprite_animate_actions.h"
 #include "bn_camera_ptr.h"
 #include "bn_point.h"
+#include "bn_regular_bg_ptr.h"
+#include "bn_regular_bg_map_item.h"
 
 namespace catgame
 {
@@ -19,9 +21,11 @@ namespace catgame
         int _view_distance = 10;
         bool _dead = false;
         bool _is_near_player = false;
+        bn::point _position;
+        bn::point _map_position;
 
     public:
-        player(bn::camera_ptr camera, bn::point pos);
+        player(bn::camera_ptr &camera, bn::point &position, bn::point &map_position);
         void update();
     };
 
