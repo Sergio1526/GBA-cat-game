@@ -28,22 +28,26 @@ I decided to make a game about a random Cat that decides to go to the Gym
 
 ## Dev plan
 ### Milestones
-- [x] Run butano day 1
-- [x] Add some texts day 2
-- [x] Add background day 3
-- [x] Add sprite day 4
-- [x] Read input day 4
-- [x] Move sprite day 5
-- [x] Animate sprite day 6
-- [x] Simple animate backgrounds day 6
-- [x] Re-desing some images and update placeholders day 7
-- [x] Added camera scroll day 8
-- [x] Collisions day 9, 10, 11 [Jono Shields post](https://jonoshields.com/post/day-13)
-- [x] Refcator code day 12
-- [ ] Basic game logic day 13
-- [x] Re-write sprites to entities day 12
-- [x] Write story day 13
-- [x] Re-write player entity day 14
+Working days on the project
+- [x] Run butano (day 1)
+- [x] Add some texts (day 2)
+- [x] Add background (day 3)
+- [x] Add sprite (day 4)
+- [x] Read input (day 4)
+- [x] Move sprite (day 5)
+- [x] Animate sprite (day 6)
+- [x] Simple animate backgrounds (day 6)
+- [x] Re-desing some images and update placeholders (day 7)
+- [x] Added camera scroll (day 8)
+- [x] Collisions (day 9, 10, 11) [Jono Shields post](https://jonoshields.com/post/day-13)
+- [x] Refcator code (day 12)
+- [x] Basic game (logic day 13)
+- [x] Re-write sprites to entities (day 12)
+- [x] Write story (day 13)
+- [x] Re-write player entity (day 14)
+- [x] Re-write player entity (day 15)
+- [x] Enemies detects player and react (day 16)
+- [x] Re-write level logic (day 16)
 - [ ] Draw some new sprites
 - [ ] Add more details to world
 - [ ] Add gameplay

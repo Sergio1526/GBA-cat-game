@@ -66,9 +66,9 @@ namespace catgame
 
         // Create enemies
         bn::vector<enemy, 16> enemies = {};
-        enemies.push_back(enemy(camera, bn::point(100, 100), _player.sprite()));
-        enemies.push_back(enemy(camera, bn::point(200, 50), _player.sprite()));
-        enemies.push_back(enemy(camera, bn::point(160, 140), _player.sprite()));
+        enemies.push_back(enemy(camera, bn::point(100, 80), _player.sprite()));
+        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite()));
+        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite()));
 
         // Set camera
         ground.set_camera(camera);
@@ -77,20 +77,26 @@ namespace catgame
         // For Backgrounds
         clouds_bg.set_priority(0);
 
-        while (!bn::keypad::start_pressed())
+        while (!_player.dead())
         {
             text_sprites.clear();
-            text_generator.generate(0, -30, "GUI", text_sprites);
-            //bn::string val = bn::to_string<32>(tile_index);
-            //text_generator.generate(0, -60, val, text_sprites);
+            text_generator.generate(0, -70, "GUI", text_sprites);
+            bn::string val = bn::to_string<32>(_player.health());
+            text_generator.generate(0, -60, val, text_sprites);
             
+            int pos = _player.map_cell(map_item);
+            val = bn::to_string<32>(pos);
+            text_generator.generate(0, -50, val, text_sprites);
+
             for (enemy &enemy : enemies)
             {
-                enemy.near_player(_player.position());
-                enemy.update();
+                if(enemy.near_player(_player.position())){
+                    _player.hurt(1);
+                }
+                enemy.update(map_item);
             }
 
-            _player.update();
+            _player.update(map_item);
             _player.animate();
 
             // Animate cloud

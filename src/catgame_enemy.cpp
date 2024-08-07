@@ -4,6 +4,10 @@
 #include "bn_keypad.h"
 #include "bn_sprite_animate_actions.h"
 #include "bn_sprite_items_ninja.h"
+#include "bn_regular_bg_map_item.h"
+#include "bn_regular_bg_map_cell.h"
+#include "bn_regular_bg_map_cell_info.h"
+#include "bn_random.h"
 
 // Common libraries
 #include "common_info.h"
@@ -14,9 +18,12 @@
 
 namespace catgame
 {
-    enemy::enemy(bn::camera_ptr camera, bn::point pos, bn::sprite_ptr player_sprite)
+    enemy::enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite)
     {
-        _sprite = bn::sprite_items::ninja.create_sprite(pos);
+        _position = position;
+        _map_position.set_x(_position.x() / 8); // Pos divide by 8 (tiles size)
+        _map_position.set_y(_position.y() / 8);
+        _sprite = bn::sprite_items::ninja.create_sprite(_position);
         _sprite.value().set_camera(camera);
         _sprite.value().set_z_order(1);
         _action = bn::create_sprite_animate_action_forever(
@@ -32,26 +39,64 @@ namespace catgame
             if (dist_y < _view_distance)
             {
                 _is_near_player = true;
-                return true;
+                return _is_near_player;
             }
         }
         _is_near_player = false;
-        return false;
+        return _is_near_player;
     }
     void enemy::set_view_distance(bn::sprite_ptr player_sprite)
     {
         _view_distance = _sprite.value().dimensions().width() + _view_distance;
     }
-    void enemy::update()
+    int enemy::map_cell(const bn::regular_bg_map_item &map)
+    {
+        bn::regular_bg_map_cell map_cell = map.cell(_map_position);
+        int tile_index = bn::regular_bg_map_cell_info(map_cell).tile_index();
+        return tile_index;
+    }
+    bn::random random = bn::random();
+    void enemy::update(const bn::regular_bg_map_item &map)
     {
         if (_is_near_player)
         {
-            _sprite.value().set_position(_sprite.value().position().x(), _sprite.value().position().y() + _velocity);
+            //
         }
-        /*if (bn::keypad::a_pressed())
+        // AI
+        else
         {
-            BN_LOG("Im an enemy! ", _mov_count);
-        }*/
+            bn::point _new_position = _position;
+            // Calculate position in map
+            if (_direction == 0)
+            {
+                _new_position.set_x(_new_position.x() + 1);
+            }
+            else if (_direction == 1)
+            {
+                _new_position.set_x(_new_position.x() - 1);
+            }
+            else if (_direction == 2)
+            {
+                _new_position.set_y(_new_position.y() - 1);
+            }
+            else if (_direction == 3)
+            {
+                _new_position.set_y(_new_position.y() + 1);
+            }
+            _map_position.set_x(_new_position.x() / 8);
+            _map_position.set_y(_new_position.y() / 8);
+            // Update position
+            if (map_cell(map) < 5)
+            {
+                _position = _new_position;
+            }
+            else
+            {
+                _direction = random.get_int(4);
+            }
+            _sprite.value().set_position(_position.x(), _position.y());
+        }
+
         if (_action.has_value() && !_action.value().done())
         {
             _action.value().update();
