@@ -7,51 +7,73 @@
 #include "bn_regular_bg_map_item.h"
 #include "bn_regular_bg_item.h"
 #include "bn_regular_bg_ptr.h"
+#include "bn_log.h" //Remove on final version
 
 namespace catgame
 {
 
-    player::player(bn::camera_ptr &camera, bn::point &position, bn::point &map_position)
+    player::player(bn::camera_ptr &camera, bn::point &position)
     {
         _position = position;
-        _map_position = map_position;
+        _map_position.set_x(position.x() / 8); // Pos divide by 8 (tiles size)
+        _map_position.set_y(position.y() / 8);
         _sprite = bn::sprite_items::cat.create_sprite(_position);
         _sprite.value().set_camera(camera);
         _sprite.value().set_z_order(1);
-        _action = bn::create_sprite_animate_action_forever(
-            _sprite.value(), 16, bn::sprite_items::cat.tiles_item(), 0, 1);
         // Generate map for collisions
-        //const bn::regular_bg_map_item &map_item = bg;
+        // const bn::regular_bg_map_item &map_item = bg;
+    }
+
+    bn::sprite_ptr player::sprite()
+    {
+        return _sprite.value();
+    }
+
+    bn::fixed_point player::position()
+    {
+        return _position;
+    }
+
+    void player::animate()
+    {
+        if (_idle)
+        {
+            _action = bn::create_sprite_animate_action_forever(
+                _sprite.value(), 16, bn::sprite_items::cat.tiles_item(), 0, 1);
+        }
+        if (_action.has_value() && !_action.value().done())
+        {
+            _action.value().update();
+        }
     }
 
     void player::update()
     {
-
         bn::point _new_position = _position;
 
         // Handle movement
-        bool idle = true;
+        _idle = true;
         if (bn::keypad::left_held())
         {
             _new_position.set_x(_new_position.x() - 1);
             _sprite.value().set_horizontal_flip(true);
-            idle = false;
+            _idle = false;
         }
         else if (bn::keypad::right_held())
         {
             _new_position.set_x(_new_position.x() + 1);
             _sprite.value().set_horizontal_flip(false);
-            idle = false;
+            _idle = false;
         }
         if (bn::keypad::up_held())
         {
             _new_position.set_y(_new_position.y() - 1);
-            idle = false;
+            _idle = false;
         }
         else if (bn::keypad::down_held())
         {
             _new_position.set_y(_new_position.y() + 1);
-            idle = false;
+            _idle = false;
         }
         // Calculate position in map
         _map_position.set_x(_new_position.x() / 8);
@@ -64,10 +86,13 @@ namespace catgame
         _position = _new_position;
         //}
         _sprite.value().set_position(_position.x(), _position.y());
-        // Animate
-        if (_action.has_value() && !_action.value().done())
+
+        if (bn::keypad::a_pressed())
         {
-            _action.value().update();
+        }
+
+        if (bn::keypad::b_pressed())
+        {
         }
     }
 

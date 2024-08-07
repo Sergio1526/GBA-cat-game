@@ -19,14 +19,18 @@ namespace catgame
         int _hp = 100;
         bn::fixed _velocity = 0.5;
         int _view_distance = 10;
+        bool _idle = true;
         bool _dead = false;
         bool _is_near_player = false;
         bn::point _position;
         bn::point _map_position;
 
     public:
-        player(bn::camera_ptr &camera, bn::point &position, bn::point &map_position);
+        player(bn::camera_ptr &camera, bn::point &position);
         void update();
+        void animate();
+        [[nodiscard]] bn::fixed_point position();
+        [[nodiscard]] bn::sprite_ptr sprite();
     };
 
 }

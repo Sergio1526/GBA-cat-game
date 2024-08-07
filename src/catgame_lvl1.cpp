@@ -21,7 +21,6 @@
 #include "bn_regular_bg_map_ptr.h"
 
 // Sprites
-#include "bn_sprite_items_cat.h"
 #include "bn_sprite_items_limit.h"
 
 // Common libraries
@@ -48,7 +47,7 @@ namespace catgame
         bn::vector<bn::sprite_ptr, 32> text_sprites;
 
         // Sprites
-        bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(0, 0);
+        
 
         // Backgrounds
         bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256);    //Center
@@ -60,123 +59,45 @@ namespace catgame
         clouds_bg.set_blending_enabled(true);
 
         // Set player at middle of the map
-        bn::point cat_position(128, 128);
-        bn::point cat_map_position(16, 16); //Pos divide by 8 (tiles size)
+        bn::point start_position(128, 128);
 
         // Create player
-        catgame::player _player = player(camera, cat_position, cat_map_position);
+        catgame::player _player = player(camera, start_position);
 
         // Create enemies
         bn::vector<enemy, 16> enemies = {};
-        enemies.push_back(enemy(camera, bn::point(100, 100), cat_sprite));
-        enemies.push_back(enemy(camera, bn::point(200, 50), cat_sprite));
-        enemies.push_back(enemy(camera, bn::point(160, 140), cat_sprite));
-
-        // Animations
-        bn::sprite_animate_action<2> cat_anim = bn::create_sprite_animate_action_forever(
-            cat_sprite, 16, bn::sprite_items::cat.tiles_item(), 0, 1);
+        enemies.push_back(enemy(camera, bn::point(100, 100), _player.sprite()));
+        enemies.push_back(enemy(camera, bn::point(200, 50), _player.sprite()));
+        enemies.push_back(enemy(camera, bn::point(160, 140), _player.sprite()));
 
         // Set camera
-        cat_sprite.set_camera(camera);
         ground.set_camera(camera);
         clouds_bg.set_camera(camera);
 
         // For Backgrounds
         clouds_bg.set_priority(0);
-        // For sprites
-        cat_sprite.set_z_order(0);
 
         while (!bn::keypad::start_pressed())
         {
             text_sprites.clear();
-            text_generator.generate(0, -40, "GUI", text_sprites);
-
-            bn::point cat_new_position = cat_position;
-
-            // Handle movement
-            bool idle = true;
-            if (bn::keypad::left_held())
-            {
-                cat_new_position.set_x(cat_new_position.x() - 1);
-                cat_sprite.set_horizontal_flip(true);
-                idle = false;
-            }
-            else if (bn::keypad::right_held())
-            {
-                cat_new_position.set_x(cat_new_position.x() + 1);
-                cat_sprite.set_horizontal_flip(false);
-                idle = false;
-            }
-
-            if (bn::keypad::up_held())
-            {
-                cat_new_position.set_y(cat_new_position.y() - 1);
-                idle = false;
-            }
-            else if (bn::keypad::down_held())
-            {
-                cat_new_position.set_y(cat_new_position.y() + 1);
-                idle = false;
-            }
-
-            cat_anim.update();
-
-            // Limits
-            if (cat_new_position.x() < 0)
-            {
-                cat_new_position.set_x(0);
-            }
-            if (cat_new_position.x() > ground.dimensions().width())
-            {
-                cat_new_position.set_x(ground.dimensions().width());
-            }
-            if (cat_new_position.y() < 0)
-            {
-                cat_new_position.set_y(0);
-            }
-            if (cat_new_position.y() > ground.dimensions().height())
-            {
-                cat_new_position.set_y(ground.dimensions().height());
-            }
-
-            // Calculate map position
-            cat_map_position.set_x(cat_new_position.x() / 8);
-            cat_map_position.set_y(cat_new_position.y() / 8);
-
-            // Update position
-            bn::regular_bg_map_cell map_cell = map_item.cell(cat_map_position);
-            int tile_index = bn::regular_bg_map_cell_info(map_cell).tile_index();
-            bn::string val = bn::to_string<32>(tile_index);
-            text_generator.generate(0, -60, val, text_sprites);
-            if (tile_index < 5)
-            {
-                cat_position = cat_new_position;
-            }
-            cat_sprite.set_position(cat_position.x(), cat_position.y());
-
-            if (bn::keypad::b_pressed())
-            {
-                BN_LOG("Cat pos: ", " X:", cat_position.x(), " Y:", cat_position.y());
-                BN_LOG("Map pos: ", " X:", cat_map_position.x(), " Y:", cat_map_position.y());
-
-                map_cell = map_item.cell(cat_map_position);
-                tile_index = bn::regular_bg_map_cell_info(map_cell).tile_index();
-                BN_LOG(tile_index);
-            }
-
+            text_generator.generate(0, -30, "GUI", text_sprites);
+            //bn::string val = bn::to_string<32>(tile_index);
+            //text_generator.generate(0, -60, val, text_sprites);
+            
             for (enemy &enemy : enemies)
             {
-                enemy.near_player(cat_position);
+                enemy.near_player(_player.position());
                 enemy.update();
             }
 
             _player.update();
+            _player.animate();
 
             // Animate cloud
             clouds_bg.set_position(clouds_bg.x() + 0.1, clouds_bg.y() + 0.1);
 
             // Update camera pos
-            camera.set_position(cat_position.x(), cat_position.y());
+            camera.set_position(_player.position());
 
             bn::core::update();
         }
