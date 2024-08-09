@@ -48,6 +48,8 @@ Working days on the project
 - [x] Re-write player entity (day 15)
 - [x] Enemies detects player and react (day 16)
 - [x] Re-write level logic (day 16)
+- [x] Added new levels and triggers (day 17)
+- [ ] Plan some gameplay and minigames (day 18)
 - [ ] Draw some new sprites
 - [ ] Add more details to world
 - [ ] Add gameplay

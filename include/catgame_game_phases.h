@@ -9,6 +9,9 @@ namespace catgame
         INTRO,
         MAIN_MENU,
         LVL1,
+        LVL2,
+        GYM,
+        GAMEOVER,
         END
     };
 }

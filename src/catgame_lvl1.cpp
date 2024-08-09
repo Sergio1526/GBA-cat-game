@@ -14,6 +14,7 @@
 #include "bn_string.h"
 #include "bn_vector.h"
 #include "bn_backdrop.h"
+#include "bn_sprite_items_collider.h"
 
 // Backgrounds
 #include "bn_regular_bg_items_simple_bg.h"
@@ -21,7 +22,7 @@
 #include "bn_regular_bg_map_ptr.h"
 
 // Sprites
-#include "bn_sprite_items_limit.h"
+#include "bn_sprite_items_gym.h"
 
 // Common libraries
 #include "common_info.h"
@@ -29,7 +30,7 @@
 
 #include "catgame_enemy.h"
 #include "catgame_player.h"
-#include "bn_sprite_items_collider.h"
+#include "catgame_trigger.h"
 
 namespace catgame
 {
@@ -47,12 +48,14 @@ namespace catgame
         bn::vector<bn::sprite_ptr, 32> text_sprites;
 
         // Sprites
-        
 
         // Backgrounds
-        bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256);    //Center
+        bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256); // Center
         // Generate map for collisions
         const bn::regular_bg_map_item &map_item = bn::regular_bg_items::simple_bg.map_item();
+
+        //Set sprites
+        bn::sprite_ptr gym_sprite = bn::sprite_items::gym.create_sprite(bn::point(200, 120));
 
         bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
         bn::blending::set_transparency_alpha(0.1);
@@ -70,9 +73,14 @@ namespace catgame
         enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite()));
         enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite()));
 
+        // Create triggers
+        catgame::trigger gym_door = trigger(camera, bn::point(200, 150));
+
         // Set camera
         ground.set_camera(camera);
         clouds_bg.set_camera(camera);
+
+        gym_sprite.set_camera(camera);
 
         // For Backgrounds
         clouds_bg.set_priority(0);
@@ -83,14 +91,15 @@ namespace catgame
             text_generator.generate(0, -70, "GUI", text_sprites);
             bn::string val = bn::to_string<32>(_player.health());
             text_generator.generate(0, -60, val, text_sprites);
-            
+
             int pos = _player.map_cell(map_item);
             val = bn::to_string<32>(pos);
             text_generator.generate(0, -50, val, text_sprites);
 
             for (enemy &enemy : enemies)
             {
-                if(enemy.near_player(_player.position())){
+                if (enemy.near_player(_player.position()))
+                {
                     _player.hurt(1);
                 }
                 enemy.update(map_item);
@@ -98,6 +107,12 @@ namespace catgame
 
             _player.update(map_item);
             _player.animate();
+
+            if(gym_door.near_player(_player.position())){
+                BN_LOG("Near GYM!");
+                next_game_phase = catgame::game_phases::GYM;
+                break;
+            }
 
             // Animate cloud
             clouds_bg.set_position(clouds_bg.x() + 0.1, clouds_bg.y() + 0.1);

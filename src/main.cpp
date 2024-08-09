@@ -11,6 +11,8 @@
 #include "catgame_logo.h"
 #include "catgame_scene.h"
 #include "catgame_lvl1.h"
+#include "catgame_lvl2.h"
+#include "catgame_lvl_gym.h"
 
 int main()
 {
@@ -41,6 +43,18 @@ int main()
         {
             catgame::lvl1 lvl1 = catgame::lvl1();
             next_game_phase = lvl1.execute(text_generator);
+        }
+        break;
+        case (catgame::game_phases::LVL2):
+        {
+            catgame::lvl2 lvl2 = catgame::lvl2();
+            next_game_phase = lvl2.execute(text_generator);
+        }
+        break;
+        case (catgame::game_phases::GYM):
+        {
+            catgame::lvl_gym lvl_gym = catgame::lvl_gym();
+            next_game_phase = lvl_gym.execute(text_generator);
         }
         break;
         default:
