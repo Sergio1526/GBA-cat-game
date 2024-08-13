@@ -13,6 +13,7 @@
 #include "catgame_lvl1.h"
 #include "catgame_lvl2.h"
 #include "catgame_lvl_gym.h"
+#include "catgame_history.h"
 
 int main()
 {
@@ -36,6 +37,12 @@ int main()
         case (catgame::game_phases::INTRO):
         {
             catgame::intro intro = catgame::intro();
+            next_game_phase = intro.execute(text_generator);
+        }
+        break;
+        case (catgame::game_phases::HISTORY):
+        {
+            catgame::history intro = catgame::history();
             next_game_phase = intro.execute(text_generator);
         }
         break;

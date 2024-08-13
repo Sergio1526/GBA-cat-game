@@ -15,7 +15,7 @@ namespace catgame
     catgame::game_phases intro::execute(bn::sprite_text_generator &text_generator)
     {
         current_game_phase = catgame::game_phases::INTRO;
-        next_game_phase = catgame::game_phases::LVL1;
+        next_game_phase = catgame::game_phases::HISTORY;
 
         // Show text
         text_generator.set_center_alignment();

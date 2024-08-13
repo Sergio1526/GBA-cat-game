@@ -1,4 +1,4 @@
-#include "catgame_lvl1.h"
+#include "catgame_lvl_gym_minigame1.h"
 #include "bn_core.h"
 #include "bn_blending.h"
 #include "bn_unique_ptr.h"
@@ -17,13 +17,12 @@
 #include "bn_sprite_items_collider.h"
 
 // Backgrounds
-#include "bn_regular_bg_items_simple_bg.h"
+#include "bn_regular_bg_items_gym_bg.h"
 #include "bn_regular_bg_items_clouds.h"
 #include "bn_regular_bg_map_ptr.h"
 
 // Sprites
-#include "bn_sprite_items_gym.h"
-#include  "bn_sprite_items_construction.h"
+#include "bn_sprite_items_limit.h"
 
 // Common libraries
 #include "common_info.h"
@@ -35,8 +34,8 @@
 
 namespace catgame
 {
-    lvl1::lvl1() {}
-    catgame::game_phases lvl1::execute(bn::sprite_text_generator &text_generator)
+    lvl_gym_minigame1::lvl_gym_minigame1() {}
+    catgame::game_phases lvl_gym_minigame1::execute(bn::sprite_text_generator &text_generator)
     {
         bn::backdrop::set_color(bn::color(0, 0, 0));
         bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
@@ -51,13 +50,9 @@ namespace catgame
         // Sprites
 
         // Backgrounds
-        bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256); // Center
+        bn::regular_bg_ptr ground = bn::regular_bg_items::gym_bg.create_bg(256, 256); // Center
         // Generate map for collisions
-        const bn::regular_bg_map_item &map_item = bn::regular_bg_items::simple_bg.map_item();
-
-        //Set sprites
-        bn::sprite_ptr gym_sprite = bn::sprite_items::gym.create_sprite(bn::point(200, 120));
-        bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 100));
+        const bn::regular_bg_map_item &map_item = bn::regular_bg_items::gym_bg.map_item();
 
         bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
         bn::blending::set_transparency_alpha(0.1);
@@ -76,13 +71,11 @@ namespace catgame
         enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite()));
 
         // Create triggers
-        catgame::trigger gym_door = trigger(camera, bn::point(200, 150));
+        catgame::trigger gym_door = trigger(camera, bn::point(100, 100));
 
         // Set camera
         ground.set_camera(camera);
         clouds_bg.set_camera(camera);
-        gym_sprite.set_camera(camera);
-        under_construction_sprite.set_camera(camera);
 
         // For Backgrounds
         clouds_bg.set_priority(0);
@@ -112,7 +105,6 @@ namespace catgame
 
             if(gym_door.near_player(_player.position())){
                 BN_LOG("Near GYM!");
-                next_game_phase = catgame::game_phases::GYM;
                 break;
             }
 

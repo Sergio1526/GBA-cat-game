@@ -8,6 +8,7 @@ namespace catgame
         LOGO,
         INTRO,
         MAIN_MENU,
+        HISTORY,
         LVL1,
         LVL2,
         GYM,
