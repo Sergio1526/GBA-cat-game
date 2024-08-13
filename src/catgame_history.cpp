@@ -40,8 +40,7 @@ namespace catgame
             timer += 0.1;
             if (timer > 1000)
             {
-                BN_LOG("Here");
-                text_generator.generate(0, 60, story_lines[counter], text_sprites);
+                text_generator.generate(0, 20, story_lines[counter], text_sprites);
                 timer = 0;
                 counter += 1;
                 if (counter > 4)

@@ -50,7 +50,14 @@ Working days on the project
 - [x] Re-write level logic (day 16)
 - [x] Added new levels and triggers (day 17)
 - [ ] Plan some gameplay and minigames (day 18)
+- [ ] Add dialogs
+- [ ] Draw maps
 - [ ] Draw some new sprites
+- [ ] Add story
+- [ ] Create gym
+- [ ] Create first mini-game
+- [ ] Draw some new sprites
+- [ ] Animate NPCs
 - [ ] Add more details to world
 - [ ] Add gameplay
 - [ ] Add music

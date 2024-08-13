@@ -18,7 +18,6 @@
 
 // Backgrounds
 #include "bn_regular_bg_items_gym_bg.h"
-#include "bn_regular_bg_items_clouds.h"
 #include "bn_regular_bg_map_ptr.h"
 
 // Sprites
@@ -41,7 +40,7 @@ namespace catgame
         bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
         // Set current scene
         current_game_phase = catgame::game_phases::LVL1;
-        next_game_phase = catgame::game_phases::INTRO;
+        next_game_phase = catgame::game_phases::LVL1;
 
         // Show text
         text_generator.set_center_alignment();
@@ -54,31 +53,25 @@ namespace catgame
         // Generate map for collisions
         const bn::regular_bg_map_item &map_item = bn::regular_bg_items::gym_bg.map_item();
 
-        bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
-        bn::blending::set_transparency_alpha(0.1);
-        clouds_bg.set_blending_enabled(true);
-
         // Set player at middle of the map
-        bn::point start_position(128, 128);
+        int map_collider_index = 3;
 
         // Create player
-        catgame::player _player = player(camera, start_position);
+        catgame::player _player = player(camera, bn::point(128, 250), map_collider_index);
 
         // Create enemies
-        bn::vector<enemy, 16> enemies = {};
-        enemies.push_back(enemy(camera, bn::point(100, 80), _player.sprite()));
-        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite()));
-        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite()));
+        bn::vector<enemy, 5> enemies = {};
+        enemies.push_back(enemy(camera, bn::point(100, 100), _player.sprite(), map_collider_index));
+        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index));
+        enemies.push_back(enemy(camera, bn::point(240, 120), _player.sprite(), map_collider_index));
+        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index));
+        enemies.push_back(enemy(camera, bn::point(230, 120), _player.sprite(), map_collider_index));
 
         // Create triggers
-        catgame::trigger gym_door = trigger(camera, bn::point(100, 100));
+        catgame::trigger gym_door = trigger(camera, bn::point(150, 340));
 
         // Set camera
         ground.set_camera(camera);
-        clouds_bg.set_camera(camera);
-
-        // For Backgrounds
-        clouds_bg.set_priority(0);
 
         while (!_player.dead())
         {
@@ -95,7 +88,7 @@ namespace catgame
             {
                 if (enemy.near_player(_player.position()))
                 {
-                    _player.hurt(1);
+                    //_player.hurt(1);
                 }
                 enemy.update(map_item);
             }
@@ -103,13 +96,10 @@ namespace catgame
             _player.update(map_item);
             _player.animate();
 
-            if(gym_door.near_player(_player.position())){
-                BN_LOG("Near GYM!");
+            if (gym_door.near_player(_player.position()))
+            {
                 break;
             }
-
-            // Animate cloud
-            clouds_bg.set_position(clouds_bg.x() + 0.1, clouds_bg.y() + 0.1);
 
             // Update camera pos
             camera.set_position(_player.position());

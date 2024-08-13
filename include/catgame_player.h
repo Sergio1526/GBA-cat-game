@@ -16,6 +16,9 @@ namespace catgame
         bn::optional<bn::sprite_ptr> _sprite;
         bn::optional<bn::sprite_animate_action<4>> _action;
         int _health = 100;
+        int _stamina = 100;
+        int _condition = 0;
+        int _map_collider_index;
         bn::fixed _velocity = 0.5;
         int _view_distance = 10;
         bool _idle = true;
@@ -25,7 +28,7 @@ namespace catgame
         int _wait_time = 30;
 
     public:
-        player(bn::camera_ptr &camera, bn::point &position);
+        player(bn::camera_ptr &camera, bn::point position, int map_collider_index);
         void update(const bn::regular_bg_map_item &map);
         void animate();
         [[nodiscard]] bn::fixed_point position();

@@ -59,16 +59,15 @@ namespace catgame
         clouds_bg.set_blending_enabled(true);
 
         // Set player at middle of the map
-        bn::point start_position(128, 128);
-
+        int map_collider_index = 4;
         // Create player
-        catgame::player _player = player(camera, start_position);
+        catgame::player _player = player(camera, bn::point(128, 128), map_collider_index);
 
         // Create enemies
-        bn::vector<enemy, 16> enemies = {};
-        enemies.push_back(enemy(camera, bn::point(100, 80), _player.sprite()));
-        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite()));
-        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite()));
+        bn::vector<enemy, 3> enemies = {};
+        enemies.push_back(enemy(camera, bn::point(100, 80), _player.sprite(), map_collider_index));
+        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index));
+        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index));
 
         // Create triggers
         catgame::trigger gym_door = trigger(camera, bn::point(100, 100));

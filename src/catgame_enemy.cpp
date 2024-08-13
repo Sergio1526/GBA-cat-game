@@ -18,9 +18,10 @@
 
 namespace catgame
 {
-    enemy::enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite)
+    enemy::enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite, int map_collider_index)
     {
         _position = position;
+        _map_collider_index = map_collider_index;
         _map_position.set_x(_position.x() / 8); // Pos divide by 8 (tiles size)
         _map_position.set_y(_position.y() / 8);
         _sprite = bn::sprite_items::ninja.create_sprite(_position);
@@ -86,7 +87,7 @@ namespace catgame
             _map_position.set_x(_new_position.x() / 8);
             _map_position.set_y(_new_position.y() / 8);
             // Update position
-            if (map_cell(map) < 5)
+            if (map_cell(map) < _map_collider_index)
             {
                 _position = _new_position;
             }
