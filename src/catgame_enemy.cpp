@@ -19,6 +19,7 @@
 
 namespace catgame
 {
+    bool updated = false;
     enemy::enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite, int map_collider_index)
     {
         _position = position;
@@ -27,7 +28,7 @@ namespace catgame
         _map_position.set_y(_position.y() / 8);
         _sprite = bn::sprite_items::ninja.create_sprite(_position);
         _sprite.value().set_camera(camera);
-        _sprite.value().set_z_order(1);
+        _sprite.value().set_z_order(2);
         _action = bn::create_sprite_animate_action_forever(
             _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
         enemy::set_view_distance(player_sprite);
@@ -69,19 +70,19 @@ namespace catgame
         {
             bn::point _new_position = _position;
             // Calculate position in map
-            if (_direction == 0)
+            if (_direction == 0) // Right
             {
                 _new_position.set_x(_new_position.x() + 1);
             }
-            else if (_direction == 1)
+            else if (_direction == 1) // Left
             {
                 _new_position.set_x(_new_position.x() - 1);
             }
-            else if (_direction == 2)
+            else if (_direction == 2) // Up
             {
                 _new_position.set_y(_new_position.y() - 1);
             }
-            else if (_direction == 3)
+            else if (_direction == 3) // Down
             {
                 _new_position.set_y(_new_position.y() + 1);
             }
@@ -95,11 +96,31 @@ namespace catgame
             else
             {
                 _direction = random.get_int(4);
+                if (_direction == 0)
+                {
+                    _action = bn::create_sprite_animate_action_forever(
+                        _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 12, 13, 14, 15);
+                }
+                if (_direction == 1)
+                {
+                    _action = bn::create_sprite_animate_action_forever(
+                        _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 8, 9, 10, 11);
+                }
+                if (_direction == 2)
+                {
+                    _action = bn::create_sprite_animate_action_forever(
+                        _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 4, 5, 6, 7);
+                }
+                if (_direction == 3)
+                {
+                    _action = bn::create_sprite_animate_action_forever(
+                        _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
+                }
             }
             _sprite.value().set_position(_position.x(), _position.y());
         }
 
-        if (_action.has_value() && !_action.value().done())
+        if (_action.has_value())
         {
             _action.value().update();
         }

@@ -24,6 +24,8 @@
 #include "bn_sprite_items_cat_hand.h"
 #include "bn_sprite_items_heart_icon.h"
 #include "bn_sprite_items_empty_heart_icon.h"
+#include "bn_sprite_items_cat_hand_icon.h"
+#include "bn_sprite_items_time_icon.h"
 
 // Common libraries
 #include "common_info.h"
@@ -75,16 +77,29 @@ namespace catgame
         text_generator.generate(-106, 57, "You must stop to recover stamina", text_sprites);
 
         // GUI
-        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-110, -70));
-        bn::sprite_ptr empty_hearth_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-90, -70));
-        bn::sprite_ptr empty_hearth_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-70, -70));
-        bn::sprite_ptr empty_hearth_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-50, -70));
-        bn::sprite_ptr empty_hearth_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-30, -70));
-        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-110, -70));
-        bn::sprite_ptr hearth_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(-90, -70));
-        bn::sprite_ptr hearth_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(-70, -70));
-        bn::sprite_ptr hearth_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(-50, -70));
-        bn::sprite_ptr hearth_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(-30, -70));
+        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-87, -67));
+        bn::sprite_ptr empty_hearth_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-71, -67));
+        bn::sprite_ptr empty_hearth_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-55, -67));
+        bn::sprite_ptr empty_hearth_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-39, -67));
+        bn::sprite_ptr empty_hearth_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-23, -67));
+        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-87, -67));
+        bn::sprite_ptr hearth_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(-71, -67));
+        bn::sprite_ptr hearth_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(-55, -67));
+        bn::sprite_ptr hearth_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(-39, -67));
+        bn::sprite_ptr hearth_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(-23, -67));
+        bn::sprite_ptr start_hearth = bn::sprite_items::cat_hand_icon.create_sprite(bn::point(-103, -67));
+
+        bn::sprite_ptr empty_time_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(79, -67));
+        bn::sprite_ptr empty_time_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(63, -67));
+        bn::sprite_ptr empty_time_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(47, -67));
+        bn::sprite_ptr empty_time_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(31, -67));
+        bn::sprite_ptr empty_time_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(15, -67));
+        bn::sprite_ptr time_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(79, -67));
+        bn::sprite_ptr time_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(63, -67));
+        bn::sprite_ptr time_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(47, -67));
+        bn::sprite_ptr time_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(31, -67));
+        bn::sprite_ptr time_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(15, -67));
+        bn::sprite_ptr start_time = bn::sprite_items::time_icon.create_sprite(bn::point(103, -67));
 
         while (!end)
         {
@@ -201,7 +216,7 @@ namespace catgame
             bn::core::update();
         }
 
-        food -= 30;
+        food -= 1;
         times_played++;
 
         return next_game_phase;

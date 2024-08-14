@@ -28,6 +28,7 @@
 #include "bn_sprite_items_fish_icon.h"
 #include "bn_sprite_items_heart_icon.h"
 #include "bn_sprite_items_empty_heart_icon.h"
+#include "bn_sprite_items_cat_hand_icon.h"
 
 // Common libraries
 #include "common_info.h"
@@ -55,8 +56,13 @@ namespace catgame
 
         // Set sprites
         bn::sprite_ptr gym_sprite = bn::sprite_items::gym.create_sprite(bn::point(192, 97));
-        bn::sprite_ptr house_sprite = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19, 200));
-        bn::sprite_ptr restaurant_sprite = bn::sprite_items::gym.create_sprite(bn::point(300 - 4 - 6, 280));
+        bn::sprite_ptr house_sprite = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 1, 200));
+        bn::sprite_ptr house_sprite2 = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 40 + 1, 250 + 32));
+        bn::sprite_ptr restaurant_sprite = bn::sprite_items::gym.create_sprite(bn::point(300 - 4 - 6 - 2, 280 + 2));
+        gym_sprite.set_z_order(0);
+        house_sprite.set_z_order(0);
+        house_sprite2.set_z_order(0);
+        restaurant_sprite.set_z_order(0);
         // bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 100));
 
         // Dialog
@@ -68,17 +74,21 @@ namespace catgame
         bn::vector<bn::sprite_ptr, 32> text_sprites;
 
         // GUI
-        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-110, -70));
-        bn::sprite_ptr empty_hearth_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-90, -70));
-        bn::sprite_ptr empty_hearth_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-70, -70));
-        bn::sprite_ptr empty_hearth_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-50, -70));
-        bn::sprite_ptr empty_hearth_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-30, -70));
-        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-110, -70));
-        bn::sprite_ptr hearth_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(-90, -70));
-        bn::sprite_ptr hearth_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(-70, -70));
-        bn::sprite_ptr hearth_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(-50, -70));
-        bn::sprite_ptr hearth_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(-30, -70));
+        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-87, -67));
+        bn::sprite_ptr empty_hearth_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-71, -67));
+        bn::sprite_ptr empty_hearth_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-55, -67));
+        bn::sprite_ptr empty_hearth_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-39, -67));
+        bn::sprite_ptr empty_hearth_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-23, -67));
+        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-87, -67));
+        bn::sprite_ptr hearth_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(-71, -67));
+        bn::sprite_ptr hearth_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(-55, -67));
+        bn::sprite_ptr hearth_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(-39, -67));
+        bn::sprite_ptr hearth_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(-23, -67));
+        bn::sprite_ptr start_hearth = bn::sprite_items::cat_hand_icon.create_sprite(bn::point(-103, -67));
+        // Food
         bn::sprite_ptr fish = bn::sprite_items::fish_icon.create_sprite(bn::point(10 + 92, 30 - 94));
+        bn::sprite_animate_action<2> action = bn::create_sprite_animate_action_forever(
+            fish, 32, bn::sprite_items::fish_icon.tiles_item(), 2, 2);
 
         bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
         bn::blending::set_transparency_alpha(0.1);
@@ -105,6 +115,7 @@ namespace catgame
         gym_sprite.set_camera(camera);
         restaurant_sprite.set_camera(camera);
         house_sprite.set_camera(camera);
+        house_sprite2.set_camera(camera);
         // under_construction_sprite.set_camera(camera);
 
         // For Backgrounds
@@ -112,6 +123,7 @@ namespace catgame
 
         while (!_player.dead())
         {
+            action.update();
             // Hearts
             hearth_1.set_visible(true);
             hearth_2.set_visible(true);
@@ -138,11 +150,27 @@ namespace catgame
             {
                 hearth_5.set_visible(false);
             }
+            // Food
+            if (food <= 1)
+            {
+                action = bn::create_sprite_animate_action_forever(
+                    fish, 32, bn::sprite_items::fish_icon.tiles_item(), 0, 0);
+            }
+            else if (food <= 2)
+            {
+                action = bn::create_sprite_animate_action_forever(
+                    fish, 32, bn::sprite_items::fish_icon.tiles_item(), 1, 1);
+            }
+            else if (food <= 3)
+            {
+                action = bn::create_sprite_animate_action_forever(
+                    fish, 32, bn::sprite_items::fish_icon.tiles_item(), 2, 2);
+            }
 
             text_sprites.clear();
-            text_generator.set_center_alignment();
-            text_generator.generate(0, -70, bn::to_string<32>(_player.health()), text_sprites);
-            text_generator.generate(0, -60, bn::to_string<32>(_player.map_cell(map_item)), text_sprites);
+            //text_generator.set_center_alignment();
+            //text_generator.generate(0, -70, bn::to_string<32>(_player.health()), text_sprites);
+            //text_generator.generate(0, -60, bn::to_string<32>(_player.map_cell(map_item)), text_sprites);
 
             dialog.set_visible(false);
             for (enemy &enemy : enemies)
@@ -172,6 +200,14 @@ namespace catgame
 
             // Update camera pos
             camera.set_position(_player.position());
+
+            if (bn::keypad::b_pressed())
+            {
+                if (food > 1)
+                {
+                    food--;
+                }
+            }
 
             bn::core::update();
         }

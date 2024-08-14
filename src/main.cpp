@@ -21,7 +21,7 @@ int main()
     bn::core::init();
 
     int _stamina = 30;
-    int _food = 0;
+    int _food = 3;
     int _times_played = 0;
 
     catgame::game_phases next_game_phase = catgame::game_phases::LOGO;

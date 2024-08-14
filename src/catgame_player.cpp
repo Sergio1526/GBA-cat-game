@@ -19,7 +19,7 @@ namespace catgame
         _map_position.set_y(_position.y() / 8);
         _sprite = bn::sprite_items::cat.create_sprite(_position);
         _sprite.value().set_camera(camera);
-        _sprite.value().set_z_order(0);
+        _sprite.value().set_z_order(1);
     }
 
     int player::health()
