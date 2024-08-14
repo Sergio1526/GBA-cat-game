@@ -49,13 +49,13 @@ Working days on the project
 - [x] Enemies detects player and react (day 16)
 - [x] Re-write level logic (day 16)
 - [x] Added new levels and triggers (day 17)
-- [ ] Plan some gameplay and minigames (day 18)
+- [x] Plan some gameplay and minigames (day 18)
 - [ ] Add dialogs
-- [ ] Draw maps
+- [x] Draw maps (day 19)
 - [ ] Draw some new sprites
-- [ ] Add story
-- [ ] Create gym
-- [ ] Create first mini-game
+- [x] Add story (day 19)
+- [x] Create gym (day 19)
+- [x] Create first mini-game (day 19)
 - [ ] Draw some new sprites
 - [ ] Animate NPCs
 - [ ] Add more details to world

@@ -8,6 +8,7 @@
 #include "bn_sprite_ptr.h"
 #include "bn_backdrop.h"
 #include "bn_string_view.h"
+#include "bn_camera_actions.h"           //Add camera
 
 namespace catgame
 {
@@ -19,42 +20,44 @@ namespace catgame
         current_game_phase = catgame::game_phases::INTRO;
         next_game_phase = catgame::game_phases::LVL1;
 
+        bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
+
         // Show text
         text_generator.set_center_alignment();
         bn::vector<bn::sprite_ptr, 32> text_sprites;
 
-        text_generator.generate(0, 60, "PRESS START", text_sprites);
-
-        bn::fixed timer = 0;
+        bn::fixed history_timer = 0;
         constexpr bn::string_view story_lines[] = {
             "...",
             "One day",
-            "our friendly cat",
-            "decides to go to",
-            "THE GYM!",
+            "Mr Skitty felt courius",
+            "and decides to go out",
+            "to explore the town!",
         };
         int counter = 0;
+        text_generator.generate(0, -40 + (counter * 10), story_lines[counter], text_sprites);
+        counter++;
 
         while (!bn::keypad::start_pressed())
         {
-            if (timer > 100)
+            // Update camera pos
+            camera.set_position(camera.position().x(), camera.position().y() + 0.2f);
+            if (history_timer > 10)
             {
-                BN_LOG("Here!");
-                text_generator.generate(0, 20, story_lines[counter], text_sprites);
-                timer = 0;
-                if (counter < 4)
+                text_generator.generate(0, -40 + (counter * 10), story_lines[counter], text_sprites);
+                history_timer = 0;
+                if (counter < 5)
                 {
                     counter += 1;
                 }
                 else{
-                    BN_LOG("End");
                     break;
                 }
-                bn::core::update();
             }
             else{
-                timer += 0.1f;
+                history_timer += 0.1f;
             }
+            bn::core::update();
         }
         return next_game_phase;
     }

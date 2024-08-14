@@ -40,7 +40,7 @@ namespace catgame
         bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
         // Set current scene
         current_game_phase = catgame::game_phases::LVL1;
-        next_game_phase = catgame::game_phases::MINIGAME1;
+        next_game_phase = catgame::game_phases::LVL1;
 
         // Show text
         text_generator.set_center_alignment();
@@ -68,7 +68,8 @@ namespace catgame
         enemies.push_back(enemy(camera, bn::point(230, 120), _player.sprite(), map_collider_index));
 
         // Create triggers
-        catgame::trigger gym_door = trigger(camera, bn::point(150, 300));
+        catgame::trigger gym_door = trigger(camera, bn::point(140, 188));
+        catgame::trigger minigame_1 = trigger(camera, bn::point(204, 312));
 
         // Set camera
         ground.set_camera(camera);
@@ -98,6 +99,12 @@ namespace catgame
 
             if (gym_door.near_player(_player.position()))
             {
+                next_game_phase = catgame::game_phases::MINIGAME1;
+                break;
+            }
+            if (minigame_1.near_player(_player.position()))
+            {
+                next_game_phase = catgame::game_phases::LVL1;
                 break;
             }
 

@@ -58,62 +58,90 @@ namespace catgame
 
         bool started = false;
 
+        text_sprites.clear();
+        text_generator.generate(0, -70, "START PUSHING!", text_sprites);
+        text_generator.generate(0, -60, "Try to get 30 push ups", text_sprites);
+        text_generator.generate(0, -50, "You can stop to recover stamina", text_sprites);
+
         while (!end)
         {
-            if(started){
+            if (started)
+            {
                 time += 0.1f;
+
+                text_sprites.clear();
+
+                bn::string val = bn::to_string<32>(time);
+                text_generator.generate(0, 60, "Time: " + val, text_sprites);
+
+                bn::string val2 = bn::to_string<32>(stamina);
+                text_generator.generate(0, 70, "Stamina: " + val2, text_sprites);
+
+                bn::string val3 = bn::to_string<32>(counter);
+                text_generator.generate(0, -60, "Push ups: " + val3, text_sprites);
             }
 
-            if(time > 60 || stamina <= 0){
+            if (time > 60)
+            {
                 end = true;
             }
 
-            text_sprites.clear();
-            text_generator.generate(0, -70, "START PUSHING!", text_sprites);
-            text_generator.generate(0, -60, "Try to get 10 push ups", text_sprites);
-
-            bn::string val = bn::to_string<32>(time);
-            text_generator.generate(0, 60, "Time: " + val, text_sprites);
-
-            bn::string val2 = bn::to_string<32>(stamina);
-            text_generator.generate(0, 70, "Stamina: " + val2, text_sprites);
-
-            if (bn::keypad::l_pressed())
+            if (stamina > 0)
             {
-                counter += 1;
-            }
-            if (bn::keypad::r_pressed())
-            {
-                counter += 1;
-            }
-            BN_LOG("Count ", counter);
+                //Animate face
+                if (bn::keypad::l_pressed())
+                {
+                    counter += 1;
+                }
+                if (bn::keypad::r_pressed())
+                {
+                    counter += 1;
+                }
 
-            if (bn::keypad::l_held())
-            {
-                started = true;
-                stamina -= 0.3f;
-                left_hand.set_position(left_hand.position().x(), 10);
-            }
-            else if (bn::keypad::l_released())
-            {
-                stamina += 0.1f;
+                if (bn::keypad::l_held())
+                {
+                    started = true;
+                    stamina -= 0.5f;
+                    left_hand.set_position(left_hand.position().x(), 20);
+                }
+                else if (bn::keypad::l_released())
+                {
+                    left_hand.set_position(left_hand.position().x(), 30);
+                }
+
+                if (bn::keypad::r_held())
+                {
+                    started = true;
+                    stamina -= 0.5f;
+                    right_hand.set_position(right_hand.position().x(), 20);
+                }
+                else if (bn::keypad::r_released())
+                {
+                    right_hand.set_position(right_hand.position().x(), 30);
+                }
+            }else{
+                //Animate sweat/tired
+                //Animate face
                 left_hand.set_position(left_hand.position().x(), 30);
-            }
-
-            if (bn::keypad::r_held())
-            {
-                started = true;
-                stamina -= 0.3f;
-                right_hand.set_position(right_hand.position().x(), 10);
-            }
-            else if (bn::keypad::r_released())
-            {
-                stamina += 0.1f;
                 right_hand.set_position(right_hand.position().x(), 30);
             }
+            if (stamina < 100)
+            {
+                stamina += 0.1f;
+            }
+            bn::core::update();
+        }
+
+        while (end && !bn::keypad::a_pressed())
+        {
+            text_sprites.clear();
+
+            bn::string val = bn::to_string<32>(counter);
+            text_generator.generate(0, 60, "You did " + val + " push ups", text_sprites);
 
             bn::core::update();
         }
+
         return next_game_phase;
     }
 }
