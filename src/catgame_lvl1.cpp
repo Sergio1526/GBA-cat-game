@@ -48,8 +48,6 @@ namespace catgame
         text_generator.set_center_alignment();
         bn::vector<bn::sprite_ptr, 32> text_sprites;
 
-        // Sprites
-
         // Backgrounds
         bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256); // Center
         // Generate map for collisions

@@ -37,17 +37,23 @@ namespace catgame
 
         while (!bn::keypad::start_pressed())
         {
-            timer += 0.1;
-            if (timer > 1000)
+            if (timer > 100)
             {
+                BN_LOG("Here!");
                 text_generator.generate(0, 20, story_lines[counter], text_sprites);
                 timer = 0;
-                counter += 1;
-                if (counter > 4)
+                if (counter < 4)
                 {
+                    counter += 1;
+                }
+                else{
+                    BN_LOG("End");
                     break;
                 }
                 bn::core::update();
+            }
+            else{
+                timer += 0.1f;
             }
         }
         return next_game_phase;

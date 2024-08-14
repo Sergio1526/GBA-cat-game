@@ -11,6 +11,8 @@ namespace catgame
         HISTORY,
         LVL1,
         LVL2,
+        MINIGAME1,
+        MINIGAME2,
         GYM,
         GAMEOVER,
         END

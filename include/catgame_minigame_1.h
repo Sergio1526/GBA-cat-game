@@ -3,10 +3,10 @@
 
 namespace catgame
 {
-    class lvl_gym_minigame1 : public scene
+    class minigame_1 : public scene
     {
     public:
-        lvl_gym_minigame1();
+        minigame_1();
         catgame::game_phases execute(bn::sprite_text_generator &text_generator);
 
     private:
