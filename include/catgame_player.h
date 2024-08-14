@@ -16,8 +16,6 @@ namespace catgame
         bn::optional<bn::sprite_ptr> _sprite;
         bn::optional<bn::sprite_animate_action<4>> _action;
         int _health = 100;
-        int _stamina = 100;
-        int _condition = 0;
         int _map_collider_index;
         bn::fixed _velocity = 0.5;
         int _view_distance = 10;

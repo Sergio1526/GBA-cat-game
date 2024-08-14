@@ -59,7 +59,7 @@ Working days on the project
 - [ ] Draw some new sprites
 - [ ] Animate NPCs
 - [ ] Add more details to world
-- [ ] Add gameplay
+- [x] Add gameplay (day 20)
 - [ ] Add music
 - [ ] Add new GUI
 

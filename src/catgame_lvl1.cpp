@@ -20,10 +20,14 @@
 #include "bn_regular_bg_items_simple_bg.h"
 #include "bn_regular_bg_items_clouds.h"
 #include "bn_regular_bg_map_ptr.h"
+#include "bn_regular_bg_items_dialog.h"
 
 // Sprites
 #include "bn_sprite_items_gym.h"
-#include  "bn_sprite_items_construction.h"
+#include "bn_sprite_items_construction.h"
+#include "bn_sprite_items_fish_icon.h"
+#include "bn_sprite_items_heart_icon.h"
+#include "bn_sprite_items_empty_heart_icon.h"
 
 // Common libraries
 #include "common_info.h"
@@ -36,7 +40,7 @@
 namespace catgame
 {
     lvl1::lvl1() {}
-    catgame::game_phases lvl1::execute(bn::sprite_text_generator &text_generator)
+    catgame::game_phases lvl1::execute(bn::sprite_text_generator &text_generator, int &times_played, int &food, int &stamina)
     {
         bn::backdrop::set_color(bn::color(0, 0, 0));
         bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
@@ -44,18 +48,37 @@ namespace catgame
         current_game_phase = catgame::game_phases::LVL1;
         next_game_phase = catgame::game_phases::INTRO;
 
-        // Show text
-        text_generator.set_center_alignment();
-        bn::vector<bn::sprite_ptr, 32> text_sprites;
-
         // Backgrounds
         bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256); // Center
         // Generate map for collisions
         const bn::regular_bg_map_item &map_item = bn::regular_bg_items::simple_bg.map_item();
 
-        //Set sprites
-        bn::sprite_ptr gym_sprite = bn::sprite_items::gym.create_sprite(bn::point(200, 120));
-        bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 100));
+        // Set sprites
+        bn::sprite_ptr gym_sprite = bn::sprite_items::gym.create_sprite(bn::point(192, 97));
+        bn::sprite_ptr house_sprite = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19, 200));
+        bn::sprite_ptr restaurant_sprite = bn::sprite_items::gym.create_sprite(bn::point(300 - 4 - 6, 280));
+        // bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 100));
+
+        // Dialog
+        bn::regular_bg_ptr dialog = bn::regular_bg_items::dialog.create_bg(264, 146);
+        dialog.set_priority(0);
+        // Show text
+        text_generator.set_bg_priority(0);
+        text_generator.set_center_alignment();
+        bn::vector<bn::sprite_ptr, 32> text_sprites;
+
+        // GUI
+        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-110, -70));
+        bn::sprite_ptr empty_hearth_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-90, -70));
+        bn::sprite_ptr empty_hearth_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-70, -70));
+        bn::sprite_ptr empty_hearth_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-50, -70));
+        bn::sprite_ptr empty_hearth_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-30, -70));
+        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-110, -70));
+        bn::sprite_ptr hearth_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(-90, -70));
+        bn::sprite_ptr hearth_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(-70, -70));
+        bn::sprite_ptr hearth_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(-50, -70));
+        bn::sprite_ptr hearth_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(-30, -70));
+        bn::sprite_ptr fish = bn::sprite_items::fish_icon.create_sprite(bn::point(10 + 92, 30 - 94));
 
         bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
         bn::blending::set_transparency_alpha(0.1);
@@ -73,33 +96,64 @@ namespace catgame
         enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index));
 
         // Create triggers
-        catgame::trigger gym_door = trigger(camera, bn::point(200, 150));
+        catgame::trigger gym_door = trigger(camera, bn::point(192, 126));
+        catgame::trigger restaurant_door = trigger(camera, bn::point(200 + 97, 200 + 115));
 
         // Set camera
         ground.set_camera(camera);
         clouds_bg.set_camera(camera);
         gym_sprite.set_camera(camera);
-        under_construction_sprite.set_camera(camera);
+        restaurant_sprite.set_camera(camera);
+        house_sprite.set_camera(camera);
+        // under_construction_sprite.set_camera(camera);
 
         // For Backgrounds
         clouds_bg.set_priority(0);
 
         while (!_player.dead())
         {
+            // Hearts
+            hearth_1.set_visible(true);
+            hearth_2.set_visible(true);
+            hearth_3.set_visible(true);
+            hearth_4.set_visible(true);
+            hearth_5.set_visible(true);
+            if (stamina <= 0)
+            {
+                hearth_1.set_visible(false);
+            }
+            if (stamina <= 20)
+            {
+                hearth_2.set_visible(false);
+            }
+            if (stamina <= 40)
+            {
+                hearth_3.set_visible(false);
+            }
+            if (stamina <= 60)
+            {
+                hearth_4.set_visible(false);
+            }
+            if (stamina <= 80)
+            {
+                hearth_5.set_visible(false);
+            }
+
             text_sprites.clear();
-            text_generator.generate(0, -70, "GUI", text_sprites);
-            bn::string val = bn::to_string<32>(_player.health());
-            text_generator.generate(0, -60, val, text_sprites);
+            text_generator.set_center_alignment();
+            text_generator.generate(0, -70, bn::to_string<32>(_player.health()), text_sprites);
+            text_generator.generate(0, -60, bn::to_string<32>(_player.map_cell(map_item)), text_sprites);
 
-            int pos = _player.map_cell(map_item);
-            val = bn::to_string<32>(pos);
-            text_generator.generate(0, -50, val, text_sprites);
-
+            dialog.set_visible(false);
             for (enemy &enemy : enemies)
             {
                 if (enemy.near_player(_player.position()))
                 {
                     //_player.hurt(1);
+                    text_sprites.clear();
+                    text_generator.set_left_alignment();
+                    text_generator.generate(-106, 47, "Hello my friend.", text_sprites);
+                    dialog.set_visible(true);
                 }
                 enemy.update(map_item);
             }
@@ -107,8 +161,8 @@ namespace catgame
             _player.update(map_item);
             _player.animate();
 
-            if(gym_door.near_player(_player.position())){
-                BN_LOG("Near GYM!");
+            if (gym_door.near_player(_player.position()))
+            {
                 next_game_phase = catgame::game_phases::GYM;
                 break;
             }

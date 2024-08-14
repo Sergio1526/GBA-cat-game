@@ -19,9 +19,13 @@
 // Backgrounds
 #include "bn_regular_bg_items_gym_bg.h"
 #include "bn_regular_bg_map_ptr.h"
+#include "bn_regular_bg_items_dialog.h"
 
 // Sprites
 #include "bn_sprite_items_limit.h"
+#include "bn_sprite_items_fish_icon.h"
+#include "bn_sprite_items_heart_icon.h"
+#include "bn_sprite_items_empty_heart_icon.h"
 
 // Common libraries
 #include "common_info.h"
@@ -34,7 +38,7 @@
 namespace catgame
 {
     lvl_gym::lvl_gym() {}
-    catgame::game_phases lvl_gym::execute(bn::sprite_text_generator &text_generator)
+    catgame::game_phases lvl_gym::execute(bn::sprite_text_generator &text_generator, int &times_played, int &food, int &stamina)
     {
         bn::backdrop::set_color(bn::color(0, 0, 0));
         bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
@@ -74,16 +78,51 @@ namespace catgame
         // Set camera
         ground.set_camera(camera);
 
+        // GUI
+        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-110, -70));
+        bn::sprite_ptr empty_hearth_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-90, -70));
+        bn::sprite_ptr empty_hearth_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-70, -70));
+        bn::sprite_ptr empty_hearth_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-50, -70));
+        bn::sprite_ptr empty_hearth_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-30, -70));
+        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-110, -70));
+        bn::sprite_ptr hearth_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(-90, -70));
+        bn::sprite_ptr hearth_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(-70, -70));
+        bn::sprite_ptr hearth_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(-50, -70));
+        bn::sprite_ptr hearth_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(-30, -70));
+        bn::sprite_ptr fish = bn::sprite_items::fish_icon.create_sprite(bn::point(10 + 92, 30 - 94));
+
         while (!_player.dead())
         {
-            text_sprites.clear();
-            text_generator.generate(0, -70, "GUI", text_sprites);
-            bn::string val = bn::to_string<32>(_player.health());
-            text_generator.generate(0, -60, val, text_sprites);
+            // Hearts
+            hearth_1.set_visible(true);
+            hearth_2.set_visible(true);
+            hearth_3.set_visible(true);
+            hearth_4.set_visible(true);
+            hearth_5.set_visible(true);
+            if (stamina <= 0)
+            {
+                hearth_1.set_visible(false);
+            }
+            if (stamina <= 20)
+            {
+                hearth_2.set_visible(false);
+            }
+            if (stamina <= 40)
+            {
+                hearth_3.set_visible(false);
+            }
+            if (stamina <= 60)
+            {
+                hearth_4.set_visible(false);
+            }
+            if (stamina <= 80)
+            {
+                hearth_5.set_visible(false);
+            }
 
-            int pos = _player.map_cell(map_item);
-            val = bn::to_string<32>(pos);
-            text_generator.generate(0, -50, val, text_sprites);
+            text_sprites.clear();
+            text_generator.generate(0, -70, bn::to_string<32>(_player.health()), text_sprites);
+            text_generator.generate(0, -50, bn::to_string<32>(_player.map_cell(map_item)), text_sprites);
 
             for (enemy &enemy : enemies)
             {

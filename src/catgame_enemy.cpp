@@ -15,6 +15,7 @@
 #include "bn_log.h" //Remove on final version
 #include "bn_math.h"
 #include "bn_size.h"
+#include "bn_string_view.h"
 
 namespace catgame
 {

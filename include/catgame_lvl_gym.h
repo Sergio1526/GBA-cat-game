@@ -7,7 +7,7 @@ namespace catgame
     {
     public:
         lvl_gym();
-        catgame::game_phases execute(bn::sprite_text_generator &text_generator);
+        catgame::game_phases execute(bn::sprite_text_generator &text_generator, int &times_played, int &food, int &stamina);
 
     private:
     };

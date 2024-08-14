@@ -20,6 +20,10 @@ int main()
 {
     bn::core::init();
 
+    int _stamina = 30;
+    int _food = 0;
+    int _times_played = 0;
+
     catgame::game_phases next_game_phase = catgame::game_phases::LOGO;
 
     bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
@@ -50,25 +54,19 @@ int main()
         case (catgame::game_phases::LVL1):
         {
             catgame::lvl1 lvl1 = catgame::lvl1();
-            next_game_phase = lvl1.execute(text_generator);
-        }
-        break;
-        case (catgame::game_phases::LVL2):
-        {
-            catgame::lvl2 lvl2 = catgame::lvl2();
-            next_game_phase = lvl2.execute(text_generator);
+            next_game_phase = lvl1.execute(text_generator, _times_played, _food, _stamina);
         }
         break;
         case (catgame::game_phases::MINIGAME1):
         {
             catgame::minigame_1 minigame_1 = catgame::minigame_1();
-            next_game_phase = minigame_1.execute(text_generator);
+            next_game_phase = minigame_1.execute(text_generator, _times_played, _food, _stamina);
         }
         break;
         case (catgame::game_phases::GYM):
         {
             catgame::lvl_gym lvl_gym = catgame::lvl_gym();
-            next_game_phase = lvl_gym.execute(text_generator);
+            next_game_phase = lvl_gym.execute(text_generator, _times_played, _food, _stamina);
         }
         break;
         default:

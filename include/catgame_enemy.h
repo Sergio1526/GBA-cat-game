@@ -6,6 +6,7 @@
 #include "bn_sprite_ptr.h"
 #include "bn_sprite_animate_actions.h"
 #include "bn_regular_bg_map_item.h"
+#include "bn_string_view.h"
 
 namespace catgame
 {
@@ -23,6 +24,7 @@ namespace catgame
         bool _is_near_player = false;
         bn::point _position;
         bn::point _map_position;
+        bn::string_view dialog;
 
     public:
         enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite, int map_collider_index);
