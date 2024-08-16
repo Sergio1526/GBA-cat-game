@@ -18,6 +18,7 @@
 
 // Backgrounds
 #include "bn_regular_bg_items_gym_bg.h"
+#include "bn_regular_bg_items_gym_1_bg.h"
 #include "bn_regular_bg_map_ptr.h"
 #include "bn_regular_bg_items_dialog.h"
 
@@ -59,6 +60,7 @@ namespace catgame
 
         // Backgrounds
         bn::regular_bg_ptr ground = bn::regular_bg_items::gym_bg.create_bg(256, 256); // Center
+        bn::regular_bg_ptr ground_1 = bn::regular_bg_items::gym_1_bg.create_bg(256, 256); // Center
         // Generate map for collisions
         const bn::regular_bg_map_item &map_item = bn::regular_bg_items::gym_bg.map_item();
 
@@ -77,11 +79,14 @@ namespace catgame
         enemies.push_back(enemy(camera, bn::point(200, 150), _player.sprite(), map_collider_index, "You look stronger >.<"));
 
         // Create triggers
-        catgame::trigger gym_door = trigger(camera, bn::point(140, 178), true);
+        catgame::trigger gym_door = trigger(camera, bn::point(140-25, 178-11), true);
         catgame::trigger minigame_1 = trigger(camera, bn::point(204, 312), false);
 
         // Set camera
         ground.set_camera(camera);
+        ground_1.set_camera(camera);
+        bn::blending::set_transparency_alpha(0.2);
+        ground_1.set_blending_enabled(true);
 
         // GUI
         bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-74, -67));

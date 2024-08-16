@@ -32,6 +32,8 @@
 #include "bn_sprite_items_cat_hand_icon.h"
 #include "bn_sprite_items_flower.h"
 #include "bn_sprite_items_fish_icon.h"
+#include "bn_sprite_items_gym_sign.h"
+#include "bn_sprite_items_restaurant_sign.h"
 
 // Common libraries
 #include "common_info.h"
@@ -60,17 +62,17 @@ namespace catgame
 
         // Set sprites
         bn::sprite_ptr gym_sprite = bn::sprite_items::gym.create_sprite(bn::point(192, 97));
-        bn::sprite_ptr gym_sprite_sign = bn::sprite_items::fish_icon.create_sprite(bn::point(192, 97));
+        bn::sprite_ptr gym_sprite_sign = bn::sprite_items::gym_sign.create_sprite(bn::point(192, 87));
         bn::sprite_ptr house_sprite = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 2, 200 + 2));
         bn::sprite_ptr house_sprite2 = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 42 - 1, 282));
         bn::sprite_ptr restaurant_sprite = bn::sprite_items::gym.create_sprite(bn::point(288, 282));
-        bn::sprite_ptr restaurant_sprite_sign = bn::sprite_items::fish_icon.create_sprite(bn::point(288, 282));
+        bn::sprite_ptr restaurant_sprite_sign = bn::sprite_items::restaurant_sign.create_sprite(bn::point(288, 272));
         gym_sprite.set_z_order(0);
-        gym_sprite_sign.set_z_order(1);
+        gym_sprite_sign.set_z_order(0);
         house_sprite.set_z_order(0);
         house_sprite2.set_z_order(0);
         restaurant_sprite.set_z_order(0);
-        restaurant_sprite_sign.set_z_order(1);
+        restaurant_sprite_sign.set_z_order(0);
         bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 227));
         under_construction_sprite.set_z_order(1);
         bn::sprite_ptr under_construction_sprite2 = bn::sprite_items::construction.create_sprite(bn::point(142, 240 + 67));
@@ -142,7 +144,7 @@ namespace catgame
 
         // For Backgrounds
         fog.set_priority(2);
-        //bn::blending::set_transparency_alpha(0.8);
+        //bn::blending::set_transparency_alpha(0.1);
         //fog.set_blending_enabled(true);
         clouds_bg.set_priority(0);
         bn::blending::set_transparency_alpha(0.1);
