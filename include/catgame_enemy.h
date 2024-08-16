@@ -24,14 +24,15 @@ namespace catgame
         bool _is_near_player = false;
         bn::point _position;
         bn::point _map_position;
-        bn::string_view dialog;
+        bn::string_view _dialog;
 
     public:
-        enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite, int map_collider_index);
+        enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite, int map_collider_index, bn::string_view dialog);
         void set_view_distance(bn::sprite_ptr player_pos);
         bool near_player(bn::fixed_point player_pos);
         void update(const bn::regular_bg_map_item &map);
         int map_cell(const bn::regular_bg_map_item &map);
+        bn::string_view get_dialog();
     };
 }
 

@@ -65,9 +65,9 @@ namespace catgame
 
         // Create enemies
         bn::vector<enemy, 16> enemies = {};
-        enemies.push_back(enemy(camera, bn::point(100, 80), _player.sprite(), map_collider_index));
-        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index));
-        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index));
+        enemies.push_back(enemy(camera, bn::point(100, 80), _player.sprite(), map_collider_index, ""));
+        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index, ""));
+        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index, ""));
 
         // Create triggers
         catgame::trigger gym_door = trigger(camera, bn::point(100, 100));

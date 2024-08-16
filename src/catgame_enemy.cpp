@@ -20,10 +20,11 @@
 namespace catgame
 {
     bool updated = false;
-    enemy::enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite, int map_collider_index)
+    enemy::enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite, int map_collider_index, bn::string_view dialog)
     {
         _position = position;
         _map_collider_index = map_collider_index;
+        _dialog = dialog;
         _map_position.set_x(_position.x() / 8); // Pos divide by 8 (tiles size)
         _map_position.set_y(_position.y() / 8);
         _sprite = bn::sprite_items::ninja.create_sprite(_position);
@@ -57,6 +58,9 @@ namespace catgame
         bn::regular_bg_map_cell map_cell = map.cell(_map_position);
         int tile_index = bn::regular_bg_map_cell_info(map_cell).tile_index();
         return tile_index;
+    }
+    bn::string_view enemy::get_dialog(){
+        return _dialog;
     }
     bn::random random = bn::random();
     void enemy::update(const bn::regular_bg_map_item &map)

@@ -66,11 +66,11 @@ namespace catgame
 
         // Create enemies
         bn::vector<enemy, 5> enemies = {};
-        enemies.push_back(enemy(camera, bn::point(100, 100), _player.sprite(), map_collider_index));
-        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index));
-        enemies.push_back(enemy(camera, bn::point(240, 120), _player.sprite(), map_collider_index));
-        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index));
-        enemies.push_back(enemy(camera, bn::point(230, 120), _player.sprite(), map_collider_index));
+        enemies.push_back(enemy(camera, bn::point(100, 100), _player.sprite(), map_collider_index, "Hello my fellow cat"));
+        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index, "..."));
+        enemies.push_back(enemy(camera, bn::point(240, 120), _player.sprite(), map_collider_index, "Don't forget to eat sometimes"));
+        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index, "It's a nicve day!"));
+        enemies.push_back(enemy(camera, bn::point(230, 120), _player.sprite(), map_collider_index, "You look stronger >.<"));
 
         // Create triggers
         catgame::trigger gym_door = trigger(camera, bn::point(140, 188));
@@ -80,46 +80,41 @@ namespace catgame
         ground.set_camera(camera);
 
         // GUI
-        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-87, -67));
-        bn::sprite_ptr empty_hearth_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-71, -67));
-        bn::sprite_ptr empty_hearth_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-55, -67));
-        bn::sprite_ptr empty_hearth_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-39, -67));
-        bn::sprite_ptr empty_hearth_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-23, -67));
-        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-87, -67));
-        bn::sprite_ptr hearth_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(-71, -67));
-        bn::sprite_ptr hearth_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(-55, -67));
-        bn::sprite_ptr hearth_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(-39, -67));
-        bn::sprite_ptr hearth_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(-23, -67));
+        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-74, -67));
+        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-72, -67));
+        bn::fixed stamina_scale = 2;
+        empty_hearth_1.set_horizontal_scale(stamina_scale);
+        hearth_1.set_horizontal_scale(stamina_scale);
         bn::sprite_ptr start_hearth = bn::sprite_items::cat_hand_icon.create_sprite(bn::point(-103, -67));
+        // Food
         bn::sprite_ptr fish = bn::sprite_items::fish_icon.create_sprite(bn::point(10 + 92, 30 - 94));
+        bn::sprite_animate_action<2> action = bn::create_sprite_animate_action_forever(
+            fish, 32, bn::sprite_items::fish_icon.tiles_item(), 2, 2);
 
         while (!_player.dead())
         {
-            // Hearts
-            hearth_1.set_visible(true);
-            hearth_2.set_visible(true);
-            hearth_3.set_visible(true);
-            hearth_4.set_visible(true);
-            hearth_5.set_visible(true);
+            // Stamina
             if (stamina <= 0)
             {
-                hearth_1.set_visible(false);
+                stamina = 0.001;
             }
-            if (stamina <= 20)
+            hearth_1.set_horizontal_scale((bn::fixed)(stamina * 2) / 100);
+            hearth_1.set_x((0.14 * (stamina - 100)) - 77);
+            // Food
+            if (food <= 1)
             {
-                hearth_2.set_visible(false);
+                action = bn::create_sprite_animate_action_forever(
+                    fish, 32, bn::sprite_items::fish_icon.tiles_item(), 0, 0);
             }
-            if (stamina <= 40)
+            else if (food <= 2)
             {
-                hearth_3.set_visible(false);
+                action = bn::create_sprite_animate_action_forever(
+                    fish, 32, bn::sprite_items::fish_icon.tiles_item(), 1, 1);
             }
-            if (stamina <= 60)
+            else if (food <= 3)
             {
-                hearth_4.set_visible(false);
-            }
-            if (stamina <= 80)
-            {
-                hearth_5.set_visible(false);
+                action = bn::create_sprite_animate_action_forever(
+                    fish, 32, bn::sprite_items::fish_icon.tiles_item(), 2, 2);
             }
 
             text_sprites.clear();

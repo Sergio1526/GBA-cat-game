@@ -56,14 +56,14 @@ namespace catgame
 
         // Set sprites
         bn::sprite_ptr gym_sprite = bn::sprite_items::gym.create_sprite(bn::point(192, 97));
-        bn::sprite_ptr house_sprite = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 1, 200));
+        bn::sprite_ptr house_sprite = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 2, 200));
         bn::sprite_ptr house_sprite2 = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 40 + 1, 250 + 32));
         bn::sprite_ptr restaurant_sprite = bn::sprite_items::gym.create_sprite(bn::point(300 - 4 - 6 - 2, 280 + 2));
         gym_sprite.set_z_order(0);
         house_sprite.set_z_order(0);
         house_sprite2.set_z_order(0);
         restaurant_sprite.set_z_order(0);
-        // bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 100));
+        bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 100+127));
 
         // Dialog
         bn::regular_bg_ptr dialog = bn::regular_bg_items::dialog.create_bg(264, 146);
@@ -74,16 +74,10 @@ namespace catgame
         bn::vector<bn::sprite_ptr, 32> text_sprites;
 
         // GUI
-        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-87, -67));
-        bn::sprite_ptr empty_hearth_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-71, -67));
-        bn::sprite_ptr empty_hearth_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-55, -67));
-        bn::sprite_ptr empty_hearth_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-39, -67));
-        bn::sprite_ptr empty_hearth_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-23, -67));
-        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-87, -67));
-        bn::sprite_ptr hearth_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(-71, -67));
-        bn::sprite_ptr hearth_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(-55, -67));
-        bn::sprite_ptr hearth_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(-39, -67));
-        bn::sprite_ptr hearth_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(-23, -67));
+        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-74, -67));
+        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-72, -67));
+        empty_hearth_1.set_horizontal_scale(2);
+        hearth_1.set_horizontal_scale(2);
         bn::sprite_ptr start_hearth = bn::sprite_items::cat_hand_icon.create_sprite(bn::point(-103, -67));
         // Food
         bn::sprite_ptr fish = bn::sprite_items::fish_icon.create_sprite(bn::point(10 + 92, 30 - 94));
@@ -101,9 +95,9 @@ namespace catgame
 
         // Create enemies
         bn::vector<enemy, 3> enemies = {};
-        enemies.push_back(enemy(camera, bn::point(100, 80), _player.sprite(), map_collider_index));
-        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index));
-        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index));
+        enemies.push_back(enemy(camera, bn::point(100, 80), _player.sprite(), map_collider_index, "Meow?"));
+        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index, "Where is the restaurant?"));
+        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index, "Nice to meet you"));
 
         // Create triggers
         catgame::trigger gym_door = trigger(camera, bn::point(192, 126));
@@ -116,7 +110,7 @@ namespace catgame
         restaurant_sprite.set_camera(camera);
         house_sprite.set_camera(camera);
         house_sprite2.set_camera(camera);
-        // under_construction_sprite.set_camera(camera);
+        under_construction_sprite.set_camera(camera);
 
         // For Backgrounds
         clouds_bg.set_priority(0);
@@ -124,32 +118,13 @@ namespace catgame
         while (!_player.dead())
         {
             action.update();
-            // Hearts
-            hearth_1.set_visible(true);
-            hearth_2.set_visible(true);
-            hearth_3.set_visible(true);
-            hearth_4.set_visible(true);
-            hearth_5.set_visible(true);
+            // Stamina
             if (stamina <= 0)
             {
-                hearth_1.set_visible(false);
+                stamina = 0.001;
             }
-            if (stamina <= 20)
-            {
-                hearth_2.set_visible(false);
-            }
-            if (stamina <= 40)
-            {
-                hearth_3.set_visible(false);
-            }
-            if (stamina <= 60)
-            {
-                hearth_4.set_visible(false);
-            }
-            if (stamina <= 80)
-            {
-                hearth_5.set_visible(false);
-            }
+            hearth_1.set_horizontal_scale((bn::fixed)(stamina * 2) / 100);
+            hearth_1.set_x((0.14 * (stamina - 100)) - 77);
             // Food
             if (food <= 1)
             {
@@ -168,19 +143,18 @@ namespace catgame
             }
 
             text_sprites.clear();
-            //text_generator.set_center_alignment();
-            //text_generator.generate(0, -70, bn::to_string<32>(_player.health()), text_sprites);
-            //text_generator.generate(0, -60, bn::to_string<32>(_player.map_cell(map_item)), text_sprites);
+            // text_generator.set_center_alignment();
+            // text_generator.generate(0, -70, bn::to_string<32>(_player.health()), text_sprites);
+            // text_generator.generate(0, -60, bn::to_string<32>(_player.map_cell(map_item)), text_sprites);
 
             dialog.set_visible(false);
             for (enemy &enemy : enemies)
             {
                 if (enemy.near_player(_player.position()))
                 {
-                    //_player.hurt(1);
                     text_sprites.clear();
                     text_generator.set_left_alignment();
-                    text_generator.generate(-106, 47, "Hello my friend.", text_sprites);
+                    text_generator.generate(-106, 47, enemy.get_dialog(), text_sprites);
                     dialog.set_visible(true);
                 }
                 enemy.update(map_item);

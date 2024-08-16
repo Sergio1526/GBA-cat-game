@@ -15,6 +15,8 @@
 #include "bn_vector.h"
 #include "bn_backdrop.h"
 #include "bn_sprite_items_collider.h"
+#include "bn_sprites_actions.h"
+#include "bn_sprite_actions.h"
 
 // Backgrounds
 #include "bn_regular_bg_items_minigame1.h"
@@ -26,6 +28,8 @@
 #include "bn_sprite_items_empty_heart_icon.h"
 #include "bn_sprite_items_cat_hand_icon.h"
 #include "bn_sprite_items_time_icon.h"
+#include "bn_sprite_items_a_icon.h"
+#include "bn_sprite_items_time_hands_icon.h"
 
 // Common libraries
 #include "common_info.h"
@@ -56,6 +60,14 @@ namespace catgame
         // Dialog
         bn::regular_bg_ptr dialog = bn::regular_bg_items::dialog.create_bg(264, 146);
         dialog.set_priority(0);
+        bn::sprite_ptr a_button = bn::sprite_items::a_icon.create_sprite(bn::point(45 + 53, 60));
+        bn::sprite_animate_action<2> a_button_action = bn::create_sprite_animate_action_forever(
+            a_button, 32, bn::sprite_items::a_icon.tiles_item(), 0, 1);
+        a_button.set_bg_priority(0);
+        bn::sprite_ptr energy_icon = bn::sprite_items::cat_hand_icon.create_sprite(bn::point(0, 0));
+        bn::sprite_scale_loop_action energy_action(energy_icon, 60, 2);
+        energy_icon.set_bg_priority(0);
+        energy_icon.set_visible(false);
         // Show text
         text_generator.set_bg_priority(0);
         bn::vector<bn::sprite_ptr, 32> text_sprites;
@@ -66,78 +78,92 @@ namespace catgame
         bn::fixed time = 0;
         int counter = 0;
         int goal = 30;
+        int instructions = 0;
 
         bool started = false;
 
-        text_sprites.clear();
-        text_generator.set_center_alignment();
-        text_generator.generate(0, 37, "START PUSHING!", text_sprites);
-        text_generator.set_left_alignment();
-        text_generator.generate(-106, 47, "Try to get " + bn::to_string<32>(goal) + " push ups", text_sprites);
-        text_generator.generate(-106, 57, "You must stop to recover stamina", text_sprites);
-
         // GUI
-        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-87, -67));
-        bn::sprite_ptr empty_hearth_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-71, -67));
-        bn::sprite_ptr empty_hearth_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-55, -67));
-        bn::sprite_ptr empty_hearth_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-39, -67));
-        bn::sprite_ptr empty_hearth_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-23, -67));
-        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-87, -67));
-        bn::sprite_ptr hearth_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(-71, -67));
-        bn::sprite_ptr hearth_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(-55, -67));
-        bn::sprite_ptr hearth_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(-39, -67));
-        bn::sprite_ptr hearth_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(-23, -67));
+        bn::sprite_ptr empty_hearth_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(-74, -67));
+        bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-72, -67));
+        bn::fixed stamina_scale = 2;
+        empty_hearth_1.set_horizontal_scale(stamina_scale);
+        hearth_1.set_horizontal_scale(stamina_scale);
         bn::sprite_ptr start_hearth = bn::sprite_items::cat_hand_icon.create_sprite(bn::point(-103, -67));
 
-        bn::sprite_ptr empty_time_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(79, -67));
-        bn::sprite_ptr empty_time_2 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(63, -67));
-        bn::sprite_ptr empty_time_3 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(47, -67));
-        bn::sprite_ptr empty_time_4 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(31, -67));
-        bn::sprite_ptr empty_time_5 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(15, -67));
-        bn::sprite_ptr time_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(79, -67));
-        bn::sprite_ptr time_2 = bn::sprite_items::heart_icon.create_sprite(bn::point(63, -67));
-        bn::sprite_ptr time_3 = bn::sprite_items::heart_icon.create_sprite(bn::point(47, -67));
-        bn::sprite_ptr time_4 = bn::sprite_items::heart_icon.create_sprite(bn::point(31, -67));
-        bn::sprite_ptr time_5 = bn::sprite_items::heart_icon.create_sprite(bn::point(15, -67));
+        bn::sprite_ptr empty_time_1 = bn::sprite_items::empty_heart_icon.create_sprite(bn::point(79 - 16, -67));
+        bn::sprite_ptr time_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(79 - 15, -67));
+        bn::fixed scale = 2;
+        time_1.set_horizontal_scale(scale);
+        empty_time_1.set_horizontal_scale(scale);
         bn::sprite_ptr start_time = bn::sprite_items::time_icon.create_sprite(bn::point(103, -67));
+        bn::sprite_ptr start_time_hands = bn::sprite_items::time_hands_icon.create_sprite(bn::point(103, -67));
+        bn::sprite_rotate_loop_action rotate_action(start_time_hands, 360, 360);
 
         while (!end)
         {
+            if (instructions < 3)
+            {
+                if (instructions == 0)
+                {
+                    text_sprites.clear();
+                    text_generator.set_center_alignment();
+                    text_generator.generate(0, 35, "INSTRUCTIONS!", text_sprites);
+                    text_generator.set_left_alignment();
+                    text_generator.generate(-106, 45, "Press L or R buttons to", text_sprites);
+                    text_generator.generate(-106, 55, "lift weight.", text_sprites);
+                }
+                else if (instructions == 1)
+                {
+                    text_sprites.clear();
+                    text_generator.set_left_alignment();
+                    text_generator.generate(-106, 35, "Try to lift " + bn::to_string<32>(goal) + " times.", text_sprites);
+                    text_generator.generate(-106, 45, "You must stop to recover your", text_sprites);
+                    text_generator.generate(-106, 55, "energy.", text_sprites);
+                }
+                else if (instructions == 2)
+                {
+                    a_button.set_visible(false);
+                    text_sprites.clear();
+                    text_generator.set_center_alignment();
+                    text_generator.generate(0, 35, "Press L or R to start", text_sprites);
+                    text_generator.generate(0, 50, "START LIFTING!", text_sprites);
+                }
+                if (bn::keypad::a_pressed())
+                {
+                    instructions++;
+                }
+            }
             // Hearts
-            hearth_1.set_visible(true);
-            hearth_2.set_visible(true);
-            hearth_3.set_visible(true);
-            hearth_4.set_visible(true);
-            hearth_5.set_visible(true);
-            if (_stamina <= 0)
+            if (_stamina >= 0)
             {
-                hearth_1.set_visible(false);
-            }
-            if (_stamina <= 20)
-            {
-                hearth_2.set_visible(false);
-            }
-            if (_stamina <= 40)
-            {
-                hearth_3.set_visible(false);
-            }
-            if (_stamina <= 60)
-            {
-                hearth_4.set_visible(false);
-            }
-            if (_stamina <= 80)
-            {
-                hearth_5.set_visible(false);
+                stamina_scale = (2 * _stamina) / 100;
+                if (stamina_scale <= 0)
+                {
+                    stamina_scale = 0.001;
+                }
+                if (_stamina <= 0)
+                {
+                    _stamina = 0.001;
+                }
+                hearth_1.set_horizontal_scale(stamina_scale);
+                hearth_1.set_x((0.14 * (_stamina - 100)) - 77);
             }
 
             if (started)
             {
+                rotate_action.update();
                 time += 0.1f;
                 dialog.set_visible(false);
                 text_sprites.clear();
-                text_generator.generate(-106, 60, "Time: " + bn::to_string<32>(time), text_sprites);
-                text_generator.generate(-106, 70, "Stamina: " + bn::to_string<32>(_stamina), text_sprites);
-                text_generator.generate(-106, -60, "Push ups: " + bn::to_string<32>(counter), text_sprites);
+                text_generator.set_left_alignment();
+                text_generator.generate(-106, -50, "Lifted: " + bn::to_string<32>(counter), text_sprites);
+
+                if (scale > 0.05)
+                {
+                    scale -= 0.003;
+                }
+                time_1.set_horizontal_scale(scale);
+                time_1.set_x(time_1.position().x() + 0.05);
             }
 
             if (time > 60)
@@ -190,27 +216,41 @@ namespace catgame
             {
                 _stamina += 0.1f;
             }
+            if (a_button.visible())
+            {
+                a_button_action.update();
+            }
             bn::core::update();
         }
 
         while (end && !bn::keypad::a_pressed())
         {
+            a_button.set_visible(true);
+
             text_sprites.clear();
 
             dialog.set_visible(true);
-            text_generator.generate(-106, 47, "You did " + bn::to_string<32>(counter) + " push ups...", text_sprites);
+            text_generator.set_left_alignment();
+            text_generator.generate(-106, 35, "You lifted " + bn::to_string<32>(counter) + " times...", text_sprites);
             if (counter > 29)
             {
                 if (!scored)
                 {
                     scored = true;
                     stamina += 20;
+                    if (stamina > 100)
+                    {
+                        stamina = 100;
+                    }
                 }
-                text_generator.generate(-106, 57, "Your life has increased!", text_sprites);
+                energy_icon.set_visible(true);
+                energy_action.update();
+                text_generator.generate(-106, 45, "Your energy has been", text_sprites);
+                text_generator.generate(-106, 55, "increased!", text_sprites);
             }
             else
             {
-                text_generator.generate(-106, 57, "Try again later.", text_sprites);
+                text_generator.generate(-106, 45, "Try again later.", text_sprites);
             }
 
             bn::core::update();
