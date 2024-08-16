@@ -17,6 +17,7 @@ namespace catgame
         bn::fixed _velocity = 0.5;
         bool _is_near_player = false;
         bn::point _position;
+        bn::fixed _speed;
 
     public:
         food(bn::camera_ptr camera);

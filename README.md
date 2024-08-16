@@ -75,6 +75,14 @@ Working days on the project / Total JAM time was 3 months.
 ![Rework sprite works](/images/GBA-cat-game-5.png)
 ![Rework logos works](/images/GBA-cat-game-6.png)
 ![Rework intro works](/images/GBA-cat-game-7.png)
+### Fourth week
+Many attemps with backgrounds, images, palettes, and many more
+![Rework with palettes](/images/GBA-cat-game-8.png)
+![Rework with layers](/images/GBA-cat-game-9.png)
+![Dialogs](/images/GBA-cat-game-10.png)
+![Colliders](/images/GBA-cat-game-11.png)
+![GYM placeholder](/images/GBA-cat-game-12.png)
+![GYM colliders](/images/GBA-cat-game-13.png)
 
 ## Licenses
 Logos and banners made by GBA Jam 2024 Organizers, licensed under [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/).

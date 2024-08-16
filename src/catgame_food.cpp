@@ -16,13 +16,11 @@
 
 namespace catgame
 {
-    bn::random random_food = bn::random();
-    bn::fixed speed;
+    bn::random _random_food = bn::random();
     food::food(bn::camera_ptr camera)
     {
-        bn::point new_position = bn::point(random_food.get_int(-100, 100), -85);
-        _sprite = bn::sprite_items::fish.create_sprite(new_position);
-        speed = random_food.get_fixed(0, 2);
+        _sprite = bn::sprite_items::fish.create_sprite(bn::point(_random_food.get_int(-100, 100), -85));
+        _speed = _random_food.get_fixed(0.5, 2);
         _sprite.value().set_camera(camera);
         _sprite.value().set_z_order(2);
         _action = bn::create_sprite_animate_action_forever(
@@ -42,20 +40,19 @@ namespace catgame
     }
     void food::update()
     {
+        BN_LOG("Speed ", _speed);
         if (_is_near_player)
-        {
-            bn::point new_position = bn::point(random_food.get_int(-100, 100), -85);
-            _sprite.value().set_position(new_position);
+        {            
+            _sprite.value().set_position(bn::point(_random_food.get_int(-100, 100), -85));
         }
         // AI
         else
         {
-            _sprite.value().set_position(_sprite.value().position().x(), _sprite.value().position().y() + (speed));
+            _sprite.value().set_position(_sprite.value().position().x(), _sprite.value().position().y() + (_speed));
             if (_sprite.value().position().y() > 85)
             {
-                speed = random_food.get_fixed(0, 2);
-                bn::point new_position = bn::point(random_food.get_int(-100, 100), -85);
-                _sprite.value().set_position(new_position);
+                _speed = _random_food.get_fixed(0, 2);
+                _sprite.value().set_position(bn::point(_random_food.get_int(-100, 100), -85));
             }
         }
 

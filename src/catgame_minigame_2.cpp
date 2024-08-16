@@ -223,13 +223,13 @@ namespace catgame
                     _stamina += 0.1f;
                 }
 
-                for (food &food : foods)
+                for (food &f : foods)
                 {
-                    if (food.near_player(cat_sprite.position()))
+                    if (f.near_player(cat_sprite.position()))
                     {
                         counter++;
                     }
-                    food.update();
+                    f.update();
                 }
             }
 
