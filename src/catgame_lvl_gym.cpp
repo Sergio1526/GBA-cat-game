@@ -47,7 +47,11 @@ namespace catgame
         current_game_phase = catgame::game_phases::LVL1;
         next_game_phase = catgame::game_phases::LVL1;
 
+        // Dialog
+        bn::regular_bg_ptr dialog = bn::regular_bg_items::dialog.create_bg(264, 146);
+        dialog.set_priority(0);
         // Show text
+        text_generator.set_bg_priority(0);
         text_generator.set_center_alignment();
         bn::vector<bn::sprite_ptr, 32> text_sprites;
 
@@ -62,18 +66,18 @@ namespace catgame
         int map_collider_index = 3;
 
         // Create player
-        catgame::player _player = player(camera, bn::point(138, 250), map_collider_index);
+        catgame::player _player = player(camera, bn::point(200, 260), map_collider_index);
 
         // Create enemies
         bn::vector<enemy, 5> enemies = {};
-        enemies.push_back(enemy(camera, bn::point(100, 100), _player.sprite(), map_collider_index, "Hello my fellow cat"));
-        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index, "..."));
-        enemies.push_back(enemy(camera, bn::point(240, 120), _player.sprite(), map_collider_index, "Don't forget to eat sometimes"));
-        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index, "It's a nicve day!"));
-        enemies.push_back(enemy(camera, bn::point(230, 120), _player.sprite(), map_collider_index, "You look stronger >.<"));
+        enemies.push_back(enemy(camera, bn::point(100, 150), _player.sprite(), map_collider_index, "Hello my fellow cat"));
+        enemies.push_back(enemy(camera, bn::point(150, 100), _player.sprite(), map_collider_index, "..."));
+        enemies.push_back(enemy(camera, bn::point(240, 150), _player.sprite(), map_collider_index, "Don't forget to eat sometimes"));
+        enemies.push_back(enemy(camera, bn::point(250, 150), _player.sprite(), map_collider_index, "It's a nice day!"));
+        enemies.push_back(enemy(camera, bn::point(200, 150), _player.sprite(), map_collider_index, "You look stronger >.<"));
 
         // Create triggers
-        catgame::trigger gym_door = trigger(camera, bn::point(140, 188));
+        catgame::trigger gym_door = trigger(camera, bn::point(140, 178));
         catgame::trigger minigame_1 = trigger(camera, bn::point(204, 312));
 
         // Set camera
@@ -118,14 +122,18 @@ namespace catgame
             }
 
             text_sprites.clear();
-            text_generator.generate(0, -70, bn::to_string<32>(_player.health()), text_sprites);
-            text_generator.generate(0, -50, bn::to_string<32>(_player.map_cell(map_item)), text_sprites);
-
+            //text_generator.generate(0, -70, bn::to_string<32>(_player.health()), text_sprites);
+            //text_generator.generate(0, -50, bn::to_string<32>(_player.map_cell(map_item)), text_sprites);
+            
+            dialog.set_visible(false);
             for (enemy &enemy : enemies)
             {
                 if (enemy.near_player(_player.position()))
                 {
-                    //_player.hurt(1);
+                    text_sprites.clear();
+                    text_generator.set_left_alignment();
+                    text_generator.generate(-106, 47, enemy.get_dialog(), text_sprites);
+                    dialog.set_visible(true);
                 }
                 enemy.update(map_item);
             }

@@ -19,7 +19,6 @@
 
 namespace catgame
 {
-    bool updated = false;
     enemy::enemy(bn::camera_ptr camera, bn::point position, bn::sprite_ptr player_sprite, int map_collider_index, bn::string_view dialog)
     {
         _position = position;

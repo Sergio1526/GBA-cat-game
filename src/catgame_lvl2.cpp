@@ -103,7 +103,6 @@ namespace catgame
             _player.animate();
 
             if(gym_door.near_player(_player.position())){
-                BN_LOG("Near GYM!");
                 break;
             }
 

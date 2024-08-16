@@ -28,7 +28,7 @@ I decided to make a game about a random Cat that decides to go to the Gym
 
 ## Dev plan
 ### Milestones
-Working days on the project
+Working days on the project / Total JAM time was 3 months.
 - [x] Run butano (day 1)
 - [x] Add some texts (day 2)
 - [x] Add background (day 3)
@@ -50,12 +50,13 @@ Working days on the project
 - [x] Re-write level logic (day 16)
 - [x] Added new levels and triggers (day 17)
 - [x] Plan some gameplay and minigames (day 18)
-- [ ] Add dialogs
+- [x] Add dialogs (day 20)
 - [x] Draw maps (day 19)
-- [ ] Draw some new sprites
+- [x] Draw some new sprites (day 20)
 - [x] Add story (day 19)
 - [x] Create gym (day 19)
 - [x] Create first mini-game (day 19)
+- [x] Minigame 2 (day 20)
 - [ ] Draw some new sprites
 - [ ] Animate NPCs
 - [ ] Add more details to world

@@ -7,12 +7,12 @@
 
 //======================================================================
 //
-//	limit_bn_gfx, 8x8@4, 
+//	limit_bn_gfx, 16x16@4, 
 //	+ palette 16 entries, not compressed
-//	+ 1 tiles not compressed
-//	Total size: 32 + 32 = 64
+//	+ 4 tiles not compressed
+//	Total size: 32 + 128 = 160
 //
-//	Time-stamp: 2024-07-10, 19:57:11
+//	Time-stamp: 2024-08-15, 20:10:13
 //	Exported by Cearn's GBA Image Transmogrifier, v0.9.2
 //	( http://www.coranac.com/projects/#grit )
 //
@@ -21,8 +21,8 @@
 #ifndef GRIT_LIMIT_BN_GFX_H
 #define GRIT_LIMIT_BN_GFX_H
 
-#define limit_bn_gfxTilesLen 32
-extern const bn::tile limit_bn_gfxTiles[1];
+#define limit_bn_gfxTilesLen 128
+extern const bn::tile limit_bn_gfxTiles[4];
 
 #define limit_bn_gfxPalLen 32
 extern const bn::color limit_bn_gfxPal[16];
@@ -33,8 +33,8 @@ extern const bn::color limit_bn_gfxPal[16];
 
 namespace bn::sprite_items
 {
-    constexpr inline sprite_item limit(sprite_shape_size(sprite_shape::SQUARE, sprite_size::SMALL), 
-            sprite_tiles_item(span<const tile>(limit_bn_gfxTiles, 1), bpp_mode::BPP_4, compression_type::NONE, 1), 
+    constexpr inline sprite_item limit(sprite_shape_size(sprite_shape::SQUARE, sprite_size::NORMAL), 
+            sprite_tiles_item(span<const tile>(limit_bn_gfxTiles, 4), bpp_mode::BPP_4, compression_type::NONE, 1), 
             sprite_palette_item(span<const color>(limit_bn_gfxPal, 16), bpp_mode::BPP_4, compression_type::NONE));
 }
 

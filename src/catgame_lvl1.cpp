@@ -57,13 +57,16 @@ namespace catgame
         // Set sprites
         bn::sprite_ptr gym_sprite = bn::sprite_items::gym.create_sprite(bn::point(192, 97));
         bn::sprite_ptr house_sprite = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 2, 200));
-        bn::sprite_ptr house_sprite2 = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 40 + 1, 250 + 32));
-        bn::sprite_ptr restaurant_sprite = bn::sprite_items::gym.create_sprite(bn::point(300 - 4 - 6 - 2, 280 + 2));
+        bn::sprite_ptr house_sprite2 = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 42, 282));
+        bn::sprite_ptr restaurant_sprite = bn::sprite_items::gym.create_sprite(bn::point(300 - 12, 282));
         gym_sprite.set_z_order(0);
         house_sprite.set_z_order(0);
         house_sprite2.set_z_order(0);
         restaurant_sprite.set_z_order(0);
-        bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 100+127));
+        bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 227));
+        under_construction_sprite.set_z_order(1);
+        bn::sprite_ptr under_construction_sprite2 = bn::sprite_items::construction.create_sprite(bn::point(142, 240+67));
+        under_construction_sprite2.set_z_order(1);
 
         // Dialog
         bn::regular_bg_ptr dialog = bn::regular_bg_items::dialog.create_bg(264, 146);
@@ -91,17 +94,17 @@ namespace catgame
         int map_collider_index = 8;
 
         // Create player
-        catgame::player _player = player(camera, bn::point(128, 128), map_collider_index);
+        catgame::player _player = player(camera, bn::point(320, 115), map_collider_index);
 
         // Create enemies
         bn::vector<enemy, 3> enemies = {};
         enemies.push_back(enemy(camera, bn::point(100, 80), _player.sprite(), map_collider_index, "Meow?"));
-        enemies.push_back(enemy(camera, bn::point(150, 90), _player.sprite(), map_collider_index, "Where is the restaurant?"));
-        enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index, "Nice to meet you"));
+        enemies.push_back(enemy(camera, bn::point(150, 250), _player.sprite(), map_collider_index, "Where is the restaurant?"));
+        enemies.push_back(enemy(camera, bn::point(230, 120), _player.sprite(), map_collider_index, "Nice to meet you"));
 
         // Create triggers
         catgame::trigger gym_door = trigger(camera, bn::point(192, 126));
-        catgame::trigger restaurant_door = trigger(camera, bn::point(200 + 97, 200 + 115));
+        catgame::trigger restaurant_door = trigger(camera, bn::point(287, 315));
 
         // Set camera
         ground.set_camera(camera);
@@ -111,6 +114,7 @@ namespace catgame
         house_sprite.set_camera(camera);
         house_sprite2.set_camera(camera);
         under_construction_sprite.set_camera(camera);
+        under_construction_sprite2.set_camera(camera);
 
         // For Backgrounds
         clouds_bg.set_priority(0);
@@ -166,6 +170,11 @@ namespace catgame
             if (gym_door.near_player(_player.position()))
             {
                 next_game_phase = catgame::game_phases::GYM;
+                break;
+            }
+            if (restaurant_door.near_player(_player.position()))
+            {
+                next_game_phase = catgame::game_phases::MINIGAME2;
                 break;
             }
 

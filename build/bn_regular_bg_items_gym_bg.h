@@ -9,11 +9,11 @@
 //
 //	gym_bg_bn_gfx, 512x512@4, 
 //	+ palette 16 entries, not compressed
-//	+ 108 tiles (t|f|p reduced) not compressed
+//	+ 186 tiles (t|f|p reduced) not compressed
 //	+ regular map (in SBBs), not compressed, 64x64 
-//	Total size: 32 + 3456 + 8192 = 11680
+//	Total size: 32 + 5952 + 8192 = 14176
 //
-//	Time-stamp: 2024-08-13, 12:33:06
+//	Time-stamp: 2024-08-16, 01:11:36
 //	Exported by Cearn's GBA Image Transmogrifier, v0.9.2
 //	( http://www.coranac.com/projects/#grit )
 //
@@ -22,8 +22,8 @@
 #ifndef GRIT_GYM_BG_BN_GFX_H
 #define GRIT_GYM_BG_BN_GFX_H
 
-#define gym_bg_bn_gfxTilesLen 3456
-extern const bn::tile gym_bg_bn_gfxTiles[108];
+#define gym_bg_bn_gfxTilesLen 5952
+extern const bn::tile gym_bg_bn_gfxTiles[186];
 
 #define gym_bg_bn_gfxMapLen 8192
 extern const bn::regular_bg_map_cell gym_bg_bn_gfxMap[4096];
@@ -38,7 +38,7 @@ extern const bn::color gym_bg_bn_gfxPal[16];
 namespace bn::regular_bg_items
 {
     constexpr inline regular_bg_item gym_bg(
-            regular_bg_tiles_item(span<const tile>(gym_bg_bn_gfxTiles, 108), bpp_mode::BPP_4, compression_type::NONE), 
+            regular_bg_tiles_item(span<const tile>(gym_bg_bn_gfxTiles, 186), bpp_mode::BPP_4, compression_type::NONE), 
             bg_palette_item(span<const color>(gym_bg_bn_gfxPal, 16), bpp_mode::BPP_4, compression_type::NONE),
             regular_bg_map_item(gym_bg_bn_gfxMap[0], size(64, 64), compression_type::NONE, 1, false));
 }

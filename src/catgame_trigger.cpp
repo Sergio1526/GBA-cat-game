@@ -16,12 +16,9 @@ namespace catgame
     {
         bn::fixed dist_x = bn::abs(player_pos.x() - _sprite.value().position().x());
         bn::fixed dist_y = bn::abs(player_pos.y() - _sprite.value().position().y());
-        if (dist_x < 5)
+        if (dist_x < 10 && dist_y < 10)
         {
-            if (dist_y < 5)
-            {
-                return true;
-            }
+            return true;
         }
         return false;
     }

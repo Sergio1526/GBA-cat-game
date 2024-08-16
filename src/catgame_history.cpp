@@ -28,11 +28,13 @@ namespace catgame
 
         bn::fixed history_timer = 0;
         constexpr bn::string_view story_lines[] = {
-            "...",
             "One day",
-            "Mr Skitty felt courius",
+            "Whiskers felt courius",
             "and decides to go out",
             "to explore the town!",
+            "This is only the begining",
+            "...",
+            "..."
         };
         int counter = 0;
         text_generator.generate(0, -40 + (counter * 10), story_lines[counter], text_sprites);
@@ -46,7 +48,7 @@ namespace catgame
             {
                 text_generator.generate(0, -40 + (counter * 10), story_lines[counter], text_sprites);
                 history_timer = 0;
-                if (counter < 5)
+                if (counter < 7)
                 {
                     counter += 1;
                 }
@@ -55,7 +57,7 @@ namespace catgame
                 }
             }
             else{
-                history_timer += 0.1f;
+                history_timer += 0.2f;
             }
             bn::core::update();
         }

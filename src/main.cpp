@@ -13,6 +13,7 @@
 #include "catgame_lvl1.h"
 #include "catgame_lvl2.h"
 #include "catgame_minigame_1.h"
+#include "catgame_minigame_2.h"
 #include "catgame_lvl_gym.h"
 #include "catgame_history.h"
 
@@ -61,6 +62,12 @@ int main()
         {
             catgame::minigame_1 minigame_1 = catgame::minigame_1();
             next_game_phase = minigame_1.execute(text_generator, _times_played, _food, _stamina);
+        }
+        break;
+        case (catgame::game_phases::MINIGAME2):
+        {
+            catgame::minigame_2 minigame_2 = catgame::minigame_2();
+            next_game_phase = minigame_2.execute(text_generator, _times_played, _food, _stamina);
         }
         break;
         case (catgame::game_phases::GYM):
