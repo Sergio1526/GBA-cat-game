@@ -57,12 +57,12 @@ Working days on the project / Total JAM time was 3 months.
 - [x] Create gym (day 19)
 - [x] Create first mini-game (day 19)
 - [x] Minigame 2 (day 20)
-- [ ] Draw some new sprites
-- [ ] Animate NPCs
-- [ ] Add more details to world
+- [x] Draw some new sprites (day 21)
+- [x] Animate NPCs (day 21)
+- [x] Add more details to world (day 21)
 - [x] Add gameplay (day 20)
-- [ ] Add music
-- [ ] Add new GUI
+- [ ] Add music (day 21)
+- [x] Add new GUI (day 21)
 
 ## Some initial dev screenshoots
 ### First week

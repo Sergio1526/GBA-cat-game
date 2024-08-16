@@ -70,7 +70,7 @@ namespace catgame
         enemies.push_back(enemy(camera, bn::point(250, 120), _player.sprite(), map_collider_index, ""));
 
         // Create triggers
-        catgame::trigger gym_door = trigger(camera, bn::point(100, 100));
+        catgame::trigger gym_door = trigger(camera, bn::point(100, 100), true);
 
         // Set camera
         ground.set_camera(camera);

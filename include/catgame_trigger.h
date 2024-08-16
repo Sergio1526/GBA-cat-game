@@ -3,6 +3,7 @@
 
 #include "bn_point.h"
 #include "bn_sprite_ptr.h"
+#include "bn_sprite_animate_actions.h"
 
 namespace catgame
 {
@@ -10,8 +11,9 @@ namespace catgame
     {
     private:
         bn::optional<bn::sprite_ptr> _sprite;
+        bn::optional<bn::sprite_animate_action<4>> _action;
     public:
-        trigger(bn::camera_ptr &camera, bn::point position);
+        trigger(bn::camera_ptr &camera, bn::point position, bool show);
         bool near_player(bn::fixed_point player_pos);
     };
 }

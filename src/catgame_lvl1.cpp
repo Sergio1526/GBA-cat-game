@@ -18,9 +18,10 @@
 
 // Backgrounds
 #include "bn_regular_bg_items_simple_bg.h"
+#include "bn_regular_bg_items_simple_1_bg.h"
 #include "bn_regular_bg_items_clouds.h"
-#include "bn_regular_bg_map_ptr.h"
 #include "bn_regular_bg_items_dialog.h"
+#include "bn_regular_bg_map_ptr.h"
 
 // Sprites
 #include "bn_sprite_items_gym.h"
@@ -29,6 +30,8 @@
 #include "bn_sprite_items_heart_icon.h"
 #include "bn_sprite_items_empty_heart_icon.h"
 #include "bn_sprite_items_cat_hand_icon.h"
+#include "bn_sprite_items_flower.h"
+#include "bn_sprite_items_fish_icon.h"
 
 // Common libraries
 #include "common_info.h"
@@ -51,22 +54,33 @@ namespace catgame
 
         // Backgrounds
         bn::regular_bg_ptr ground = bn::regular_bg_items::simple_bg.create_bg(256, 256); // Center
+        bn::regular_bg_ptr fog = bn::regular_bg_items::simple_1_bg.create_bg(256, 256); // Center
         // Generate map for collisions
         const bn::regular_bg_map_item &map_item = bn::regular_bg_items::simple_bg.map_item();
 
         // Set sprites
         bn::sprite_ptr gym_sprite = bn::sprite_items::gym.create_sprite(bn::point(192, 97));
-        bn::sprite_ptr house_sprite = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 2, 200));
-        bn::sprite_ptr house_sprite2 = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 42, 282));
-        bn::sprite_ptr restaurant_sprite = bn::sprite_items::gym.create_sprite(bn::point(300 - 12, 282));
+        bn::sprite_ptr gym_sprite_sign = bn::sprite_items::fish_icon.create_sprite(bn::point(192, 97));
+        bn::sprite_ptr house_sprite = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 2, 200 + 2));
+        bn::sprite_ptr house_sprite2 = bn::sprite_items::gym.create_sprite(bn::point(150 - 28 - 19 + 42 - 1, 282));
+        bn::sprite_ptr restaurant_sprite = bn::sprite_items::gym.create_sprite(bn::point(288, 282));
+        bn::sprite_ptr restaurant_sprite_sign = bn::sprite_items::fish_icon.create_sprite(bn::point(288, 282));
         gym_sprite.set_z_order(0);
+        gym_sprite_sign.set_z_order(1);
         house_sprite.set_z_order(0);
         house_sprite2.set_z_order(0);
         restaurant_sprite.set_z_order(0);
+        restaurant_sprite_sign.set_z_order(1);
         bn::sprite_ptr under_construction_sprite = bn::sprite_items::construction.create_sprite(bn::point(100, 227));
         under_construction_sprite.set_z_order(1);
-        bn::sprite_ptr under_construction_sprite2 = bn::sprite_items::construction.create_sprite(bn::point(142, 240+67));
+        bn::sprite_ptr under_construction_sprite2 = bn::sprite_items::construction.create_sprite(bn::point(142, 240 + 67));
         under_construction_sprite2.set_z_order(1);
+
+        bn::sprite_ptr flower_sprite = bn::sprite_items::flower.create_sprite(bn::point(192+69, 132));
+        bn::sprite_animate_action<4> flower_action = bn::create_sprite_animate_action_forever(
+            flower_sprite, 8, bn::sprite_items::flower.tiles_item(), 0, 0, 1, 0);
+        flower_sprite.set_z_order(1);
+        flower_sprite.set_camera(camera);
 
         // Dialog
         bn::regular_bg_ptr dialog = bn::regular_bg_items::dialog.create_bg(264, 146);
@@ -81,17 +95,24 @@ namespace catgame
         bn::sprite_ptr hearth_1 = bn::sprite_items::heart_icon.create_sprite(bn::point(-72, -67));
         empty_hearth_1.set_horizontal_scale(2);
         hearth_1.set_horizontal_scale(2);
+        empty_hearth_1.set_z_order(0);
+        hearth_1.set_z_order(0);
+        empty_hearth_1.set_bg_priority(0);
+        hearth_1.set_bg_priority(0);
+
         bn::sprite_ptr start_hearth = bn::sprite_items::cat_hand_icon.create_sprite(bn::point(-103, -67));
         // Food
         bn::sprite_ptr fish = bn::sprite_items::fish_icon.create_sprite(bn::point(10 + 92, 30 - 94));
         bn::sprite_animate_action<2> action = bn::create_sprite_animate_action_forever(
             fish, 32, bn::sprite_items::fish_icon.tiles_item(), 2, 2);
+        start_hearth.set_z_order(0);
+        fish.set_z_order(0);
+        start_hearth.set_bg_priority(0);
+        fish.set_bg_priority(0);
 
         bn::regular_bg_ptr clouds_bg = bn::regular_bg_items::clouds.create_bg(0, 0);
-        bn::blending::set_transparency_alpha(0.1);
-        clouds_bg.set_blending_enabled(true);
 
-        int map_collider_index = 8;
+        int map_collider_index = 11;
 
         // Create player
         catgame::player _player = player(camera, bn::point(320, 115), map_collider_index);
@@ -103,24 +124,38 @@ namespace catgame
         enemies.push_back(enemy(camera, bn::point(230, 120), _player.sprite(), map_collider_index, "Nice to meet you"));
 
         // Create triggers
-        catgame::trigger gym_door = trigger(camera, bn::point(192, 126));
-        catgame::trigger restaurant_door = trigger(camera, bn::point(287, 315));
+        catgame::trigger gym_door = trigger(camera, bn::point(196, 97 + 16), true);
+        catgame::trigger restaurant_door = trigger(camera, bn::point(293, 296), true);
 
         // Set camera
         ground.set_camera(camera);
+        fog.set_camera(camera);
         clouds_bg.set_camera(camera);
         gym_sprite.set_camera(camera);
+        gym_sprite_sign.set_camera(camera);
         restaurant_sprite.set_camera(camera);
+        restaurant_sprite_sign.set_camera(camera);
         house_sprite.set_camera(camera);
         house_sprite2.set_camera(camera);
         under_construction_sprite.set_camera(camera);
         under_construction_sprite2.set_camera(camera);
 
         // For Backgrounds
+        fog.set_priority(2);
+        //bn::blending::set_transparency_alpha(0.8);
+        //fog.set_blending_enabled(true);
         clouds_bg.set_priority(0);
+        bn::blending::set_transparency_alpha(0.1);
+        clouds_bg.set_blending_enabled(true);
 
         while (!_player.dead())
         {
+            // Flowers
+            if (flower_sprite.visible())
+            {
+                flower_action.update();
+            }
+
             action.update();
             // Stamina
             if (stamina <= 0)

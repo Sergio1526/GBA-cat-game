@@ -77,8 +77,8 @@ namespace catgame
         enemies.push_back(enemy(camera, bn::point(200, 150), _player.sprite(), map_collider_index, "You look stronger >.<"));
 
         // Create triggers
-        catgame::trigger gym_door = trigger(camera, bn::point(140, 178));
-        catgame::trigger minigame_1 = trigger(camera, bn::point(204, 312));
+        catgame::trigger gym_door = trigger(camera, bn::point(140, 178), true);
+        catgame::trigger minigame_1 = trigger(camera, bn::point(204, 312), false);
 
         // Set camera
         ground.set_camera(camera);
@@ -91,7 +91,7 @@ namespace catgame
         hearth_1.set_horizontal_scale(stamina_scale);
         bn::sprite_ptr start_hearth = bn::sprite_items::cat_hand_icon.create_sprite(bn::point(-103, -67));
         // Food
-        bn::sprite_ptr fish = bn::sprite_items::fish_icon.create_sprite(bn::point(10 + 92, 30 - 94));
+        bn::sprite_ptr fish = bn::sprite_items::fish_icon.create_sprite(bn::point(102, - 64));
         bn::sprite_animate_action<2> action = bn::create_sprite_animate_action_forever(
             fish, 32, bn::sprite_items::fish_icon.tiles_item(), 2, 2);
 

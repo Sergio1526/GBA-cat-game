@@ -53,7 +53,7 @@ namespace catgame
         ground.set_priority(3);
 
         // Sprites
-        bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(bn::point(0, 50));
+        bn::sprite_ptr cat_sprite = bn::sprite_items::cat.create_sprite(bn::point(0, 40));
         bn::sprite_animate_action<2> player_action = bn::create_sprite_animate_action_forever(
             cat_sprite, 16, bn::sprite_items::cat.tiles_item(), 0, 1);
         cat_sprite.set_bg_priority(1);
@@ -190,25 +190,27 @@ namespace catgame
                     // Animate face
                     if (bn::keypad::left_pressed())
                     {
-                        // counter += 1;
+                        cat_sprite.set_horizontal_flip(true);
                     }
                     if (bn::keypad::right_pressed())
                     {
-                        // counter += 1;
+                        cat_sprite.set_horizontal_flip(false);
                     }
 
                     if (bn::keypad::left_held())
                     {
-                        _stamina -= 0.2f;
-                        cat_sprite.set_x(cat_sprite.x() - 1);
-                        cat_sprite.set_horizontal_flip(true);
+                        if(cat_sprite.x() > -110){
+                            _stamina -= 0.2f;
+                            cat_sprite.set_x(cat_sprite.x() - 1);
+                        }
                     }
 
                     if (bn::keypad::right_held())
                     {
-                        _stamina -= 0.2f;
-                        cat_sprite.set_x(cat_sprite.x() + 1);
-                        cat_sprite.set_horizontal_flip(false);
+                        if(cat_sprite.x() < 110){
+                            _stamina -= 0.2f;
+                            cat_sprite.set_x(cat_sprite.x() + 1);
+                        }
                     }
                 }
                 else
