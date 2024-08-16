@@ -61,10 +61,8 @@ namespace catgame
     {
         if (_idle)
         {
-            _action = bn::create_sprite_animate_action_forever(
-                _sprite.value(), 8, bn::sprite_items::player.tiles_item(), 0, 1, 2, 3);
-        }
-        if (_action.has_value() && !_action.value().done())
+            // Do nothing!
+        }else if (_action.has_value() && !_action.value().done())
         {
             _action.value().update();
         }
@@ -95,28 +93,50 @@ namespace catgame
             bn::point _new_position = _position;
 
             // Handle movement
-            _idle = true;
             if (bn::keypad::left_held())
             {
                 _new_position.set_x(_new_position.x() - 1);
-                //_sprite.value().set_horizontal_flip(true);
-                _idle = false;
             }
             else if (bn::keypad::right_held())
             {
                 _new_position.set_x(_new_position.x() + 1);
-                //_sprite.value().set_horizontal_flip(false);
-                _idle = false;
             }
             if (bn::keypad::up_held())
             {
                 _new_position.set_y(_new_position.y() - 1);
-                _idle = false;
             }
             else if (bn::keypad::down_held())
             {
                 _new_position.set_y(_new_position.y() + 1);
+            }
+            // For animations
+            if (bn::keypad::left_pressed())
+            {
+                _action = bn::create_sprite_animate_action_forever(
+                    _sprite.value(), 8, bn::sprite_items::player.tiles_item(), 8, 9, 10, 11);
                 _idle = false;
+            }
+            else if (bn::keypad::right_pressed())
+            {
+                _action = bn::create_sprite_animate_action_forever(
+                    _sprite.value(), 8, bn::sprite_items::player.tiles_item(), 12, 13, 14, 15);
+                _idle = false;
+            }
+            if (bn::keypad::up_pressed())
+            {
+                _action = bn::create_sprite_animate_action_forever(
+                    _sprite.value(), 8, bn::sprite_items::player.tiles_item(), 4, 5, 6, 7);
+                _idle = false;
+            }
+            else if (bn::keypad::down_pressed())
+            {
+                _action = bn::create_sprite_animate_action_forever(
+                    _sprite.value(), 8, bn::sprite_items::player.tiles_item(), 0, 1, 2, 3);
+                _idle = false;
+            }
+            if (bn::keypad::up_released() || bn::keypad::down_released() || bn::keypad::left_released() || bn::keypad::right_released())
+            {
+                _idle = true;
             }
             // Calculate position in map
             _map_position.set_x(_new_position.x() / 8);
@@ -127,14 +147,7 @@ namespace catgame
                 _position = _new_position;
             }
             _sprite.value().set_position(_position.x(), _position.y());
-
-            if (bn::keypad::a_pressed())
-            {
-            }
-
-            if (bn::keypad::b_pressed())
-            {
-            }
+            animate();
         }
     }
 

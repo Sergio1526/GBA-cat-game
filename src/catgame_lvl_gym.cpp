@@ -144,7 +144,7 @@ namespace catgame
             }
 
             _player.update(map_item);
-            _player.animate();
+            //_player.animate();
 
             if (gym_door.near_player(_player.position()))
             {
