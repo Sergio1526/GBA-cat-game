@@ -9,11 +9,11 @@
 //
 //	minigame2_bn_gfx, 256x256@8, 
 //	+ palette 64 entries, not compressed
-//	+ 192 tiles (t|f reduced) not compressed
+//	+ 249 tiles (t|f reduced) not compressed
 //	+ regular map (flat), not compressed, 32x32 
-//	Total size: 128 + 12288 + 2048 = 14464
+//	Total size: 128 + 15936 + 2048 = 18112
 //
-//	Time-stamp: 2024-08-16, 09:50:05
+//	Time-stamp: 2024-08-21, 16:53:18
 //	Exported by Cearn's GBA Image Transmogrifier, v0.9.2
 //	( http://www.coranac.com/projects/#grit )
 //
@@ -22,8 +22,8 @@
 #ifndef GRIT_MINIGAME2_BN_GFX_H
 #define GRIT_MINIGAME2_BN_GFX_H
 
-#define minigame2_bn_gfxTilesLen 12288
-extern const bn::tile minigame2_bn_gfxTiles[384];
+#define minigame2_bn_gfxTilesLen 15936
+extern const bn::tile minigame2_bn_gfxTiles[498];
 
 #define minigame2_bn_gfxMapLen 2048
 extern const bn::regular_bg_map_cell minigame2_bn_gfxMap[1024];
@@ -38,7 +38,7 @@ extern const bn::color minigame2_bn_gfxPal[64];
 namespace bn::regular_bg_items
 {
     constexpr inline regular_bg_item minigame2(
-            regular_bg_tiles_item(span<const tile>(minigame2_bn_gfxTiles, 384), bpp_mode::BPP_8, compression_type::NONE), 
+            regular_bg_tiles_item(span<const tile>(minigame2_bn_gfxTiles, 498), bpp_mode::BPP_8, compression_type::NONE), 
             bg_palette_item(span<const color>(minigame2_bn_gfxPal, 64), bpp_mode::BPP_8, compression_type::NONE),
             regular_bg_map_item(minigame2_bn_gfxMap[0], size(32, 32), compression_type::NONE, 1, false));
 }

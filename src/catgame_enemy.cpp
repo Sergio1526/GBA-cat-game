@@ -3,7 +3,7 @@
 #include "bn_point.h"
 #include "bn_keypad.h"
 #include "bn_sprite_animate_actions.h"
-#include "bn_sprite_items_ninja.h"
+#include "bn_sprite_items_npc.h"
 #include "bn_regular_bg_map_item.h"
 #include "bn_regular_bg_map_cell.h"
 #include "bn_regular_bg_map_cell_info.h"
@@ -26,11 +26,11 @@ namespace catgame
         _dialog = dialog;
         _map_position.set_x(_position.x() / 8); // Pos divide by 8 (tiles size)
         _map_position.set_y(_position.y() / 8);
-        _sprite = bn::sprite_items::ninja.create_sprite(_position);
+        _sprite = bn::sprite_items::npc.create_sprite(_position);
         _sprite.value().set_camera(camera);
         _sprite.value().set_z_order(2);
         _action = bn::create_sprite_animate_action_forever(
-            _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
+            _sprite.value(), 16, bn::sprite_items::npc.tiles_item(), 0, 1, 2, 3);
         enemy::set_view_distance(player_sprite);
     }
     bool enemy::near_player(bn::fixed_point player_pos)
@@ -102,22 +102,22 @@ namespace catgame
                 if (_direction == 0)
                 {
                     _action = bn::create_sprite_animate_action_forever(
-                        _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 12, 13, 14, 15);
+                        _sprite.value(), 16, bn::sprite_items::npc.tiles_item(), 12, 13, 14, 15);
                 }
                 if (_direction == 1)
                 {
                     _action = bn::create_sprite_animate_action_forever(
-                        _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 8, 9, 10, 11);
+                        _sprite.value(), 16, bn::sprite_items::npc.tiles_item(), 8, 9, 10, 11);
                 }
                 if (_direction == 2)
                 {
                     _action = bn::create_sprite_animate_action_forever(
-                        _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 4, 5, 6, 7);
+                        _sprite.value(), 16, bn::sprite_items::npc.tiles_item(), 4, 5, 6, 7);
                 }
                 if (_direction == 3)
                 {
                     _action = bn::create_sprite_animate_action_forever(
-                        _sprite.value(), 16, bn::sprite_items::ninja.tiles_item(), 0, 1, 2, 3);
+                        _sprite.value(), 16, bn::sprite_items::npc.tiles_item(), 0, 1, 2, 3);
                 }
             }
             _sprite.value().set_position(_position.x(), _position.y());
