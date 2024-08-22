@@ -49,7 +49,7 @@ namespace catgame
         next_game_phase = catgame::game_phases::LVL1;
 
         // Backgrounds
-        bn::regular_bg_ptr ground = bn::regular_bg_items::minigame2.create_bg(256, 256); // Center
+        bn::regular_bg_ptr ground = bn::regular_bg_items::minigame2.create_bg(256, 256+27); // Center
         ground.set_priority(3);
 
         // Sprites

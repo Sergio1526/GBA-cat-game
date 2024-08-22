@@ -51,9 +51,9 @@ namespace catgame
         ground.set_priority(3);
 
         // Sprites
-        bn::sprite_ptr left_hand = bn::sprite_items::cat_hand.create_sprite(bn::point(-26, 30));
+        bn::sprite_ptr left_hand = bn::sprite_items::cat_hand.create_sprite(bn::point(-30, 28));
         left_hand.set_bg_priority(1);
-        bn::sprite_ptr right_hand = bn::sprite_items::cat_hand.create_sprite(bn::point(35, 30));
+        bn::sprite_ptr right_hand = bn::sprite_items::cat_hand.create_sprite(bn::point(32, 28));
         right_hand.set_bg_priority(1);
         right_hand.set_horizontal_flip(true);
 
